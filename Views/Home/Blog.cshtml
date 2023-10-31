@@ -1,0 +1,337 @@
+﻿
+@{
+    ViewData["Title"] = @ViewBag.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- ist section -->
+<section style="background:#f5c11629;">
+    <div class="container py-5">
+        <h2 class="font-weight-bold pb-2">Blog</h2>
+        <h5>Recent Updates</h5>
+        <div class="row py-3">
+
+            <div class="col-xxl-6 col-xl-6 col-lg-6">
+                <div class="text-left  blog_card p-4 h-100">
+                    <img src="~/image/whatsapp-authertication.webp" class="img-fluid" style="border-radius: 17px;" alt="blog-img">
+                    <div class="card-body p-1">
+
+                        <h5 class="pt-3">
+                            WhatsApp Business App vs WhatsApp Business API: Simplified Comparison for Business Owners
+                        </h5>
+                        <p class="text-justify">
+                            When WhatsApp introduced the WhatsApp Business app, it came out as a great tool for small businesses to
+                            interact with customers. However, Facebook soon realized that medium and large businesses had more
+                            complex needs,so keeping their needs in mind, they opened up access to the WhatsApp Business API.
+                        </p>
+                        @Html.ActionLink("Read More >","whatsappbusinessappvswhatsappbusinessapi","Home",new{})
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 pt-md-0 pt-3">
+                <div class="text-left  blog_card p-4 row m-0">
+                    <div class="image col-6 my-auto">
+                        <img src="~/image/whatsapp-broadcasting.webp" class="img-fluid" style="border-radius: 17px;" alt="...">
+
+                    </div>
+                    <div class="card-body col-6 pr-0">
+                        <a href="whatsapp-business-app-vs-whatsapp-business-api.html"
+                           style="text-decoration: none;  font-weight: 500;">
+                            <h5>WhatsApp Business App vs WhatsApp Business API: Simplified Comparison for Business Owners</h5>
+                        </a>
+
+
+
+                    </div>
+                </div>
+                <div class="text-left  blog_card p-4 my-3 row m-0">
+
+                    <div class="image col-6 my-auto">
+                        <img src="~/image/Enhance-your-marketing-strategy-min.webp" class="img-fluid" style="border-radius: 17px;"
+                             alt="...">
+
+                    </div>
+                    <div class="card-body col-6">
+                        <a href="whatsapp-marketing-strategies-to-drive-sales.html"
+                           style="text-decoration: none;  font-weight: 500;">
+                            <h5>5 Winning WhatsApp Marketing Strategies to Drive 3X More Sales</h5>
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+                <div class="text-left  blog_card p-4 row m-0">
+
+                    <div class="image col-6 my-auto">
+                        <img src="~/image/whatsapp-marketing.webp" class="img-fluid" style="border-radius: 17px;" alt="...">
+
+                    </div>
+                    <div class="card-body col-6 pr-0 ">
+                        <a href="reshaping-customer-engagement-on-whatsapp.html"
+                           style="text-decoration: none;  font-weight: 500;">
+                            <h5>From Vision to Reality: How Anantya.ai is Reshaping Customer Engagement on WhatsApp</h5>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</section>
+<!-- form -->
+<section style="background:#f5c11629;">
+    <div class="container py-4">
+        <div class="form_box px-5 py-4 ">
+            <!-- <h3 class="text-center">Fill The <span class="primary_color"> Form Below</span></h3> -->
+            <form action="" method="POST">
+                <div class="row my-auto px-0 align-items-center">
+                    <div class="col-md-3 col-12">
+                        <label class="control-label pt-2" for="root_00N5g00000OZ5f1">
+                            Search<span class="required">
+                                *
+
+                            </span>
+                        </label>
+                            <input type="search" class="form-control w-100" placeholder="Search..." aria-label="Search">
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="form-group field field-string field-error has-error has-danger country">
+                            <label class="control-label" for="root_00N5g00000OZ5f1">
+                                Categories<span class="required">
+                                    *
+
+                                </span>
+                            </label><select id="root_00N5g00000OZ5f1" class="form-control" required="">
+
+
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected" data-sf-count="0"
+                                        data-sf-depth="0" value="" data-select2-id="6"> All Categories</option>
+
+                                <option class="sf-level-0 sf-item-453" data-sf-count="6" data-sf-depth="0"
+                                        value="media-entertainment">
+                                    Media
+                                    &amp; Entertainment
+                                </option>
+
+                                <option class="sf-level-0 sf-item-401" data-sf-count="6" data-sf-depth="0" value="travel">
+                                    Travel
+                                </option>
+                                <option class="sf-level-0 sf-item-372" data-sf-count="15" data-sf-depth="0" value="d2c-e-commerce">
+                                    D2C
+                                    &amp;
+                                    E-commerce
+                                </option>
+
+                                <option class="sf-level-0 sf-item-304" data-sf-count="5" data-sf-depth="0" value="healthcare">
+                                    Healthcare
+                                </option>
+
+                                <option class="sf-level-0 sf-item-295" data-sf-count="4" data-sf-depth="0" value="edtech">
+                                    EdTech
+                                </option>
+
+                                <option class="sf-level-0 sf-item-271" data-sf-count="3" data-sf-depth="0" value="hospitality">
+                                    Hospitality
+                                </option>
+
+
+                                <option class="sf-level-0 sf-item-266" data-sf-count="10" data-sf-depth="0" value="food-beverage">
+                                    Food
+                                    &amp;
+                                    Beverage
+                                </option>
+
+                                <option class="sf-level-0 sf-item-264" data-sf-count="10" data-sf-depth="0" value="bfsi">BFSI</option>
+
+
+
+
+
+
+                            </select>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="form-group field field-string field-error has-error has-danger country">
+                            <label class="control-label" for="root_00N5g00000OZ5f1">
+                                Solutions<span class="required">*</span>
+                            </label><select id="root_00N5g00000OZ5f1" class="form-control" required="">
+
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected" data-sf-count="0"
+                                        data-sf-depth="0" value="" data-select2-id="3">Solutions</option>
+                                <option class="sf-level-0 sf-item-827" data-sf-count="4" data-sf-depth="0" value="announcements">
+                                    WhatsApp Marketing
+                                </option>
+                                <option class="sf-level-0 sf-item-345" data-sf-count="150" data-sf-depth="0"
+                                        value="conversational-engagement">Whatsapp Commerce</option>
+                                <option class="sf-level-0 sf-item-275" data-sf-count="62" data-sf-depth="0"
+                                        value="conversational-commerce">
+                                    Whatsapp Support
+                                </option>
+                                <option class="sf-level-0 sf-item-274" data-sf-count="73" data-sf-depth="0"
+                                        value="conversational-support">
+                                    Whatsapp Authentication
+                                </option>
+
+
+
+
+
+
+                            </select>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="form-group field field-string field-error has-error has-danger country">
+                            <label class="control-label" for="root_00N5g00000OZ5f1">
+                                Industries<span class="required">*</span>
+                            </label><select id="root_00N5g00000OZ5f1" class="form-control" required="">
+
+
+                                <option class="sf-level-0 sf-item-0 sf-option-active" selected="selected" data-sf-count="0"
+                                        data-sf-depth="0" value="" data-select2-id="6">Industries</option>
+
+                                <option class="sf-level-0 sf-item-453" data-sf-count="6" data-sf-depth="0"
+                                        value="media-entertainment">
+                                    Media
+                                    &amp; Entertainment
+                                </option>
+
+                                <option class="sf-level-0 sf-item-401" data-sf-count="6" data-sf-depth="0" value="travel">
+                                    Travel
+                                </option>
+                                <option class="sf-level-0 sf-item-372" data-sf-count="15" data-sf-depth="0" value="d2c-e-commerce">
+                                    D2C
+                                    &amp;
+                                    E-commerce
+                                </option>
+
+                                <option class="sf-level-0 sf-item-304" data-sf-count="5" data-sf-depth="0" value="healthcare">
+                                    Healthcare
+                                </option>
+
+                                <option class="sf-level-0 sf-item-295" data-sf-count="4" data-sf-depth="0" value="edtech">
+                                    EdTech
+                                </option>
+
+                                <option class="sf-level-0 sf-item-271" data-sf-count="3" data-sf-depth="0" value="hospitality">
+                                    Hospitality
+                                </option>
+
+
+                                <option class="sf-level-0 sf-item-266" data-sf-count="10" data-sf-depth="0" value="food-beverage">
+                                    Food
+                                    &amp;
+                                    Beverage
+                                </option>
+
+                                <option class="sf-level-0 sf-item-264" data-sf-count="10" data-sf-depth="0" value="bfsi">BFSI</option>
+
+
+
+
+
+
+                            </select>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- form -->
+<!-- cards -->
+<section style="background:#f5c11629;">
+    <div class="container text-center ">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5 px-md-0 px-3">
+
+
+            <div class="col my-2">
+
+                <div class="blog_card text-left h-100 p-4 h-100">
+                    <img src="~/image/whatsapp-authertication.webp" class="img-fluid " style="border-radius: 17px;"
+                         alt="blog-img">
+                    <div class="card-body p-1">
+
+                        <h5 class="pt-3">
+                            WhatsApp Business App vs WhatsApp Business API: Simplified Comparison for Business Owners
+                        </h5>
+                        <p class="text-justify">
+                            When WhatsApp introduced the WhatsApp Business app, it came out as a great tool
+                            for small
+                            businesses to interact with customers..
+                        </p>
+                        @Html.ActionLink("Read More >","whatsappbusinessappvswhatsappbusinessapi","Home",new{})
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col my-2">
+
+                <div class="blog_card text-left h-100 p-4 h-100">
+                    <img src="~/image/Empowering-Customer-Support-min.webp" class="img-fluid" style="border-radius: 17px;"
+                         alt="blog-img">
+                    <div class="card-body p-1">
+
+                        <h5 class="pt-3">
+                            5 Winning WhatsApp Marketing Strategies to Drive 3X More Sales
+                        </h5>
+                        <p class="text-justify">
+                            As of now, the world's population is around 7.5 billion people. And guess what? The number of WhatsApp
+                            messages sent is 13 times bigger than that! It's crazy, right?
+                        </p>
+                        @Html.ActionLink("Read More >","whatsappmarketingstrategiestodrivesales","Home",new{})
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col my-2">
+
+                <div class="blog_card text-left h-100 p-4 h-100">
+                    <img src="~/image/chatbot-reports.webp" class="img-fluid" style="border-radius: 17px;" alt="blog-img">
+                    <div class="card-body p-1">
+
+                        <h5 class="pt-3">
+                            From Vision to Reality: How Anantya.ai is Reshaping Customer Engagement on WhatsApp
+                        </h5>
+                        <p class="text-justify">
+                            The journey started when we realized that the existing customer engagement
+                            solutions in the market were not up to the mark to deliver exceptional customer experience.
+                        </p>
+                        @Html.ActionLink("Read More >","reshapingcustomerengagementonwhatsapp","Home",new{})
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- cards -->
+<!-- Footer-Section start -->
+
