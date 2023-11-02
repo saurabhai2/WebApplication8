@@ -34,6 +34,7 @@ namespace WebApplication8.Controllers
         {
 
             var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
             if (r == @number)
             {
                 return View();
@@ -44,5 +45,83 @@ namespace WebApplication8.Controllers
             }
 
         }
+        public IActionResult Articles(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+
+        }
+
+        public IActionResult Tittle(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+
+        }
+
+        public IActionResult Metadata(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            if (r == @number)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+
+        }
+
+        public IActionResult Inbox(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            if (r == @number)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+
+        }
+
+        public IActionResult Settings(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            if (r == @number)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+
+        }
+
+
     } 
 }

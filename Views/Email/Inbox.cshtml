@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Inbox";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@model List<Email>
+
+<h2>Email Inbox</h2>
+
+<table>
+    <tr>
+        <th>From</th>
+        <th>Subject</th>
+        <th>Date</th>
+    </tr>
+    @foreach (var email in Model)
+    {
+        <tr>
+            <td>@email.From</td>
+            <td>@email.Subject</td>
+            <td>@email.Date.ToString("MM/dd/yyyy HH:mm:ss")</td>
+        </tr>
+    }
+</table>
+

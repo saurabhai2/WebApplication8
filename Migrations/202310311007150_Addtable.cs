@@ -18,7 +18,7 @@
                 .PrimaryKey(t => t.Id);
             
         }
-        
+      
         public override void Down()
         {
             DropTable("dbo.Logins");
