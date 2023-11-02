@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
+using NuGet.Protocol.Core.Types;
+using WebApplication8.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
+builder.Services.AddScoped<AnantyaDbContext>();
 
 builder.Services.AddSession();
 

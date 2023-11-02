@@ -7,7 +7,13 @@ namespace WebApplication8.Controllers
 {
     public class AdminController : Controller
     {
-       
+        private readonly AnantyaDbContext _context;
+
+        public AdminController(AnantyaDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Admin()
         {
             Random rand = new Random(DateTime.Now.Millisecond);
@@ -112,9 +118,13 @@ namespace WebApplication8.Controllers
 
             var number = HttpContext.Session.GetInt32("Token");
             ViewBag.Number = @number;
+
+            
+
             if (r == @number)
             {
-                return View();
+                List<ContactForm> ContactForm = _context.ContactForm.ToList();
+                return View(ContactForm);
             }
             else
             {

@@ -13,6 +13,8 @@ using System;
 using Newtonsoft.Json;
 using RestSharp;
 using System.Text;
+using System.Data.Entity;
+using WebApplication8.Database;
 
 namespace WebApplication8.Controllers
 {
@@ -25,15 +27,22 @@ namespace WebApplication8.Controllers
             return View();
         }
         private readonly IWebHostEnvironment _hostingEnvironment;
+        private readonly AnantyaDbContext _context;
 
-        public ContactUs1Controller(IWebHostEnvironment hostingEnvironment)
+        public ContactUs1Controller(IWebHostEnvironment hostingEnvironment, AnantyaDbContext context)
         {
             _hostingEnvironment = hostingEnvironment;
+            _context = context;
+
         }
+
+        
+
+        
 
 
         [HttpPost]
-        public async Task<string> Contact(string Name, string email, string phone, string message, string url)
+        public async Task<string> Contact(string Name, string email, string phone, string message, string url, ContactForm contactForm)
         {
             try
             {
@@ -182,8 +191,30 @@ namespace WebApplication8.Controllers
                 Console.WriteLine(ex.Message);
             }
 
+            var contact = new ContactForm
+            {
+                
+                Name = Name,
+                Email = email,
+                Phone = phone,
+                Message = message,
+                url = url,
+
+            };
+
+            SaveData(contact);
 
             return "Thank You , Your mail is submitted";
+        }
+
+        private void SaveData(ContactForm contact)
+        {
+            // Common logic that both Action1 and Action2 need
+            // ...
+
+            // Save the contact object to the database using Entity Framework Core
+            _context.ContactForm.Add(contact);
+            _context.SaveChanges();
         }
 
         [HttpPost]
@@ -228,6 +259,8 @@ namespace WebApplication8.Controllers
             {
                 Console.WriteLine(ex.Message);
             }
+
+            
 
 
             return "Thank You , Your mail is submitted";

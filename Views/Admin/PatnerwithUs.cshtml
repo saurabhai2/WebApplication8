@@ -3,11 +3,13 @@
 @{
     ViewData["Title"] = "PatnerwithUs";
     Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["heading"] = "Form Data";
 }
 
 
-<p>
-    <a>@Html.ActionLink("Contact Form","FormData","Admin",new{r=@ViewBag.Number}) </a>
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px">
+    @Html.ActionLink("Contact Form","FormData","Admin",new{r=@ViewBag.Number})
+    
 </p>
 
 <h4>Patner FormData</h4>
@@ -17,7 +19,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Id)
+                @Html.DisplayNameFor(model => model.Id) 
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)

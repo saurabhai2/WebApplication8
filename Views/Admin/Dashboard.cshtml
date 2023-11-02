@@ -2,27 +2,28 @@
 @{
     ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["heading"] = "Dashboard";
 }
 
 <div class="box-container">
     <a href="@Url.Action("FormData", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
     <div class="box box1">
-        <div class="text">
+        <div class="text" style="color:black">
             <h2 class="topic-heading">0</h2>
             <h2 class="topic">Contact Form</h2>
         </div>
     </div>
     </a>
     <a href="@Url.Action("PatnerwithUs", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-    <div class="box box2">
-        <div class="text">
+        <div class="box box2">
+            <div class="text" style="color:black">
             <h2 class="topic-heading">0</h2>
             <h2 class="topic">Partner Form</h2>
         </div>
     </div>
     </a>
     <div class="box box3">
-        <div class="text">
+        <div class="text" style="color:black">
             <h2 class="topic-heading">0</h2>
             <h2 class="topic">Website Views</h2>
         </div>
