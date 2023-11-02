@@ -5,147 +5,140 @@
     Layout = "~/Views/Shared/_Layout2.cshtml";
 }
 
-<h1>Tittle</h1>
 
-<h4>Tittle</h4>
+<h4>Tittle For Pages</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Tittle">
+    <div class="col-md-8">
+        <form asp-action="Tittle" method="Post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <input type="submit" value="Create" class="btn btn-primary" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Index" class="control-label"></label>
-                <input asp-for="Index" class="form-control" />
+                <label asp-for="Index"  class="control-label"></label>
+                <input asp-for="Index" style="width:60%" class="form-control" />
                 <span asp-validation-for="Index" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="liveagentsupport" class="control-label"></label>
+                <label asp-for="liveagentsupport" class="control-label">live-agent-support</label>
                 <input asp-for="liveagentsupport" class="form-control" />
                 <span asp-validation-for="liveagentsupport" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsAppBroadcasting" class="control-label"></label>
+                <label asp-for="WhatsAppBroadcasting" class="control-label">WhatsApp Broadcasting</label>
                 <input asp-for="WhatsAppBroadcasting" class="form-control" />
                 <span asp-validation-for="WhatsAppBroadcasting" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReportsAnalytics" class="control-label"></label>
+                <label asp-for="ReportsAnalytics" class="control-label">Reports Analytics</label>
                 <input asp-for="ReportsAnalytics" class="form-control" />
                 <span asp-validation-for="ReportsAnalytics" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AutomatedChatBot" class="control-label"></label>
+                <label asp-for="AutomatedChatBot" class="control-label">Automated ChatBot</label>
                 <input asp-for="AutomatedChatBot" class="form-control" />
                 <span asp-validation-for="AutomatedChatBot" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ConversationalMarketing" class="control-label"></label>
+                <label asp-for="ConversationalMarketing" class="control-label">Conversational Marketing</label>
                 <input asp-for="ConversationalMarketing" class="form-control" />
                 <span asp-validation-for="ConversationalMarketing" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AutoSegregation" class="control-label"></label>
+                <label asp-for="AutoSegregation" class="control-label">Auto-Segregation</label>
                 <input asp-for="AutoSegregation" class="form-control" />
                 <span asp-validation-for="AutoSegregation" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AppMarketing" class="control-label"></label>
+                <label asp-for="AppMarketing" class="control-label">App Marketing</label>
                 <input asp-for="AppMarketing" class="form-control" />
                 <span asp-validation-for="AppMarketing" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsAppMarketing" class="control-label"></label>
+                <label asp-for="WhatsAppMarketing" class="control-label">WhatsApp Marketing</label>
                 <input asp-for="WhatsAppMarketing" class="form-control" />
                 <span asp-validation-for="WhatsAppMarketing" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsappCommerce" class="control-label"></label>
+                <label asp-for="WhatsappCommerce" class="control-label">Whatsapp Commerce</label>
                 <input asp-for="WhatsappCommerce" class="form-control" />
                 <span asp-validation-for="WhatsappCommerce" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsappSupport" class="control-label"></label>
+                <label asp-for="WhatsappSupport" class="control-label">Whatsapp Support</label>
                 <input asp-for="WhatsappSupport" class="form-control" />
                 <span asp-validation-for="WhatsappSupport" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsappAuthentication" class="control-label"></label>
+                <label asp-for="WhatsappAuthentication" class="control-label">Whatsapp Authentication</label>
                 <input asp-for="WhatsappAuthentication" class="form-control" />
                 <span asp-validation-for="WhatsappAuthentication" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EcommerceRetail" class="control-label"></label>
+                <label asp-for="EcommerceRetail" class="control-label">Ecommerce Retail</label>
                 <input asp-for="EcommerceRetail" class="form-control" />
                 <span asp-validation-for="EcommerceRetail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Healthcare" class="control-label"></label>
+                <label asp-for="Healthcare" class="control-label">Healthcare</label>
                 <input asp-for="Healthcare" class="form-control" />
                 <span asp-validation-for="Healthcare" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EdTech" class="control-label"></label>
+                <label asp-for="EdTech" class="control-label">EdTech</label>
                 <input asp-for="EdTech" class="form-control" />
                 <span asp-validation-for="EdTech" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BankingBFSI" class="control-label"></label>
+                <label asp-for="BankingBFSI" class="control-label">Banking BFSI</label>
                 <input asp-for="BankingBFSI" class="form-control" />
                 <span asp-validation-for="BankingBFSI" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Mediaentertainment" class="control-label"></label>
+                <label asp-for="Mediaentertainment" class="control-label">Media entertainment</label>
                 <input asp-for="Mediaentertainment" class="form-control" />
                 <span asp-validation-for="Mediaentertainment" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FoodBeverage" class="control-label"></label>
+                <label asp-for="FoodBeverage" class="control-label">Food Beverage</label>
                 <input asp-for="FoodBeverage" class="form-control" />
                 <span asp-validation-for="FoodBeverage" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TravelHospitality" class="control-label"></label>
+                <label asp-for="TravelHospitality" class="control-label">Travel Hospitality</label>
                 <input asp-for="TravelHospitality" class="form-control" />
                 <span asp-validation-for="TravelHospitality" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AboutUs" class="control-label"></label>
+                <label asp-for="AboutUs" class="control-label">AboutUs</label>
                 <input asp-for="AboutUs" class="form-control" />
                 <span asp-validation-for="AboutUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WorkWithUs" class="control-label"></label>
+                <label asp-for="WorkWithUs" class="control-label">Work With Us</label>
                 <input asp-for="WorkWithUs" class="form-control" />
                 <span asp-validation-for="WorkWithUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PartnerWithUs" class="control-label"></label>
+                <label asp-for="PartnerWithUs" class="control-label">Partner With Us</label>
                 <input asp-for="PartnerWithUs" class="form-control" />
                 <span asp-validation-for="PartnerWithUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Blog" class="control-label"></label>
+                <label asp-for="Blog" class="control-label">Blog</label>
                 <input asp-for="Blog" class="form-control" />
                 <span asp-validation-for="Blog" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ContactUs" class="control-label"></label>
+                <label asp-for="ContactUs" class="control-label">Contact Us</label>
                 <input asp-for="ContactUs" class="form-control" />
                 <span asp-validation-for="ContactUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="KnowledgeCenter" class="control-label"></label>
+                <label asp-for="KnowledgeCenter" class="control-label">Knowledge Center</label>
                 <input asp-for="KnowledgeCenter" class="form-control" />
                 <span asp-validation-for="KnowledgeCenter" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="whatsappbusinessappvswhatsappbusinessapi" class="control-label"></label>
+                <label asp-for="whatsappbusinessappvswhatsappbusinessapi" class="control-label">whatsapp business app vs whatsapp business api</label>
                 <input asp-for="whatsappbusinessappvswhatsappbusinessapi" class="form-control" />
                 <span asp-validation-for="whatsappbusinessappvswhatsappbusinessapi" class="text-danger"></span>
             </div>
@@ -166,7 +159,4 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 

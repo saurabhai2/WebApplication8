@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebApplication8.Models.PatnerwithUs>
+
+@{
+    ViewData["Title"] = "PatnerwithUs";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<p>
+    <a>@Html.ActionLink("Contact Form","FormData","Admin",new{r=@ViewBag.Number}) </a>
+</p>
+
+<h4>Patner FormData</h4>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Designation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.company)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>

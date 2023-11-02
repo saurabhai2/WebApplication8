@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplication8.Models.ContactForm>
+
+
+@{
+    ViewData["Title"] = "FormData";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<p>
+    <a>@Html.ActionLink("Patners Form","PatnerwithUs","Admin",new{r=@ViewBag.Number})</a>
+</p>
+<h4>Contact Form Data</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.url)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>

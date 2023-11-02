@@ -107,10 +107,27 @@ namespace WebApplication8.Controllers
 
         }
 
-        public IActionResult Settings(int r)
+        public IActionResult FormData(int r)
         {
 
             var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+
+        }
+
+        public IActionResult PatnerwithUs(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
             if (r == @number)
             {
                 return View();

@@ -15,6 +15,9 @@ namespace WebApplication8.Database
 
         public DbSet<Tittle> Tittle { get; set; }
 
+        public DbSet<ContactForm> ContactForm { get; set; }
+        public DbSet<PatnerwithUs> PatnerwithUs { get; set; }
+
 
 
     }
