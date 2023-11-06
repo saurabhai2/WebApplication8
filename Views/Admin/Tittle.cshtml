@@ -1,9 +1,10 @@
-﻿@model WebApplication8.Models.Tittle
+﻿@model WebApplication8.Models.AdminTittle
 
 @{
     ViewData["Title"] = "Tittle";
     Layout = "~/Views/Shared/_Layout2.cshtml";
     ViewData["heading"] = "Tittle";
+   
 }
 
 
@@ -11,152 +12,210 @@
 <hr />
 <div class="row">
     <div class="col-md-8">
-        <form asp-action="Tittle" method="Post">
+        
+        <form asp-action="Tittle" asp-route-r="@ViewBag.Number" method="Post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Index"  class="control-label"></label>
-                <input asp-for="Index" style="width:60%" class="form-control" />
+                <label asp-for="Index"  style="display:block" class="control-label"></label>
+                <input asp-for="Index"  id="Index_input" style="width:60%; display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Index" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Index" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="Index" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="liveagentsupport" class="control-label">live-agent-support</label>
-                <input asp-for="liveagentsupport" class="form-control" />
+                <label asp-for="liveagentsupport" style="display:block" class="control-label">live-agent-support</label>
+                <input asp-for="liveagentsupport" id="live_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_live" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_live" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="liveagentsupport" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsAppBroadcasting" class="control-label">WhatsApp Broadcasting</label>
-                <input asp-for="WhatsAppBroadcasting" class="form-control" />
+                <label asp-for="WhatsAppBroadcasting" style="display:block" class="control-label">WhatsApp Broadcasting</label>
+                <input asp-for="WhatsAppBroadcasting" id="AppBroad_input" style="width:60%; display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_AppBroad" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_AppBroad" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="WhatsAppBroadcasting" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReportsAnalytics" class="control-label">Reports Analytics</label>
-                <input asp-for="ReportsAnalytics" class="form-control" />
+                <label asp-for="ReportsAnalytics" style="display:block" class="control-label">Reports Analytics</label>
+                <input asp-for="ReportsAnalytics" id="Report_input" style="width:60%; display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Report" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Report" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="ReportsAnalytics" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AutomatedChatBot" class="control-label">Automated ChatBot</label>
-                <input asp-for="AutomatedChatBot" class="form-control" />
+                <label asp-for="AutomatedChatBot" style="display:block" class="control-label">Automated ChatBot</label>
+                <input asp-for="AutomatedChatBot" id="Auto_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Auto" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Auto" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="AutomatedChatBot" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ConversationalMarketing" class="control-label">Conversational Marketing</label>
-                <input asp-for="ConversationalMarketing" class="form-control" />
+                <label asp-for="ConversationalMarketing" style="display:block" class="control-label">Conversational Marketing</label>
+                <input asp-for="ConversationalMarketing" id="Conve_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Conve" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Conve" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="ConversationalMarketing" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AutoSegregation" class="control-label">Auto-Segregation</label>
-                <input asp-for="AutoSegregation" class="form-control" />
+                <label asp-for="AutoSegregation" style="display:block" class="control-label">Auto-Segregation</label>
+                <input asp-for="AutoSegregation" id="Segrega_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Segrega" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Segrega" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="AutoSegregation" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AppMarketing" class="control-label">App Marketing</label>
-                <input asp-for="AppMarketing" class="form-control" />
+                <label asp-for="AppMarketing" style="display:block" class="control-label">App Marketing</label>
+                <input asp-for="AppMarketing" id="Marke_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Marke" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Marke" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="AppMarketing" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsAppMarketing" class="control-label">WhatsApp Marketing</label>
-                <input asp-for="WhatsAppMarketing" class="form-control" />
+                <label asp-for="WhatsAppMarketing" style="display:block" class="control-label">WhatsApp Marketing</label>
+                <input asp-for="WhatsAppMarketing" id="AppMark_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_AppMark" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_AppMark" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="WhatsAppMarketing" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsappCommerce" class="control-label">Whatsapp Commerce</label>
-                <input asp-for="WhatsappCommerce" class="form-control" />
+                <label asp-for="WhatsappCommerce" style="display:block" class="control-label">Whatsapp Commerce</label>
+                <input asp-for="WhatsappCommerce" id="Commer_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Commer" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Commer" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="WhatsappCommerce" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsappSupport" class="control-label">Whatsapp Support</label>
-                <input asp-for="WhatsappSupport" class="form-control" />
+                <label asp-for="WhatsappSupport" style="display:block" class="control-label">Whatsapp Support</label>
+                <input asp-for="WhatsappSupport" id="hatsap_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_hatsap" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_hatsap" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="WhatsappSupport" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WhatsappAuthentication" class="control-label">Whatsapp Authentication</label>
-                <input asp-for="WhatsappAuthentication" class="form-control" />
+                <label asp-for="WhatsappAuthentication" style="display:block" class="control-label">Whatsapp Authentication</label>
+                <input asp-for="WhatsappAuthentication" id="Authen_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Authen" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Authen" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="WhatsappAuthentication" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EcommerceRetail" class="control-label">Ecommerce Retail</label>
-                <input asp-for="EcommerceRetail" class="form-control" />
+                <label asp-for="EcommerceRetail" style="display:block" class="control-label">Ecommerce Retail</label>
+                <input asp-for="EcommerceRetail" id="Retail_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Retail" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Retail" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="EcommerceRetail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Healthcare" class="control-label">Healthcare</label>
-                <input asp-for="Healthcare" class="form-control" />
+                <label asp-for="Healthcare" style="display:block" class="control-label">Healthcare</label>
+                <input asp-for="Healthcare" id="care_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_care" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_care" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="Healthcare" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EdTech" class="control-label">EdTech</label>
-                <input asp-for="EdTech" class="form-control" />
+                <label asp-for="EdTech" style="display:block" class="control-label">EdTech</label>
+                <input asp-for="EdTech" id="EdTech_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_EdTech" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_EdTech" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="EdTech" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BankingBFSI" class="control-label">Banking BFSI</label>
-                <input asp-for="BankingBFSI" class="form-control" />
+                <label asp-for="BankingBFSI" style="display:block" class="control-label">Banking BFSI</label>
+                <input asp-for="BankingBFSI" id="BFSI_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_BFSI" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_BFSI" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="BankingBFSI" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Mediaentertainment" class="control-label">Media entertainment</label>
-                <input asp-for="Mediaentertainment" class="form-control" />
+                <label asp-for="Mediaentertainment" style="display:block" class="control-label">Media entertainment</label>
+                <input asp-for="Mediaentertainment" id="Media_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Media" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Media" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="Mediaentertainment" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FoodBeverage" class="control-label">Food Beverage</label>
-                <input asp-for="FoodBeverage" class="form-control" />
+                <label asp-for="FoodBeverage" style="display:block" class="control-label">Food Beverage</label>
+                <input asp-for="FoodBeverage" id="Food_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Food" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Food" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="FoodBeverage" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TravelHospitality" class="control-label">Travel Hospitality</label>
-                <input asp-for="TravelHospitality" class="form-control" />
+                <label asp-for="TravelHospitality" style="display:block" class="control-label">Travel Hospitality</label>
+                <input asp-for="TravelHospitality" id="Travel_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Travel" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Travel" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="TravelHospitality" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AboutUs" class="control-label">AboutUs</label>
-                <input asp-for="AboutUs" class="form-control" />
+                <label asp-for="AboutUs" style="display:block" class="control-label">AboutUs</label>
+                <input asp-for="AboutUs" id="AboutUs_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_AboutUs" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_AboutUs" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="AboutUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WorkWithUs" class="control-label">Work With Us</label>
-                <input asp-for="WorkWithUs" class="form-control" />
+                <label asp-for="WorkWithUs" style="display:block" class="control-label">Work With Us</label>
+                <input asp-for="WorkWithUs" id="WithUs_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_WithUs" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_WithUs" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="WorkWithUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PartnerWithUs" class="control-label">Partner With Us</label>
-                <input asp-for="PartnerWithUs" class="form-control" />
+                <label asp-for="PartnerWithUs" style="display:block" class="control-label">Partner With Us</label>
+                <input asp-for="PartnerWithUs" id="Partner_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Partner" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Partner" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="PartnerWithUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Blog" class="control-label">Blog</label>
-                <input asp-for="Blog" class="form-control" />
+                <label asp-for="Blog" style="display:block" class="control-label">Blog</label>
+                <input asp-for="Blog" id="Blog_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Blog" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Blog" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="Blog" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ContactUs" class="control-label">Contact Us</label>
-                <input asp-for="ContactUs" class="form-control" />
+                <label asp-for="ContactUs" style="display:block" class="control-label">Contact Us</label>
+                <input asp-for="ContactUs" id="Contact_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Contact" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Contact" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="ContactUs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="KnowledgeCenter" class="control-label">Knowledge Center</label>
-                <input asp-for="KnowledgeCenter" class="form-control" />
+                <label asp-for="KnowledgeCenter" style="display:block" class="control-label">Knowledge Center</label>
+                <input asp-for="KnowledgeCenter" id="Center_input" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_Center" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_Center" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="KnowledgeCenter" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="whatsappbusinessappvswhatsappbusinessapi" class="control-label">whatsapp business app vs whatsapp business api</label>
-                <input asp-for="whatsappbusinessappvswhatsappbusinessapi" class="form-control" />
+                <label asp-for="whatsappbusinessappvswhatsappbusinessapi" style="display:block" class="control-label">whatsapp business app vs whatsapp business api</label>
+                <input asp-for="whatsappbusinessappvswhatsappbusinessapi"  style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_api" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_api" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="whatsappbusinessappvswhatsappbusinessapi" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="whatsappmarketingstrategiestodrivesales" class="control-label"></label>
-                <input asp-for="whatsappmarketingstrategiestodrivesales" class="form-control" />
+                <label asp-for="whatsappmarketingstrategiestodrivesales" style="display:block" class="control-label"></label>
+                <input asp-for="whatsappmarketingstrategiestodrivesales" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_sales" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_sales" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="whatsappmarketingstrategiestodrivesales" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="reshapingcustomerengagementonwhatsapp" class="control-label"></label>
-                <input asp-for="reshapingcustomerengagementonwhatsapp" class="form-control" />
+                <label asp-for="reshapingcustomerengagementonwhatsapp" style="display:block" class="control-label"></label>
+                <input asp-for="reshapingcustomerengagementonwhatsapp" style="width:60%;display:inline-block" class="form-control" />
+                <button value="Save" class="btn btn-primary" id="Tittle_engage" onclick="SendData(event)">Save</button>
+                <button value="Delete" class="btn btn-primary" id="Tittle_engage" onclick="DeleteData(event)">Delete</button>
                 <span asp-validation-for="reshapingcustomerengagementonwhatsapp" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
+       
     </div>
 </div>
 

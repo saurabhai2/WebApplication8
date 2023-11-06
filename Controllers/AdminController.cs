@@ -47,7 +47,7 @@ namespace WebApplication8.Controllers
             }
             else
             {
-                return RedirectToAction("Admin");
+                return RedirectToAction("Index", "Admin", new { r = number });
             }
 
         }
@@ -74,7 +74,10 @@ namespace WebApplication8.Controllers
             ViewBag.Number = @number;
             if (r == @number)
             {
-                return View();
+                var data = _context.AdminTittle.FirstOrDefault(item => item.Id == 1);
+
+
+                return View(data);
             }
             else
             {
@@ -140,7 +143,8 @@ namespace WebApplication8.Controllers
             ViewBag.Number = @number;
             if (r == @number)
             {
-                return View();
+                List<PatnerwithUs> PatnerwithUs = _context.PatnerwithUs.ToList();
+                return View(PatnerwithUs);
             }
             else
             {
@@ -149,6 +153,10 @@ namespace WebApplication8.Controllers
 
         }
 
+        public IActionResult EmailVarification() 
+        {
+            return View();
+        }
 
     } 
 }

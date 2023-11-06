@@ -13,7 +13,6 @@ using System;
 using Newtonsoft.Json;
 using RestSharp;
 using System.Text;
-using System.Data.Entity;
 using WebApplication8.Database;
 
 namespace WebApplication8.Controllers
@@ -202,19 +201,27 @@ namespace WebApplication8.Controllers
 
             };
 
-            SaveData(contact);
+            SaveData(contact, null);
 
             return "Thank You , Your mail is submitted";
         }
 
-        private void SaveData(ContactForm contact)
+        private void SaveData(ContactForm? contact, PatnerwithUs? contact1)
         {
             // Common logic that both Action1 and Action2 need
             // ...
 
             // Save the contact object to the database using Entity Framework Core
-            _context.ContactForm.Add(contact);
-            _context.SaveChanges();
+            if (contact != null)
+            {
+                _context.ContactForm.Add(contact);
+                _context.SaveChanges();
+            }
+            else if (contact1 != null)
+            {
+                _context.PatnerwithUs.Add(contact1);
+                _context.SaveChanges();
+            }
         }
 
         [HttpPost]
@@ -331,7 +338,7 @@ namespace WebApplication8.Controllers
             return "hi";
         }
         [HttpPost]
-        public async Task<ActionResult> PatnerContact(string Name, string email, string phone, string country, string Designation, string name)
+        public async Task<ActionResult> PatnerContact(string Name, string email, string phone, string country, string Designation, string Company)
         {
             try
             {
@@ -480,9 +487,20 @@ namespace WebApplication8.Controllers
                 Console.WriteLine(ex.Message);
             }
 
-           
+            var contact = new PatnerwithUs
+            {
+                Name = Name,
+                Email = email,
+                Phone = phone,
+                country = country,
+                Designation = Designation,
+                company = Company,
 
-            return View("~/Views/Home/PatnerWithUs");
+            };
+            SaveData(null, contact);
+
+
+            return RedirectToAction("Home/PatnerWithUs");
         }
     }
 }

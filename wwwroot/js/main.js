@@ -1,4 +1,410 @@
 // Open Sub Menu
+
+
+function SendData(event) {
+
+    var currentTargetId = event.currentTarget.id
+
+    switch (currentTargetId) {
+        case "Tittle_Index":
+            var Value = document.getElementById("Index_input").value;
+            var Data = {
+                Index: Value               
+            };
+            var Collumn = "Index"
+           
+            break;
+        case "Tittle_live":
+            var Value = document.getElementById("live_input").value;
+            var Data = {
+                liveagentsupport: Value
+            };
+            var Collumn = "live"
+            break;
+        case "Tittle_AppBroad":
+            var Value = document.getElementById("AppBroad_input").value;
+            var Data = {
+                WhatsAppBroadcasting: Value
+            };
+            var Collumn = "WhatsAppBroadcasting"
+            break;
+        case "Tittle_Report":
+            var Value = document.getElementById("Report_input").value;
+            var Data = {
+                ReportsAnalytics: Value
+            };
+            var Collumn = "ReportsAnalytics"
+            break;
+        case "Tittle_Auto":
+            var Value = document.getElementById("Auto_input").value;
+            var Data = {
+                AutomatedChatBot: Value
+            };
+            var Collumn = "AutomatedChatBot"
+            break;
+        case "Tittle_Conve":
+            var Value = document.getElementById("Conve_input").value;
+            var Data = {
+                ConversationalMarketing: Value
+            };
+            var Collumn = "ConversationalMarketing"
+            break;
+        case "Tittle_Segrega":
+            var Value = document.getElementById("Segrega_input").value;
+            var Data = {
+                AutoSegregation: Value
+            };
+            var Collumn = "AutoSegregation"
+            break;
+        case "Tittle_Marke":
+            var Value = document.getElementById("Marke_input").value;
+            var Data = {
+                AppMarketing: Value
+            };
+            var Collumn = "AppMarketing"
+            break;
+        case "Tittle_AppMark":
+            var Value = document.getElementById("AppMark_input").value;
+            var Data = {
+                WhatsAppMarketing: Value
+            };
+            var Collumn = "WhatsAppMarketing"
+            break;
+        case "Tittle_Commer":
+            var Value = document.getElementById("Commer_input").value;
+            var Data = {
+                WhatsappCommerce: Value
+            };
+            var Collumn = "WhatsappCommerce"
+            break;
+        case "Tittle_hatsap":
+            var Value = document.getElementById("hatsap_input").value;
+            var Data = {
+                WhatsappSupport: Value
+            };
+            var Collumn = "WhatsappSupport"
+            break;
+        case "Tittle_Authen":
+            var Value = document.getElementById("Authen_input").value;
+            var Data = {
+                WhatsappAuthentication: Value
+            };
+            var Collumn = "WhatsappAuthentication"
+            break;
+        case "Tittle_Retail":
+            var Value = document.getElementById("Retail_input").value;
+            var Data = {
+                EcommerceRetail: Value
+            };
+            var Collumn = "EcommerceRetail"
+            break;
+        case "Tittle_care":
+            var Value = document.getElementById("care_input").value;
+            var Data = {
+                Healthcare: Value
+            };
+            var Collumn = "Healthcare"
+            break;
+        case "Tittle_EdTech":
+            var Value = document.getElementById("EdTech_input").value;
+            var Data = {
+                EdTech: Value
+            };
+            var Collumn = "EdTech"
+            break;
+        case "Tittle_BFSI":
+            var Value = document.getElementById("BFSI_input").value;
+            var Data = {
+                BankingBFSI: Value
+            };
+            var Collumn = "BankingBFSI"
+            break;
+        case "Tittle_Media":
+            var Value = document.getElementById("Media_input").value;
+            var Data = {
+                Mediaentertainment: Value
+            };
+            var Collumn = "Mediaentertainment"
+            break;
+        case "Tittle_Food":
+            var Value = document.getElementById("Food_input").value;
+            var Data = {
+                FoodBeverage: Value
+            };
+            var Collumn = "FoodBeverage"
+            break;
+        case "Tittle_Travel":
+            var Value = document.getElementById("Travel_input").value;
+            var Data = {
+                TravelHospitality: Value
+            };
+            var Collumn = "TravelHospitality"
+            break;
+        case "Tittle_AboutUs":
+            var Value = document.getElementById("AboutUs_input").value;
+            var Data = {
+                AboutUs: Value
+            };
+            var Collumn = "AboutUs"
+            break;
+        case "Tittle_WithUs":
+            var Value = document.getElementById("WithUs_input").value;
+            var Data = {
+                WorkWithUs: Value
+            };
+            var Collumn = "WorkWithUs"
+            break;
+        case "Tittle_Partner":
+            var Value = document.getElementById("Partner_input").value;
+            var Data = {
+                PartnerWithUs: Value
+            };
+            var Collumn = "PartnerWithUs"
+            break;
+        case "Tittle_Blog":
+            var Value = document.getElementById("Blog_input").value;
+            var Data = {
+                Blog: Value
+            };
+            var Collumn = "Blog"
+            break;
+        case "Tittle_Contact":
+            var Value = document.getElementById("Contact_input").value;
+            var Data = {
+                ContactUs: Value
+            };
+            var Collumn = "ContactUs"
+            break;
+        case "Tittle_Center":
+            var Value = document.getElementById("Center_input").value;
+            var Data = {
+                KnowledgeCenter: Value
+            };
+            var Collumn = "KnowledgeCenter"
+            break;
+        
+
+    }
+
+    $.ajax({
+        url: '/SaveAndDelete/Save',
+        method: 'POST',
+        data: {
+            data: Data,
+            Column: Collumn
+        },   
+        success: function (data) {
+            alert(data);
+            // Handle the server response if needed
+        },
+        error: function (error) {
+            // Handle any errors
+        }
+    });
+}
+function DeleteData(event) {
+
+    var currentTargetId = event.currentTarget.id
+
+    switch (currentTargetId) {
+        case "Tittle_Index":
+            var Data = {
+                Index: null
+            };
+            var Collumn = "Index"
+           
+            break;
+        case "Tittle_live":
+            var Value = document.getElementById("live_input").value;
+            var Data = {
+                liveagentsupport: null
+            };
+            var Collumn = "live"
+            break;
+        case "Tittle_AppBroad":
+            var Value = document.getElementById("AppBroad_input").value;
+            var Data = {
+                WhatsAppBroadcasting: null
+            };
+            var Collumn = "WhatsAppBroadcasting"
+            break;
+        case "Tittle_Report":
+            var Value = document.getElementById("Report_input").value;
+            var Data = {
+                ReportsAnalytics: null
+            };
+            var Collumn = "ReportsAnalytics"
+            break;
+        case "Tittle_Auto":
+            var Value = document.getElementById("Auto_input").value;
+            var Data = {
+                AutomatedChatBot: null
+            };
+            var Collumn = "AutomatedChatBot"
+            break;
+        case "Tittle_Conve":
+            var Value = document.getElementById("Conve_input").value;
+            var Data = {
+                ConversationalMarketing: null
+            };
+            var Collumn = "ConversationalMarketing"
+            break;
+        case "Tittle_Segrega":
+            var Value = document.getElementById("Segrega_input").value;
+            var Data = {
+                AutoSegregation: null
+            };
+            var Collumn = "AutoSegregation"
+            break;
+        case "Tittle_Marke":
+            var Value = document.getElementById("Marke_input").value;
+            var Data = {
+                AppMarketing: null
+            };
+            var Collumn = "AppMarketing"
+            break;
+        case "Tittle_AppMark":
+            var Value = document.getElementById("AppMark_input").value;
+            var Data = {
+                WhatsAppMarketing: null
+            };
+            var Collumn = "WhatsAppMarketing"
+            break;
+        case "Tittle_Commer":
+            var Value = document.getElementById("Commer_input").value;
+            var Data = {
+                WhatsappCommerce: null
+            };
+            var Collumn = "WhatsappCommerce"
+            break;
+        case "Tittle_hatsap":
+            var Value = document.getElementById("hatsap_input").value;
+            var Data = {
+                WhatsappSupport: null
+            };
+            var Collumn = "WhatsappSupport"
+            break;
+        case "Tittle_Authen":
+            var Value = document.getElementById("Authen_input").value;
+            var Data = {
+                WhatsappAuthentication: null
+            };
+            var Collumn = "WhatsappAuthentication"
+            break;
+        case "Tittle_Retail":
+            var Value = document.getElementById("Retail_input").value;
+            var Data = {
+                EcommerceRetail: null
+            };
+            var Collumn = "EcommerceRetail"
+            break;
+        case "Tittle_care":
+            var Value = document.getElementById("care_input").value;
+            var Data = {
+                Healthcare: null
+            };
+            var Collumn = "Healthcare"
+            break;
+        case "Tittle_EdTech":
+            var Value = document.getElementById("EdTech_input").value;
+            var Data = {
+                EdTech: null
+            };
+            var Collumn = "EdTech"
+            break;
+        case "Tittle_BFSI":
+            var Value = document.getElementById("BFSI_input").value;
+            var Data = {
+                BankingBFSI: null
+            };
+            var Collumn = "BankingBFSI"
+            break;
+        case "Tittle_Media":
+            var Value = document.getElementById("Media_input").value;
+            var Data = {
+                Mediaentertainment: null
+            };
+            var Collumn = "Mediaentertainment"
+            break;
+        case "Tittle_Food":
+            var Value = document.getElementById("Food_input").value;
+            var Data = {
+                FoodBeverage: null
+            };
+            var Collumn = "FoodBeverage"
+            break;
+        case "Tittle_Travel":
+            var Value = document.getElementById("Travel_input").value;
+            var Data = {
+                TravelHospitality: null
+            };
+            var Collumn = "TravelHospitality"
+            break;
+        case "Tittle_AboutUs":
+            var Value = document.getElementById("AboutUs_input").value;
+            var Data = {
+                AboutUs: null
+            };
+            var Collumn = "AboutUs"
+            break;
+        case "Tittle_WithUs":
+            var Value = document.getElementById("WithUs_input").value;
+            var Data = {
+                WorkWithUs: null
+            };
+            var Collumn = "WorkWithUs"
+            break;
+        case "Tittle_Partner":
+            var Value = document.getElementById("Partner_input").value;
+            var Data = {
+                PartnerWithUs: null
+            };
+            var Collumn = "PartnerWithUs"
+            break;
+        case "Tittle_Blog":
+            var Value = document.getElementById("Blog_input").value;
+            var Data = {
+                Blog: null
+            };
+            var Collumn = "Blog"
+            break;
+        case "Tittle_Contact":
+            var Value = document.getElementById("Contact_input").value;
+            var Data = {
+                ContactUs: null
+            };
+            var Collumn = "ContactUs"
+            break;
+        case "Tittle_Center":
+            var Value = document.getElementById("Center_input").value;
+            var Data = {
+                KnowledgeCenter: null
+            };
+            var Collumn = "KnowledgeCenter"
+            break;
+
+
+    }
+
+    $.ajax({
+        url: '/SaveAndDelete/Delete',
+        method: 'POST',
+        data: {
+            data: Data,
+            Column: Collumn
+        },
+        success: function (data) {
+            alert(data);
+            // Handle the server response if needed
+        },
+        error: function (error) {
+            // Handle any errors
+        }
+    });
+}
+
+
+
 $('.drp_btn').click(function(){
   $(this).siblings('.sub_menu').slideToggle();
 })
@@ -46,6 +452,8 @@ function CloseModal(event) {
     }
 
 }
+
+
 
 
 /*$(document).ready(function () {

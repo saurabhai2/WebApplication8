@@ -13,7 +13,7 @@ namespace WebApplication8.Database
 
         public DbSet<Login> login { get; set; }
 
-        public DbSet<Tittle> Tittle { get; set; }
+        public DbSet<AdminTittle> AdminTittle { get; set; }
 
         public DbSet<ContactForm> ContactForm { get; set; }
         public DbSet<PatnerwithUs> PatnerwithUs { get; set; }

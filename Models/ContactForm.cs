@@ -25,7 +25,7 @@ namespace WebApplication8.Models
         public string Designation { get; set; }
 
         public string country { get; set; }
-        public int company { get; set; }
+        public string company { get; set; }
 
 
 

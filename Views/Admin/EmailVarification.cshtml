@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "EmailVarification";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h4 style="text-align:center;margin-top:25vh">An OTP has been Sent to Your Email</h4>
+<<div class="login-card" style="position:static"> 
+    <h4>Enter OTP </h4>
+    <form action="~/LoginValidation/OTPverification" method="post">
+        <input type="password" name="OTP" placeholder="OTP">
+        <input type="submit" name="login" class="login login-submit" value="Verify">
+    </form>
+</div>
+
