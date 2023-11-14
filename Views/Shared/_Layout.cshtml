@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -41,15 +41,15 @@
     <link rel="alternate" hreflang="en-ae" href="https://anantya.ai" />
     <link rel="alternate" hreflang="en-sa" href="https://anantya.ai" />
     <!-- anup meta tags and schema -->
-
-    <title>Whatsapp Chatbot | WhatsApp Business API by Anantya.ai</title>
+    
+    <title>@ViewBag.Title</title>
     <meta name="robots" content="index,follow" />
     <meta name="description"
-          content="Anantya.ai provides whatsapp business api solutions and whatsapp bulk messaging service to more than 10 countries and empowering you to reach and engage customers effectively.">
-    <meta property="og:title" content="Whatsapp Chatbot | Verified WhatsApp Business API by Anantya" />
+          content="@ViewBag.Meta">
+    <meta property="og:title" content="@ViewBag.Title" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
-          content="Anantya.ai provides whatsapp business api solutions and whatsapp bulk messaging service to more than 10 countries and empowering you to reach and engage customers effectively." />
+          content="@ViewBag.Meta" />
     <meta property="og:url" content="https://anantya.ai/" />
     <meta property="og:site_name" content="anantya.ai" />
     <meta property="og:image" content="https://anantya.ai/image/main-page-graphics.webp" />
@@ -58,8 +58,8 @@
 
     <script type="application/ld+json">
             {
-              "context": "https://schema.org",
-              "type": "Organization",
+          "context": "https://schema.org","type": "Organization",
+              
               "name": "anantya.ai",
               "alternateName": "Anantya.ai: Whatsapp Business API Providers",
               "url": "https://anantya.ai/",

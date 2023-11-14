@@ -26,8 +26,14 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.Index;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.IndexMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.IndexMeta;
+            }
 
             return View();
+
         }
         public IActionResult liveagentsupport()
         {
@@ -36,7 +42,12 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.liveagentsupport;
             }
-           
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.liveagentsupportMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.liveagentsupportMeta;
+            }
+
             return View();
         }
 
@@ -46,6 +57,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.WhatsAppBroadcasting != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.WhatsAppBroadcasting;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.liveagentsupportMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.liveagentsupportMeta;
             }
             return View();
         }
@@ -57,6 +73,12 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.ReportsAnalytics;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.ReportsAnalyticsMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.ReportsAnalyticsMeta;
+            }
+
             return View();
         }
 
@@ -67,6 +89,12 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.AutomatedChatBot;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.ReportsAnalyticsMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.ReportsAnalyticsMeta;
+            }
+
             return View();
         }
 
@@ -77,6 +105,12 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.ConversationalMarketing;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
+            }
+
             return View();
         }
 
@@ -86,6 +120,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.AutoSegregation != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.AutoSegregation;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.AutoSegregationMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.AutoSegregationMeta;
             }
             return View();
         }
@@ -97,6 +136,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.AppMarketing;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.AppMarketingMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.AppMarketingMeta;
+            }
             return View();
         }
 
@@ -106,6 +150,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.WhatsAppMarketing != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.WhatsAppMarketing;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.WhatsAppMarketingMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsAppMarketingMeta;
             }
             return View();
         }
@@ -117,6 +166,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.WhatsappCommerce;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.WhatsappCommerceMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsappCommerceMeta;
+            }
             return View();
         }
 
@@ -126,6 +180,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.WhatsappSupport != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.WhatsappSupport;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.WhatsappSupportMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsappSupportMeta;
             }
             return View();
         }
@@ -137,6 +196,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.WhatsappAuthentication;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.WhatsappAuthenticationMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsappAuthenticationMeta;
+            }
             return View();
         }
 
@@ -146,6 +210,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.EcommerceRetail != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.EcommerceRetail;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.EcommerceRetailMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.EcommerceRetailMeta;
             }
             return View();
         }
@@ -157,6 +226,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.Healthcare;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.HealthcareMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.HealthcareMeta;
+            }
             return View();
         }
 
@@ -166,6 +240,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.EdTech != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.EdTech;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.EdTechMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.EdTechMeta;
             }
             return View();
         }
@@ -177,6 +256,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.BankingBFSI;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.BankingBFSIMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.BankingBFSIMeta;
+            }
             return View();
         }
 
@@ -186,6 +270,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.Mediaentertainment != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.Mediaentertainment;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.MediaentertainmentMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.MediaentertainmentMeta;
             }
             return View();
         }
@@ -197,6 +286,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.FoodBeverage;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.FoodBeverageMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.FoodBeverageMeta;
+            }
             return View();
         }
 
@@ -206,6 +300,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.TravelHospitality != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.TravelHospitality;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.TravelHospitalityMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.TravelHospitalityMeta;
             }
             return View();
         }
@@ -217,6 +316,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.AboutUs;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.AboutUsMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.AboutUsMeta;
+            }
             return View();
         }
 
@@ -226,6 +330,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.WorkWithUs != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.WorkWithUs;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.WorkWithUsMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.WorkWithUsMeta;
             }
             return View();
         }
@@ -237,6 +346,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.PartnerWithUs;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.PartnerWithUsMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.PartnerWithUsMeta;
+            }
             return View();
         }
 
@@ -246,6 +360,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.Blog != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.Blog;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.BlogMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.BlogMeta;
             }
             return View();
         }
@@ -257,6 +376,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.ContactUs;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.ContactUsMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.ContactUsMeta;
+            }
             return View();
         }
 
@@ -266,6 +390,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.KnowledgeCenter != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.KnowledgeCenter;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.KnowledgeCenterMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.KnowledgeCenterMeta;
             }
             return View();
         }
@@ -277,6 +406,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.whatsappbusinessappvswhatsappbusinessapi;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
+            }
             return View();
         }
 
@@ -287,6 +421,11 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Title = data.FirstOrDefault()?.whatsappmarketingstrategiestodrivesales;
             }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
+            }
             return View();
         }
 
@@ -296,6 +435,11 @@ namespace WebApplication8.Controllers
             if (data.FirstOrDefault()?.reshapingcustomerengagementonwhatsapp != null)
             {
                 ViewBag.Title = data.FirstOrDefault()?.reshapingcustomerengagementonwhatsapp;
+            }
+            var dataMeta = _context.Metatag.ToList();
+            if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
+            {
+                ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
             }
             return View();
         }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using WebApplication8.Models;
 using WebApplication8.Database;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApplication8.Controllers
 {
@@ -86,21 +87,6 @@ namespace WebApplication8.Controllers
 
         }
 
-        public IActionResult Metadata(int r)
-        {
-
-            var number = HttpContext.Session.GetInt32("Token");
-            if (r == @number)
-            {
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Admin");
-            }
-
-        }
-
         public IActionResult Inbox(int r)
         {
 
@@ -121,8 +107,6 @@ namespace WebApplication8.Controllers
 
             var number = HttpContext.Session.GetInt32("Token");
             ViewBag.Number = @number;
-
-            
 
             if (r == @number)
             {
@@ -153,10 +137,46 @@ namespace WebApplication8.Controllers
 
         }
 
+        public IActionResult Logout(int r) 
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                List<AdminTittle> AdminTittle = _context.AdminTittle.ToList();
+                ViewBag.Data = AdminTittle.FirstOrDefault();
+                List<Metatag> Metatag = _context.Metatag.ToList();
+                ViewBag.DataMeta = Metatag.FirstOrDefault();
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+        }
+        public IActionResult Logout1(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+        }
+
         public IActionResult EmailVarification() 
         {
             return View();
         }
+
+        
 
     } 
 }

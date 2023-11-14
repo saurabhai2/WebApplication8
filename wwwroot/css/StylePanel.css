@@ -362,3 +362,25 @@ header {
     color: white;
     border-radius: 4px;
 }
+
+.select {
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.Metaheading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1c1c23;
+    opacity: 0.7;
+}
+
+.buttondiv {
+    text-align: right;
+    width: 90%;
+}
+
+.button {
+    border: 1px solid black;
+    background: #c5b5bc8c;
+}

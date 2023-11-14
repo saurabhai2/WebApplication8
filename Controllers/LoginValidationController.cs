@@ -60,12 +60,14 @@ namespace WebApplication8.Controllers
             return RedirectToAction("EmailVarification", "Admin");
         }
 
-        public IActionResult OTPverification(int OTP)
+        public IActionResult OTPverification(Register register, int OTP)
         {
             var number = HttpContext.Session.GetInt32("OTP");
             if (OTP == number)
             {
-                return RedirectToAction("Index","Home");
+                _context.Register.Add(register);
+                _context.SaveChanges();
+                return RedirectToAction("Admin","Admin");
             }
             else
             {

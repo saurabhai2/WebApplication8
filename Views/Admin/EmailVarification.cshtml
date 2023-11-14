@@ -8,8 +8,8 @@
 <<div class="login-card" style="position:static"> 
     <h4>Enter OTP </h4>
     <form action="~/LoginValidation/OTPverification" method="post">
-        <input type="password" name="OTP" placeholder="OTP">
-        <input type="submit" name="login" class="login login-submit" value="Verify">
+        <input type="number" name="OTP" placeholder="OTP" pattern="[0-9]*" maxlength="6">
+        <input type="submit" name="login" class="login login-submit"  value="Verify">
     </form>
 </div>
 
