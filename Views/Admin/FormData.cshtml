@@ -4,13 +4,16 @@
 @{
     ViewData["Title"] = "FormData";
     Layout = "~/Views/Shared/_Layout2.cshtml";
-    ViewData["heading"] = "Form Data";
+    ViewData["heading"] = "Contact Form";
 }
 
-<p>
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:10vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
     <a>@Html.ActionLink("Patners Form","PatnerwithUs","Admin",new{r=@ViewBag.Number})</a>
 </p>
-<h4>Contact Form Data</h4>
+
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:10vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
+    <a>@Html.ActionLink("Pop Up","PatnerwithUs","Admin",new{r=@ViewBag.Number})</a>
+</p>
 
 <table class="table">
     <thead>

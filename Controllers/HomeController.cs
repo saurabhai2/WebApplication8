@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using WebApplication8.Models;
 using WebApplication8.Database;
+using System.Text.Json;
 
 namespace WebApplication8.Controllers
 {
@@ -31,6 +32,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.IndexMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.IndexMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.IndexMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+               
+            }
 
             return View();
 
@@ -46,6 +54,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.liveagentsupportMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.liveagentsupportMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.liveagentsupportMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.liveagentsupportMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
 
             return View();
@@ -63,6 +78,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.liveagentsupportMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.liveagentsupportMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.liveagentsupportMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -77,6 +99,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.ReportsAnalyticsMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.ReportsAnalyticsMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.ReportsAnalyticsMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.ReportsAnalyticsMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
 
             return View();
@@ -94,7 +123,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.ReportsAnalyticsMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.ReportsAnalyticsMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.ReportsAnalyticsMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
+            }
             return View();
         }
 
@@ -109,6 +144,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.ConversationalMarketingMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.ConversationalMarketingMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
 
             return View();
@@ -126,6 +168,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.AutoSegregationMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.AutoSegregationMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.AutoSegregationMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }   
             return View();
         }
 
@@ -140,6 +189,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.AppMarketingMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.AppMarketingMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.AppMarketingMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.AppMarketingMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -156,6 +212,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsAppMarketingMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.WhatsAppMarketingMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.WhatsAppMarketingMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -170,6 +233,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.WhatsappCommerceMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsappCommerceMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.WhatsappCommerceMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.WhatsappCommerceMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -186,6 +256,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsappSupportMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.WhatsappSupportMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.WhatsappSupportMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -200,6 +277,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.WhatsappAuthenticationMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.WhatsappAuthenticationMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.WhatsappAuthenticationMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.WhatsappAuthenticationMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -216,6 +300,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.EcommerceRetailMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.EcommerceRetailMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.EcommerceRetailMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -230,6 +321,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.HealthcareMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.HealthcareMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.HealthcareMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.HealthcareMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -246,6 +344,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.EdTechMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.EdTechMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.EdTechMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -260,6 +365,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.BankingBFSIMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.BankingBFSIMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.BankingBFSIMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.BankingBFSIMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -276,6 +388,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.MediaentertainmentMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.MediaentertainmentMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.MediaentertainmentMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -290,6 +409,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.FoodBeverageMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.FoodBeverageMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.FoodBeverageMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.FoodBeverageMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -306,6 +432,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.TravelHospitalityMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.TravelHospitalityMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.TravelHospitalityMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -320,6 +453,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.AboutUsMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.AboutUsMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.AboutUsMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.AboutUsMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -336,6 +476,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.WorkWithUsMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.WorkWithUsMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.WorkWithUsMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -350,6 +497,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.PartnerWithUsMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.PartnerWithUsMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.PartnerWithUsMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.PartnerWithUsMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }
@@ -366,6 +520,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.BlogMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.BlogMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.BlogMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -381,6 +542,13 @@ namespace WebApplication8.Controllers
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.ContactUsMeta;
             }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.ContactUsMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.ContactUsMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+            }
             return View();
         }
 
@@ -395,6 +563,13 @@ namespace WebApplication8.Controllers
             if (dataMeta.FirstOrDefault()?.KnowledgeCenterMeta != null)
             {
                 ViewBag.Meta = dataMeta.FirstOrDefault()?.KnowledgeCenterMeta;
+            }
+            var dataSchema = _context.MetatagSchema.ToList();
+            if (dataSchema.FirstOrDefault()?.KnowledgeCenterMeta != null)
+            {
+                string? jsonString = dataSchema.FirstOrDefault()?.KnowledgeCenterMeta;
+                ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
             }
             return View();
         }

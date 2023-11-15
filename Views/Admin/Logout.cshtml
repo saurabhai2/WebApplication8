@@ -68,7 +68,11 @@
                     <p>@ViewBag.dataMeta.IndexMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Index" type="checkbox"  onclick="checkUncheck(event)" />
+                    <input id="Check_Index" type="checkbox" onclick="checkUncheck(event)" @(
+
+                        ViewBag.Checked.IndexMeta
+                         ? "checked" : ""
+                    ) />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -127,7 +131,8 @@
                     <p>@ViewBag.dataMeta.liveagentsupportMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_live" type="checkbox" onclick="checkUncheck(event)" />
+
+                    <input id="Check_live" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -186,7 +191,7 @@
                     <p>@ViewBag.dataMeta.WhatsAppBroadcastingMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_AppBroad" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_AppBroad" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsAppBroadcastingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -245,7 +250,7 @@
                     <p>@ViewBag.dataMeta.ReportsAnalyticsMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Report" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Report" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.ReportsAnalyticsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -304,7 +309,7 @@
                     <p>@ViewBag.dataMeta.AutomatedChatBotMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Auto" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Auto" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.AutomatedChatBotMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -363,7 +368,7 @@
                     <p>@ViewBag.dataMeta.ConversationalMarketingMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Conve" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Conve" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.ConversationalMarketingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -422,7 +427,7 @@
                     <p>@ViewBag.dataMeta.AutoSegregationMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Segrega" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Segrega" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.AutoSegregationMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -481,7 +486,7 @@
                     <p>@ViewBag.dataMeta.AppMarketingMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Marke" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Marke" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.AppMarketingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -540,7 +545,7 @@
                     <p>@ViewBag.dataMeta.WhatsAppMarketingMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_AppMark" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_AppMark" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsAppMarketingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -599,7 +604,7 @@
                     <p>@ViewBag.dataMeta.WhatsappCommerceMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Commer" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Commer" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsappCommerceMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -658,7 +663,7 @@
                     <p>@ViewBag.dataMeta.WhatsappSupportMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_hatsap" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_hatsap" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsappSupportMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -717,7 +722,7 @@
                     <p>@ViewBag.dataMeta.WhatsappAuthenticationMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Authen" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Authen" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsappAuthenticationMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -776,7 +781,7 @@
                     <p>@ViewBag.dataMeta.EcommerceRetailMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Retail" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Retail" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.EcommerceRetailMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -835,7 +840,7 @@
                     <p>@ViewBag.dataMeta.HealthcareMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_care" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_care" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.HealthcareMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -894,7 +899,7 @@
                     <p>@ViewBag.dataMeta.EdTechMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_EdTech" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_EdTech" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.EdTechMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -953,7 +958,7 @@
                     <p>@ViewBag.dataMeta.BankingBFSIMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_BFSI" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_BFSI" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.BankingBFSIMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1012,7 +1017,7 @@
                     <p>@ViewBag.dataMeta.MediaentertainmentMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Media" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Media" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.MediaentertainmentMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1071,7 +1076,7 @@
                     <p>@ViewBag.dataMeta.FoodBeverageMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Food" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Food" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.FoodBeverageMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1130,7 +1135,7 @@
                     <p>@ViewBag.dataMeta.TravelHospitalityMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Travel" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Travel" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.TravelHospitalityMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1189,7 +1194,7 @@
                     <p>@ViewBag.dataMeta.AboutUsMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_AboutUs" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_AboutUs" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1248,7 +1253,7 @@
                     <p>@ViewBag.dataMeta.WorkWithUsMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_WithUs" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_WithUs" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WorkWithUsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1307,7 +1312,7 @@
                     <p>@ViewBag.dataMeta.PartnerWithUsMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Partner" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Partner" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.PartnerWithUsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1366,7 +1371,7 @@
                     <p>@ViewBag.dataMeta.BlogMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Blog" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Blog" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.BlogMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1425,7 +1430,7 @@
                     <p>@ViewBag.dataMeta.ContactUsMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Contact" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Contact" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.ContactUsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1484,7 +1489,7 @@
                     <p>@ViewBag.dataMeta.KnowledgeCenterMeta</p>
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Center" type="checkbox" onclick="checkUncheck(event)" />
+                    <input id="Check_Center" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.KnowledgeCenterMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>

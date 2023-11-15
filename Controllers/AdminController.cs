@@ -148,6 +148,8 @@ namespace WebApplication8.Controllers
                 ViewBag.Data = AdminTittle.FirstOrDefault();
                 List<Metatag> Metatag = _context.Metatag.ToList();
                 ViewBag.DataMeta = Metatag.FirstOrDefault();
+                List<MetatagCheck> MetatagCheck = _context.MetatagCheck.ToList();
+                ViewBag.Checked = MetatagCheck.FirstOrDefault();
                 return View();
             }
             else
@@ -158,17 +160,9 @@ namespace WebApplication8.Controllers
         public IActionResult Logout1(int r)
         {
 
-            var number = HttpContext.Session.GetInt32("Token");
-            ViewBag.Number = @number;
-            if (r == @number)
-            {
-
-                return View();
-            }
-            else
-            {
+            
                 return RedirectToAction("Admin");
-            }
+            
         }
 
         public IActionResult EmailVarification() 

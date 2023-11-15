@@ -582,6 +582,209 @@ function SendMetaData(event) {
     });
 }
 
+function SendSchemaData(event) {
+
+    var currentTargetId = event.currentTarget.id
+
+    switch (currentTargetId) {
+        case "Schema_Index":
+            var Value = document.getElementById("Schema_Index_text").value;
+            var Data = {
+                IndexMeta: Value
+            };
+            var Collumn = "Index"
+
+            break;
+        case "Schema_live":
+            var Value = document.getElementById("Schema_live_text").value;
+            var Data = {
+                liveagentsupportMeta: Value
+            };
+            var Collumn = "live"
+            break;
+        case "Schema_AppBroad":
+            var Value = document.getElementById("Schema_AppBroad_text").value;
+            var Data = {
+                WhatsAppBroadcastingMeta: Value
+            };
+            var Collumn = "WhatsAppBroadcasting"
+            break;
+        case "Schema_Report":
+            var Value = document.getElementById("Schema_Report_text").value;
+            var Data = {
+                ReportsAnalyticsMeta: Value
+            };
+            var Collumn = "ReportsAnalytics"
+            break;
+        case "Schema_Auto":
+            var Value = document.getElementById("Schema_Auto_input").value;
+            var Data = {
+                AutomatedChatBotMeta: Value
+            };
+            var Collumn = "AutomatedChatBot"
+            break;
+        case "Schema_Conve":
+            var Value = document.getElementById("Schema_Conve_text").value;
+            var Data = {
+                ConversationalMarketingMeta: Value
+            };
+            var Collumn = "ConversationalMarketing"
+            break;
+        case "Schema_Segrega":
+            var Value = document.getElementById("Schema_Segrega_text").value;
+            var Data = {
+                AutoSegregationMeta: Value
+            };
+            var Collumn = "AutoSegregation"
+            break;
+        case "Schema_Marke":
+            var Value = document.getElementById("Schema_Marke_text").value;
+            var Data = {
+                AppMarketingMeta: Value
+            };
+            var Collumn = "AppMarketing"
+            break;
+        case "Schema_AppMark":
+            var Value = document.getElementById("Schema_AppMark_text").value;
+            var Data = {
+                WhatsAppMarketingMeta: Value
+            };
+            var Collumn = "WhatsAppMarketing"
+            break;
+        case "Schema_Commer":
+            var Value = document.getElementById("Schema_Commer_text").value;
+            var Data = {
+                WhatsappCommerceMeta: Value
+            };
+            var Collumn = "WhatsappCommerce"
+            break;
+        case "Schema_hatsap":
+            var Value = document.getElementById("Schema_hatsap_text").value;
+            var Data = {
+                WhatsappSupportMeta: Value
+            };
+            var Collumn = "WhatsappSupport"
+            break;
+        case "Schema_Authen":
+            var Value = document.getElementById("Schema_Authen_text").value;
+            var Data = {
+                WhatsappAuthenticationMeta: Value
+            };
+            var Collumn = "WhatsappAuthentication"
+            break;
+        case "Schema_Retail":
+            var Value = document.getElementById("Schema_Retail_text").value;
+            var Data = {
+                EcommerceRetailMeta: Value
+            };
+            var Collumn = "EcommerceRetail"
+            break;
+        case "Schema_care":
+            var Value = document.getElementById("Schema_care_text").value;
+            var Data = {
+                HealthcareMeta: Value
+            };
+            var Collumn = "Healthcare"
+            break;
+        case "Schema_EdTech":
+            var Value = document.getElementById("Schema_EdTech_text").value;
+            var Data = {
+                EdTechMeta: Value
+            };
+            var Collumn = "EdTech"
+            break;
+        case "Schema_BFSI":
+            var Value = document.getElementById("Schema_BFSI_text").value;
+            var Data = {
+                BankingBFSIMeta: Value
+            };
+            var Collumn = "BankingBFSI"
+            break;
+        case "Schema_Media":
+            var Value = document.getElementById("Schema_Media_text").value;
+            var Data = {
+                MediaentertainmentMeta: Value
+            };
+            var Collumn = "Mediaentertainment"
+            break;
+        case "Schema_Food":
+            var Value = document.getElementById("Schema_Food_text").value;
+            var Data = {
+                FoodBeverageMeta: Value
+            };
+            var Collumn = "FoodBeverage"
+            break;
+        case "Schema_Travel":
+            var Value = document.getElementById("Schema_Travel_text").value;
+            var Data = {
+                TravelHospitalityMeta: Value
+            };
+            var Collumn = "TravelHospitality"
+            break;
+        case "Schema_AboutUs":
+            var Value = document.getElementById("Schema_AboutUs_text").value;
+            var Data = {
+                AboutUsMeta: Value
+            };
+            var Collumn = "AboutUs"
+            break;
+        case "Schema_WithUs":
+            var Value = document.getElementById("Schema_WithUs_text").value;
+            var Data = {
+                WorkWithUsMeta: Value
+            };
+            var Collumn = "WorkWithUs"
+            break;
+        case "Schema_Partner":
+            var Value = document.getElementById("Schema_Partner_text").value;
+            var Data = {
+                PartnerWithUsMeta: Value
+            };
+            var Collumn = "PartnerWithUs"
+            break;
+        case "Schema_Blog":
+            var Value = document.getElementById("Schema_Blog_text").value;
+            var Data = {
+                BlogMeta: Value
+            };
+            var Collumn = "Blog"
+            break;
+        case "Schema_Contact":
+            var Value = document.getElementById("Schema_Contact_text").value;
+            var Data = {
+                ContactUsMeta: Value
+            };
+            var Collumn = "ContactUs"
+            break;
+        case "Schema_Center":
+            var Value = document.getElementById("Schema_Center_text").value;
+            var Data = {
+                KnowledgeCenterMeta: Value
+            };
+            var Collumn = "KnowledgeCenter"
+            break;
+
+
+    }
+
+    $.ajax({
+        url: '/SaveAndDelete/SaveSchema',
+        method: 'POST',
+        data: {
+            data: Data,
+            Column: Collumn
+        },
+        success: function (data) {
+            alert(data);
+            // Handle the server response if needed
+        },
+        error: function (error) {
+            // Handle any errors
+        }
+    });
+}
+
+
 function checkUncheck(event)
 {
     var checkId = event.currentTarget.id;

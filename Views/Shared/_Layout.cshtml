@@ -57,27 +57,9 @@
     <meta name="author" content="Anantya">
 
     <script type="application/ld+json">
-            {
-          "context": "https://schema.org","type": "Organization",
-              
-              "name": "anantya.ai",
-              "alternateName": "Anantya.ai: Whatsapp Business API Providers",
-              "url": "https://anantya.ai/",
-              "logo": "https://anantya.ai/image/logo.webp",
-              "contactPoint": {
-                "type": "ContactPoint",
-                "telephone": "+971565480273",
-                "contactType": "sales",
-                "areaServed": ["SA","AE","IN","PK"],
-                "availableLanguage": ["en","Arabic"]
-              },
-              "sameAs": [
-                "https://www.facebook.com/anantyaai",
-                "https://www.instagram.com/anantya.ai/",
-                "https://www.linkedin.com/company/anantya-ai/",
-                "https://in.pinterest.com/anantyaai/"
-              ]
-            }
+
+        @Html.Raw(@ViewBag.Schema)
+           
             </script>
 
 </head>
