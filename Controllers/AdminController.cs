@@ -48,7 +48,7 @@ namespace WebApplication8.Controllers
             }
             else
             {
-                return RedirectToAction("Index", "Admin", new { r = number });
+                return RedirectToAction("Admin");
             }
 
         }

@@ -5,4 +5,77 @@
     ViewData["heading"] = "Articles";
 }
 
-
+<div>
+     @using (Html.BeginForm("PostBlog", "Blog", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+     {
+    <div id="HomePage">
+        <h5 sTyle="display:block" class="Metaheading">Blog Post</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" name="Category" id="Index_input" style="width:20vw" />
+            </div>
+        </div>
+        <div class="row" style=" margin-top:1vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" name="Title" id="Index_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="row" style="margin-top:1vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" name="Meta" id="Meta_Index_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="row" style="margin-top:1vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" name="Schema" id="Schema_Index_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div class="row" style=" margin-top:2vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Heading</h6>
+            </div>
+            <div class="col-sm-8">
+                    <input type="text" name="MainHeading" id="Meta_Index_input" style="width:50vw" />
+            </div>
+        </div>
+       
+        <div class="row" style="margin-top:2vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Featured Image</h6>
+            </div>
+            <div class="col-sm-3">
+                    <input type="file" name="FeatureImage" id="Meta_Index_input" />
+            </div>
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Author</h6>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="author" id="Meta_Index_input" />
+                </div>
+        </div>
+       
+        <hr />
+        <div  style="margin-top:1vh">           
+            <h6 style="font-weight:400; text-align:center;display:block">Blog Body</h6>
+         <hr />
+                <textarea style="width:77vw;height:80vh;" name="Content" id="Blog_Body" name="Description"></textarea>
+        </div>
+        <div style="text-align:right;margin-top:2vh">
+                <input type="submit" class="btn button" value="Post" />
+        </div>
+    </div>
+    }
+</div>

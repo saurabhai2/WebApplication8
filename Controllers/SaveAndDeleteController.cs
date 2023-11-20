@@ -1,6 +1,5 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-
 using WebApplication8.Database;
 using WebApplication8.Models;
 

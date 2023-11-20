@@ -119,8 +119,9 @@ namespace WebApplication8.Controllers
                     httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
                     // Replace with your LeadSquared API access token and API secret key
-                    httpClient.DefaultRequestHeaders.Add("accessKey", "u$ra7ab62a1fbe3875d15c6907120f9b1b9");
-                    httpClient.DefaultRequestHeaders.Add("secretKey", "09408280a20e76f74d1fe1f2a198cf0a306ec434");
+                    
+                    httpClient.DefaultRequestHeaders.Add("accessKey", "u$rce7dad9984ce11949354bb263d4b2ccf");
+                    httpClient.DefaultRequestHeaders.Add("secretKey", "b91df9ce97dfe611b5448d0efcf74586439bedf5");
 
                     var contactData = new
                     {

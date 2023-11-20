@@ -985,3 +985,12 @@ function checkUncheck(event)
     });
     
 }
+
+tinymce.init({
+    selector: '#Blog_Body', // Replace with your textarea ID
+    apiKey: 'qohlsycqusyhdy1a0xcusn7toggrtgoxu0hy0kisgtlamf3x',
+    plugins: 'link image',
+    toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | bullist numlist outdent indent | link image unlink ',
+    menubar: 'file edit view insert format tools table help',
+    // Additional configurations as needed
+});

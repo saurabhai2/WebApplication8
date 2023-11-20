@@ -28,5 +28,17 @@
             <h2 class="topic">Website Views</h2>
         </div>
     </div>
+    @using (Html.BeginForm("SaveImage1", "Blog", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        <div class="row" style="margin-top:2vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Featured Image</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="file" name="file" id="Meta_Index_input" />
+                <input type="submit" value="Save" />
+            </div>
+        </div>
+    }
 </div>
 

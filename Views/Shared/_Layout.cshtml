@@ -21,17 +21,7 @@
     
    
     
-
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NX45B45C');</script>
-    <!-- End Google Tag Manager -->
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +33,14 @@
     <!-- anup meta tags and schema -->
     
     <title>@ViewBag.Title</title>
-    <meta name="robots" content="index,follow" />
+    @if (ViewBag.Check == true)
+    {
+        <meta name="robots" content="no index,no follow" />
+    }
+    else
+    {
+        <meta name="robots" content="index,follow" />
+    }
     <meta name="description"
           content="@ViewBag.Meta">
     <meta property="og:title" content="@ViewBag.Title" />
@@ -126,7 +123,7 @@
                                     <div class="col-md-6 col-sm-12  pl-md-3 p-0">
                                         <span class="pl-2 font-weight-bold">Features</span>
                                         <ul class="p-2">
-                                            <li>@Html.ActionLink("Live Agent Assistant","liveagentsupport","Home",new{})</li>
+                                            <li>@Html.ActionLink("Live Agent Assistant","liveagentsupport","Home",new{ })</li>
                                             <li>@Html.ActionLink("WhatsApp Broadcasting","WhatsAppBroadcasting","Home",new{})</li>
                                             <li>@Html.ActionLink("Reports & Analytics","ReportsAnalytics","Home",new{})</li>
                                             <li>@Html.ActionLink("Automated ChatBot","AutomatedChatBot","Home",new{})</li>
