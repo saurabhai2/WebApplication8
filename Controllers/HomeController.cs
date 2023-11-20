@@ -773,15 +773,6 @@ namespace WebApplication8.Controllers
         }
 
 
-
-        [HttpPost]
-        public string Contact(string Name, string email, string phone, string message, string url)
-        {
-
-            return Name;
-        }
-
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

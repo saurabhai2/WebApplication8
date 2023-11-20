@@ -1,0 +1,8 @@
+﻿@model WebApplication8.Models.BlogPost;
+@{
+    ViewData["Title"] = "PostBlog";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@Html.Raw(Model.Content)
+

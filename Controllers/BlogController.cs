@@ -44,7 +44,7 @@ namespace WebApplication8.Controllers
         {
 
             var number = HttpContext.Session.GetInt32("Token");
-            return RedirectToAction("Articles", "Admin", new { r = number });
+            return View(blog);
         }
     }
 }
