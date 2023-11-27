@@ -668,7 +668,9 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
-            return View();
+            List<BlogPost> blogPost = _context.BlogPost.ToList();
+            ViewBag.totalRows = _context.BlogPost.Count();
+            return View(blogPost);
         }
 
         [Route("/contact")]

@@ -27,8 +27,10 @@ namespace WebApplication8.Models
         public string MainHeading { get; set; }
         [Required]
         public IFormFile FeatureImage { get; set; }
+        public string FeatureImagePath { get; set; }
 
         [Required]
         public string Content { get; set; }
+        public string SlugUrl { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApplication8.Controllers
 {
-    public class AdminController : Controller
+    public class AdminController : Controller 
     {
         private readonly AnantyaDbContext _context;
 
@@ -157,10 +157,62 @@ namespace WebApplication8.Controllers
                 return RedirectToAction("Admin");
             }
         }
-        public IActionResult Logout1(int r)
+
+        public IActionResult KnowlageCentre(int r)
         {
 
-            
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                List<AdminTittle> AdminTittle = _context.AdminTittle.ToList();
+                ViewBag.Data = AdminTittle.FirstOrDefault();
+                List<Metatag> Metatag = _context.Metatag.ToList();
+                ViewBag.DataMeta = Metatag.FirstOrDefault();
+                List<MetatagCheck> MetatagCheck = _context.MetatagCheck.ToList();
+                ViewBag.Checked = MetatagCheck.FirstOrDefault();
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+        }
+
+        public IActionResult EditBlog(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                List<BlogPost> BlogPost = _context.BlogPost.ToList();
+                return View(BlogPost);
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+        }
+
+        public IActionResult Editblogs(int r , int Id)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                var existingRecord = _context.BlogPost.FirstOrDefault(item => item.Id == Id);
+                return View(existingRecord);
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+        }
+
+        public IActionResult Logout1(int r)
+        {            
                 return RedirectToAction("Admin");
             
         }

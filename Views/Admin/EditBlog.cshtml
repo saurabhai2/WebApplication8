@@ -1,0 +1,60 @@
+﻿@model IEnumerable<WebApplication8.Models.BlogPost>
+
+@{
+    ViewData["Title"] = "EditBlog";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>EditBlog</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>                  
+            <th>
+                @Html.DisplayNameFor(model => model.datePublish)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SlugUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                    @{
+                        var Title = item.Title.Substring(0, 50);
+                    }
+                    @Html.DisplayFor(modelItem => Title)
+            </td>            
+            <td>
+                   
+                    @Html.DisplayFor(modelItem => item.datePublish)
+            </td>
+            <td>
+                    @{/*
+                    var SlugUrl = item.SlugUrl.Substring(0, 10);*/
+                    }
+                    @Html.DisplayFor(modelItem => item.SlugUrl)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Editblogs","Admin" , new {r=@ViewBag.Number, id= item.Id  }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

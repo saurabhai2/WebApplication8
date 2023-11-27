@@ -1,10 +1,14 @@
-﻿
+﻿@model IEnumerable<WebApplication8.Models.BlogPost>
 @{
     ViewData["Title"] = @ViewBag.Title;
     ViewData["Meta"] = @ViewBag.Meta;
     ViewData["Check"] = @ViewBag.Check;
     ViewData["Schema"] = @ViewBag.Schema;
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var latestBlog = Model.OrderByDescending(b => b.Id).FirstOrDefault();
+    var paragraphs1 = latestBlog.Content.Split(new[] { '\n', '\r', }, StringSplitOptions.RemoveEmptyEntries);
+    var firstParagraph1 = paragraphs1.FirstOrDefault();
 }
 
 <!-- ist section -->
@@ -20,14 +24,12 @@
                     <div class="card-body p-1">
 
                         <h5 class="pt-3">
-                            WhatsApp Business App vs WhatsApp Business API: Simplified Comparison for Business Owners
+                            @latestBlog.MainHeading
                         </h5>
                         <p class="text-justify">
-                            When WhatsApp introduced the WhatsApp Business app, it came out as a great tool for small businesses to
-                            interact with customers. However, Facebook soon realized that medium and large businesses had more
-                            complex needs,so keeping their needs in mind, they opened up access to the WhatsApp Business API.
+                            @Html.Raw(@firstParagraph1)
                         </p>
-                        @Html.ActionLink("Read More >","whatsappbusinessappvswhatsappbusinessapi","Home",new{})
+                        @Html.ActionLink("Read More >","blog","Blog",new{id= latestBlog.Id})
                     </div>
                 </div>
             </div>
@@ -184,12 +186,6 @@
                                         value="conversational-support">
                                     Whatsapp Authentication
                                 </option>
-
-
-
-
-
-
                             </select>
                             <div>
                             </div>
@@ -240,96 +236,47 @@
                                 </option>
 
                                 <option class="sf-level-0 sf-item-264" data-sf-count="10" data-sf-depth="0" value="bfsi">BFSI</option>
-
-
-
-
-
-
                             </select>
                             <div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
-
             </form>
-
-
         </div>
     </div>
 </section>
-
-
-
 <!-- form -->
 <!-- cards -->
 <section style="background:#f5c11629;">
     <div class="container text-center ">
 
         <div class="row row-cols-1 row-cols-md-3 g-4 py-5 px-md-0 px-3">
+            @foreach (var item in Model)
+            {
+                <div class="col my-2">
 
+                    <div class="blog_card text-left h-100 p-4 h-100">
+                        <img src="@Url.Content(item.FeatureImagePath)" class="img-fluid" style="border-radius: 17px;" alt="blog-img">
+                        <div class="card-body p-1">
 
-            <div class="col my-2">
+                            <h5 class="pt-3">
+                                @Html.DisplayFor(modelItem => item.MainHeading)
+                            </h5>
+                            <p class="text-justify">
+                                @{
+                                    var paragraphs = item.Content.Split(new[] { '\n', '\r','.' }, StringSplitOptions.RemoveEmptyEntries);
+                                    var firstParagraph = paragraphs.FirstOrDefault();
+                                }
+                                @Html.Raw(@firstParagraph)
 
-                <div class="blog_card text-left h-100 p-4 h-100">
-                    <img src="~/image/whatsapp-authertication.webp" class="img-fluid " style="border-radius: 17px;"
-                         alt="blog-img">
-                    <div class="card-body p-1">
+                            </p>
+                            @Html.ActionLink("Read More >","blog","Blog",new{id = item.Id})
 
-                        <h5 class="pt-3">
-                            WhatsApp Business App vs WhatsApp Business API: Simplified Comparison for Business Owners
-                        </h5>
-                        <p class="text-justify">
-                            When WhatsApp introduced the WhatsApp Business app, it came out as a great tool
-                            for small
-                            businesses to interact with customers..
-                        </p>
-                        @Html.ActionLink("Read More >","whatsappbusinessappvswhatsappbusinessapi","Home",new{})
-                        
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col my-2">
-
-                <div class="blog_card text-left h-100 p-4 h-100">
-                    <img src="~/image/Empowering-Customer-Support-min.webp" class="img-fluid" style="border-radius: 17px;"
-                         alt="blog-img">
-                    <div class="card-body p-1">
-
-                        <h5 class="pt-3">
-                            5 Winning WhatsApp Marketing Strategies to Drive 3X More Sales
-                        </h5>
-                        <p class="text-justify">
-                            As of now, the world's population is around 7.5 billion people. And guess what? The number of WhatsApp
-                            messages sent is 13 times bigger than that! It's crazy, right?
-                        </p>
-                        @Html.ActionLink("Read More >","whatsappmarketingstrategiestodrivesales","Home",new{})
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col my-2">
-
-                <div class="blog_card text-left h-100 p-4 h-100">
-                    <img src="~/image/chatbot-reports.webp" class="img-fluid" style="border-radius: 17px;" alt="blog-img">
-                    <div class="card-body p-1">
-
-                        <h5 class="pt-3">
-                            From Vision to Reality: How Anantya.ai is Reshaping Customer Engagement on WhatsApp
-                        </h5>
-                        <p class="text-justify">
-                            The journey started when we realized that the existing customer engagement
-                            solutions in the market were not up to the mark to deliver exceptional customer experience.
-                        </p>
-                        @Html.ActionLink("Read More >","reshapingcustomerengagementonwhatsapp","Home",new{})
-                        
-                    </div>
-                </div>
-            </div>
+            }
 
         </div>
     </div>

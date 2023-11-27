@@ -16,6 +16,7 @@ namespace WebApplication8.Database
         public DbSet<AdminTittle> AdminTittle { get; set; }
         public DbSet<Metatag> Metatag { get; set; }
         public DbSet<MetatagCheck> MetatagCheck { get; set; }
+        public DbSet<BlogPost> BlogPost { get; set; }
 
         public DbSet<MetatagSchema> MetatagSchema { get; set; }
         public DbSet<ContactForm> ContactForm { get; set; }
