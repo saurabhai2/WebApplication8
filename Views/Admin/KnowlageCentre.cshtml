@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Articles";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["heading"] = "Articles";
+}
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:10vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
+    <a>@Html.ActionLink("Blog Post", "Articles", "Admin", new { r = @ViewBag.Number })</a>
+</p>
+
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:10vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
+    <a>@Html.ActionLink("Edit Knowlage", "EditKnowlage", "Admin", new { r = @ViewBag.Number })</a>
+</p>
+
+<div>
+    @using (Html.BeginForm("PostKnowlage", "Blog", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+    {
+        <div id="HomePage">
+            <h5 sTyle="display:block" class="Metaheading">Knowlage Center</h5>
+            <hr />
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 style="font-weight:400">Category</h6>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="Category" id="Index_input" style="width:18vw" required />
+                </div>
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Category line</h6>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" name="CetegoryLine" id="Index_input" style="width:25vw" required />
+                </div>
+            </div>
+            <div class="row" style=" margin-top:1vh">
+                <div class="col-sm-3">
+                    <h6 style="font-weight:400">Category Title</h6>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" name="Title" id="Index_input" style="width:50vw" required />
+                </div>
+            </div>
+            <div class="row" style="margin-top:1vh">
+                <div class="col-sm-3">
+                    <h6 style="font-weight:400">Category Description</h6>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" name="Meta" id="Meta_Index_input" style="width:50vw" required />
+                </div>
+            </div>
+            <div class="row" style="margin-top:1vh">
+                <div class="col-sm-3">
+                    <h6 style="font-weight:400">Category Schema</h6>
+                </div>
+                <div class="col-sm-8">
+                    <textarea style="width:50vw;height:20vh" name="Schema" id="Schema_Index_text" name="Description" required></textarea>
+                </div>
+            </div>
+            <div class="row" style=" margin-top:2vh">
+                <div class="col-sm-3">
+                    <h6 style="font-weight:400">Category Heading</h6>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" name="MainHeading" id="Meta_Index_input" style="width:50vw" required />
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:2vh">
+                <div class="col-sm-3">
+                    <h6 style="font-weight:400">Author</h6>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="author" id="Meta_Index_input" required />
+                </div>
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Slug Url</h6>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="SlugUrl" id="Meta_Index_input" required />
+                </div>
+            </div>
+
+            <hr />
+            <div style="margin-top:1vh">
+                <h6 style="font-weight:400; text-align:center;display:block">Answer Body</h6>
+                <hr />
+                <textarea style="width:77vw;height:80vh;" name="Content" id="Blog_Body"></textarea>
+            </div>
+            <div style="text-align:right;margin-top:2vh">
+                <input type="submit" class="btn button" value="Post" />
+            </div>
+        </div>
+    }
+</div>

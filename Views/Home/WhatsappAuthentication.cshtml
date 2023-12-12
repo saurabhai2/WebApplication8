@@ -401,6 +401,34 @@
         </div>
     </div>
 </div>
+<section style="background-color: #c8ddd514;">
+    <div class="container py-5">
+        <div class="row px-md-0 px-4">
+            <div class="col-lg-7  col-md-7 col-sm-12 my-auto">
+                <h2>
+                    <b>Subscribe Newsletter For<br> <span class="primary_color"> Latest Update</span></b>
+                </h2>
+                <p>Claim your FREE guide on how to use WhatsApp Business API for secure authentication.</p>
+                @using (Html.BeginForm("SendPDF", "ContactUs1", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <input type="hidden" name="id" value="4" />
+                    <input type="email" class="form-control w-50 ml-0" name="email" placeholder="Enter your email*">
+                    <button type="submit" class="button_start  mt-3 ">
+                        Sign up
+                        today!
+                    </button>
+                }
+
+
+            </div>
+            <div class="col-lg-5  col-md-5 col-sm-12 my-auto">
+                <img src="image/24-7-Support.webp" class="img-fluid" alt="subscribe-newsletter">
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <!--Frequently Asked Questions -->
 <section class="container px-md-0 px-3">
@@ -567,7 +595,7 @@
 
 
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 my-auto  text-md-right  text-center">
-                <a href="contact.html"><button type="button" class="apply_now">Start Today</button></a>
+                <button type="button" class="apply_now"> @Html.ActionLink("Start Today", "ContactUs", "Home", new { })</button>
 
             </div>
         </div>

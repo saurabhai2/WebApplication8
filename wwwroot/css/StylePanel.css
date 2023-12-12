@@ -205,6 +205,11 @@ header {
         cursor: pointer;
     }
 
+.nav-option.active {
+    background-color: #a89c9c;
+    cursor: pointer;
+}
+
 .nav-img {
     height: 30px;
 }

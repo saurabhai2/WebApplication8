@@ -49,9 +49,11 @@
                  class="icn"
                  alt="">
             <div class="dp">
+                <a href="@Url.Action("USerInfo", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
                 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
                      class="dpicn"
                      alt="dp">
+                </a>
             </div>
         </div>
 
@@ -60,8 +62,8 @@
         <div class="navcontainer">
             <nav class="nav" style="background:#e2d0d0">
                 <div class="nav-upper-options">
-                    <a href="@Url.Action("Dashboard", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-                        <div class="nav-option option1">
+                    <a href="@Url.Action("Dashboard", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none" >
+                        <div id="tab1" class="nav-option active" onclick="setActiveTab('tab1')">
                             <img src="~/image/dashboard.png"
                                     class="nav-img"
                                     alt="dashboard">
@@ -70,8 +72,8 @@
                         </div>
                     </a>
                     
-                    <a href="@Url.Action("Articles", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-                       <div class="option2 nav-option">
+                    <a href="@Url.Action("Articles", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none" >
+                        <div id="tab2" class="option2 nav-option" onclick="setActiveTab('tab2')">
                           <img src="~/image/blog.png"
                              class="nav-img"
                              alt="articles">
@@ -79,8 +81,8 @@
                        </div>       
                     </a>
 
-                    <a href="@Url.Action("Tittle", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-                        <div class="nav-option option3">
+                    <a href="@Url.Action("Tittle", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none" >
+                        <div id="tab3" class="nav-option option3" onclick="setActiveTab('tab3')">
                             <img src="~/image/title.png"
                                  class="nav-img"
                                  alt="report">
@@ -88,17 +90,17 @@
                         </div>
                     </a>
 
-                    <a href="@Url.Action("Inbox", "Email" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-                        <div class="nav-option option5">
+                    <!-- <a href="@Url.Action("Inbox", "Email", new { r = @ViewBag.Number })" style="text-decoration:none" > -->
+                        <div class="nav-option option5" onclick="setActiveTab(this)">
                             <img src="~/image/Mail.png"
                                  class="nav-img"
                                  alt="blog">
                             <h3 style="font-size:1rem">Inbox</h3>
                         </div>
-                    </a>
+               <!--    </a -->
                     
-                    <a href="@Url.Action("FormData", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-                        <div class="nav-option option6">
+                    <a href="@Url.Action("FormData", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none" >
+                        <div class="nav-option option6" onclick="setActiveTab(this)">
                             <img src="~/image/Form.png"
                                  class="nav-img"
                                  alt="settings">
@@ -106,16 +108,16 @@
                         </div>
                     </a>
 
-                    <a href="@Url.Action("Logout", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-                        <div class="nav-option logout">
+                    <a href="@Url.Action("Logout", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none" >
+                        <div class="nav-option logout" onclick="setActiveTab(this)">
                             <img src="~/image/metaTag.png"
                                  class="nav-img"
                                  alt="logout">
                             <h3 style="font-size:1rem">MetaTags</h3>
                         </div>
                     </a>
-                    <a href="@Url.Action("Logout1", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none">
-                    <div class="nav-option logout">
+                    <a href="@Url.Action("Logout1", "Admin" ,new{r=@ViewBag.Number})" style="text-decoration:none" >
+                        <div class="nav-option logout" onclick="setActiveTab(this)">
                         <img src="~/image/logout.png"
                              class="nav-img"
                              alt="logout">

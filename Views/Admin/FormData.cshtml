@@ -15,7 +15,7 @@
     <a>@Html.ActionLink("Pop Up","PatnerwithUs","Admin",new{r=@ViewBag.Number})</a>
 </p>
 
-<table class="table">
+<table class="table" style="background:#fff">
     <thead>
         <tr>
             <th>
@@ -30,9 +30,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Phone)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Message)
-            </th>
+            
             <th>
                 @Html.DisplayNameFor(model => model.url)
             </th>
@@ -40,11 +38,14 @@
         </tr>
     </thead>
     <tbody>
+        @{
+            var N = 1;
+        }
         @foreach (var item in Model)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Id)
+                    @N
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Email)
@@ -55,19 +56,14 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Phone)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Message)
-                </td>
+                
                 <td>
                     @Html.DisplayFor(modelItem => item.url)
                 </td>
                 
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
+                
             </tr>
+            N++;
         }
     </tbody>
 </table>

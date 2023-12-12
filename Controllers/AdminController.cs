@@ -6,7 +6,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApplication8.Controllers
 {
-    public class AdminController : Controller 
+    public class AdminController : Controller
     {
         private readonly AnantyaDbContext _context;
 
@@ -44,6 +44,8 @@ namespace WebApplication8.Controllers
             ViewBag.Number = @number;
             if (r == @number)
             {
+                ViewBag.ContactForm = _context.ContactForm.Count();
+                ViewBag.PatnerwithUs = _context.PatnerwithUs.Count();
                 return View();
             }
             else
@@ -52,6 +54,29 @@ namespace WebApplication8.Controllers
             }
 
         }
+
+        public IActionResult USerInfo(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                ViewBag.UserName = HttpContext.Session.GetString("UserName");
+                if (ViewBag.UserName == "Admin")
+                {
+                    List<Register> Register = _context.Register.ToList();
+                    return View(Register);
+                }
+                    return View();
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+
+        }
+
         public IActionResult Articles(int r)
         {
 
@@ -165,12 +190,7 @@ namespace WebApplication8.Controllers
             ViewBag.Number = @number;
             if (r == @number)
             {
-                List<AdminTittle> AdminTittle = _context.AdminTittle.ToList();
-                ViewBag.Data = AdminTittle.FirstOrDefault();
-                List<Metatag> Metatag = _context.Metatag.ToList();
-                ViewBag.DataMeta = Metatag.FirstOrDefault();
-                List<MetatagCheck> MetatagCheck = _context.MetatagCheck.ToList();
-                ViewBag.Checked = MetatagCheck.FirstOrDefault();
+               
                 return View();
             }
             else
@@ -195,6 +215,22 @@ namespace WebApplication8.Controllers
             }
         }
 
+        public IActionResult EditKnowlage(int r)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                List<KnowlageCentre> KnowlageCentre = _context.KnowlageCentre.ToList();
+                return View(KnowlageCentre);
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+        }
+
         public IActionResult Editblogs(int r , int Id)
         {
 
@@ -203,6 +239,22 @@ namespace WebApplication8.Controllers
             if (r == @number)
             {
                 var existingRecord = _context.BlogPost.FirstOrDefault(item => item.Id == Id);
+                return View(existingRecord);
+            }
+            else
+            {
+                return RedirectToAction("Admin");
+            }
+        }
+
+        public IActionResult EditKnowlages(int r, int Id)
+        {
+
+            var number = HttpContext.Session.GetInt32("Token");
+            ViewBag.Number = @number;
+            if (r == @number)
+            {
+                var existingRecord = _context.KnowlageCentre.FirstOrDefault(item => item.Id == Id);
                 return View(existingRecord);
             }
             else
@@ -223,6 +275,5 @@ namespace WebApplication8.Controllers
         }
 
         
-
     } 
 }

@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout2.cshtml";
     ViewData["heading"] = "Articles";
 }
-<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:10vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:11vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
     <a>@Html.ActionLink("Knowlage Centre","KnowlageCentre","Admin",new{r=@ViewBag.Number})</a>
 </p>
 
@@ -55,7 +55,7 @@
                 <h6 style="font-weight:400">Category Heading</h6>
             </div>
             <div class="col-sm-8">
-                    <input type="text" name="MainHeading" id="Meta_Index_input" style="width:50vw" required />
+                    <input type="text" name="MainHeading" id="" style="width:50vw; height:30vh" required />
             </div>
         </div>
        
@@ -73,6 +73,14 @@
                     <input type="text" name="author" id="Meta_Index_input" required />
                 </div>
         </div>
+            <div class="row" style="margin-top:2vh">
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Slug Url</h6>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="SlugUrl" id="Meta_Index_input" required />
+                </div>
+            </div>
        
         <hr />
         <div  style="margin-top:1vh">           

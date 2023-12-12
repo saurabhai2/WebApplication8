@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WebApplication8.Models.KnowlageCentre>
+
+@{
+    ViewData["Title"] = "EditKnowlage";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h3 style="text-align:center;">Edit Knowlage Centre</h3>
+
+<table class="table" style="background:#fff">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datePublish)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SlugUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var N = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @N
+                </td>
+                <td>
+                    
+                    @Html.DisplayFor(modelItem => item.Category )
+                </td>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.datePublish)
+                </td>
+                <td>
+                    @{
+                    /*
+                    var SlugUrl = item.SlugUrl.Substring(0, 10);*/
+                    }
+                    @Html.DisplayFor(modelItem => item.SlugUrl)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditKnowlages", "Admin", new { r = @ViewBag.Number, id = item.Id }) |
+                    @Html.ActionLink("Delete", "DeleteKnowlage", "Blog", new { r = @ViewBag.Number, id = item.Id  })
+                </td>
+            </tr>
+            N++;
+        }
+    </tbody>
+</table>
+
+

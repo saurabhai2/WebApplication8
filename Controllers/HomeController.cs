@@ -46,7 +46,8 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
                
             }
-            
+             ViewBag.currentUrl = "https://anantya.ai"+ HttpContext.Request.Path;
+
             return View();
 
         }
@@ -77,6 +78,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
 
             return View();
         }
@@ -106,6 +108,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -134,6 +137,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
 
             return View();
         }
@@ -163,6 +167,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -191,7 +196,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
-
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -219,7 +224,8 @@ namespace WebApplication8.Controllers
                 string? jsonString = dataSchema.FirstOrDefault()?.AutoSegregationMeta;
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
-            }   
+            }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -248,6 +254,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -276,6 +283,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -304,6 +312,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -332,6 +341,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -360,6 +370,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -388,6 +399,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl =  "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -416,6 +428,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -444,6 +457,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -472,6 +486,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -500,6 +515,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -528,6 +544,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -556,6 +573,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -584,6 +602,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -612,6 +631,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -640,6 +660,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -668,9 +689,14 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             List<BlogPost> blogPost = _context.BlogPost.ToList();
-            ViewBag.totalRows = _context.BlogPost.Count();
-            return View(blogPost);
+            if (blogPost.Count != 0)
+            {
+                ViewBag.totalRows = _context.BlogPost.Count();
+                return View(blogPost);
+            }
+            return RedirectToAction("NotFound");
         }
 
         [Route("/contact")]
@@ -698,6 +724,7 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+            ViewBag.currentUrl = "https://anantya.ai" + HttpContext.Request.Path;
             return View();
         }
 
@@ -726,54 +753,19 @@ namespace WebApplication8.Controllers
                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
 
             }
+
+            ViewBag.Support = _context.KnowlageCentre.Select(x => new { Category = x.Category, Heading = x.CetegoryLine }).Distinct().ToList();
+            ViewBag.currentUrl = HttpContext.Request.Path;
             return View();
         }
 
-        public IActionResult whatsappbusinessappvswhatsappbusinessapi()
+        [Route("/404")]
+        public IActionResult NotFound()
         {
-            var data = _context.AdminTittle.ToList();
-            if (data.FirstOrDefault()?.whatsappbusinessappvswhatsappbusinessapi != null)
-            {
-                ViewBag.Title = data.FirstOrDefault()?.whatsappbusinessappvswhatsappbusinessapi;
-            }
-            var dataMeta = _context.Metatag.ToList();
-            if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
-            {
-                ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
-            }
+            
+
             return View();
         }
-
-        public IActionResult whatsappmarketingstrategiestodrivesales()
-        {
-            var data = _context.AdminTittle.ToList();
-            if (data.FirstOrDefault()?.whatsappmarketingstrategiestodrivesales != null)
-            {
-                ViewBag.Title = data.FirstOrDefault()?.whatsappmarketingstrategiestodrivesales;
-            }
-            var dataMeta = _context.Metatag.ToList();
-            if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
-            {
-                ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
-            }
-            return View();
-        }
-
-        public IActionResult reshapingcustomerengagementonwhatsapp()
-        {
-            var data = _context.AdminTittle.ToList();
-            if (data.FirstOrDefault()?.reshapingcustomerengagementonwhatsapp != null)
-            {
-                ViewBag.Title = data.FirstOrDefault()?.reshapingcustomerengagementonwhatsapp;
-            }
-            var dataMeta = _context.Metatag.ToList();
-            if (dataMeta.FirstOrDefault()?.ConversationalMarketingMeta != null)
-            {
-                ViewBag.Meta = dataMeta.FirstOrDefault()?.ConversationalMarketingMeta;
-            }
-            return View();
-        }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

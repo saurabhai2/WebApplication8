@@ -11,5 +11,15 @@
         public string url { get; set; }
     }
 
+    public class EmailSetting
+    { 
+        public string EmailSender { get; set; }
+        public string EmailReciver { get; set; }
+        public string Password { get; set; }
+
+
+
+    }
+
     
 }

@@ -993,7 +993,67 @@ tinymce.init({
     toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | bullist numlist outdent indent | link image unlink| template media quickbars ',
     menubar: 'file edit view insert format tools table help',
     branding: false,
+    images_upload_url: 'SaveTinyImage',// Replace with your image upload endpoint URL
+    automatic_uploads: true,
+    file_picker_types: 'image', // Allow only images to be picked/uploaded
+
+    setup: function (editor) {
+        editor.on('change', function () {
+            // On change event, update the textarea value (if needed)
+            editor.save();
+        });
+    },
     
-    // Additional configurations as needed
+    images_upload_handler: function (blobInfo, success, failure) {
+        // Perform image upload using XMLHttpRequest or fetch API
+       
+        var xhr, formData;
+
+        xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+
+        xhr.open('POST', 'SaveTinyImage', true);
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+                var editor = tinymce.get('Blog_Body');
+
+              editor.insertContent('<img src="' + response.imagePath + '" alt="Uploaded Image" class="img-fluid">');
+                success(response.imagePath); // Image URL returned by the server
+            } else {
+                failure('Image upload failed');
+            }
+        };
+        var originalFilename = blobInfo.filename();
+
+        formData = new FormData();
+        formData.append('file', blobInfo.blob(), blobInfo.filename());
+
+        xhr.send(formData);
+    },
+
+    // Other configurations
+});
+    
+tinymce.init({
+    selector: '#Heading_input', // Replace with your textarea ID
+    skin: "oxide-dark",
+    toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | bullist numlist outdent indent | link image unlink| template media quickbars ',
+    menubar: 'file edit view insert format tools table help',
+    branding: false,
 });
 
+function setActiveTab(tab1) {
+
+    
+    // Remove 'active' class from all tabs
+    var tabs = document.querySelectorAll('.nav-upper-options .nav-option');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+    var Tab = document.getElementById(tab1)
+    // Add 'active' class to the clicked tab
+    Tab.classList.add('active');
+}

@@ -1,0 +1,104 @@
+﻿@if (ViewBag.UserName == "Admin")
+{
+    @model IEnumerable<WebApplication8.Models.Register>
+}
+@{
+    ViewData["Title"] = "USerInfo";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<div style="text-align:center; background:#fff">
+    <div class="dp" style="height:35vh;width:20vw; margin-left:28vw">   
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+            class="dpicn"
+            alt="dp">
+    </div>
+    <div style="margin-top:2vh">
+        <h5>Anantya</h5>
+    </div>
+</div>
+
+@if (ViewBag.UserName == "Admin")
+{
+    <hr />
+    <h5 style="font-weight:400; text-align:center;display:block">Add User</h5>
+    <hr />
+    <div style="margin-top:5vh;">
+        @using (Html.BeginForm("AddUser", "LoginValidation", FormMethod.Post, new { @enctype = "multipart/form-data" }))
+        {
+            <div class="row" >
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Username</h6>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="Username" id="Index_input" value="" style="width:18vw" required />
+                </div>
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Password</h6>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" name="Password" value="" id="Index_input" style="width:25vw" required />
+                </div>
+            </div>
+            <div class="row" style="margin-top:2vh">
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Email</h6>
+                </div>
+                <div class="col-sm-3">
+                    <input type="text" name="Email" value="" style="width:18vw" required />
+                </div>
+                <div class="col-sm-1">
+                    <h6 style="font-weight:400">Name</h6>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" name="Name" value="" style="width:25vw" required />
+                </div>
+            </div>
+            <div style="text-align:right;margin-top:2vh;margin-right:19vw">
+                <input type="submit" class="btn button" value="Add" />
+            </div>
+        }
+    </div>
+    <hr />
+    <hr />
+    <h5 style="font-weight:400; text-align:center;display:block">User List</h5>
+    <hr />
+
+    <table class="table" style="margin-top:5vh;background:#fff">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Username)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var N = 1;
+            }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @N
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Username)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Delete", "Delete","LoginValidation", new { id=item.Id  })
+                    </td>
+                </tr>
+                N++;
+            }
+        </tbody>
+    </table>
+}

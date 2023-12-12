@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Anantya.ai KnowlageCentre";
+    ViewData["Meta"] = "Anantya.ai KnowlageCentre";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="" style="background: linear-gradient(to left bottom, rgb(245, 193, 22), rgb(238, 86, 60));">
+    <div class="container py-5 text-center text-white">
+        <div class="row py-5">
+            <div class="col-md-6 col-sm-12">
+                <h1 class="font-weight-bold">
+                    Anantya Support
+                </h1>
+            </div>
+            <div class="col-md-6 col-sm-12 text-right">
+                <div class="wrap">
+                    <div class="search">
+                        <input type="text" class="searchTerm " placeholder="Search support articles">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- info -->
+<section>
+    <div class="container pt-5">
+        <div class="text-center">
+            <h2 class="font-weight-bold"> Getting started with Anantya</h2>
+            <p>Helpful resources to easily set up your Anantya account</p>
+
+
+        </div>
+    </div>
+
+</section>
+<!-- info -->
+<!-- knowledge center -->
+<section class="box-forhelp">
+    <div class="container py-5 text-center">
+        <div class="row row-cols-1 row-cols-md-1 g-4 pb-5 px-md-0 px-3">
+            <div class="col-md-12">
+
+
+                <div class="  m-0 p-0  card_anantya_started">
+
+                    <div class=" p-md-3 p-0 text-left">
+
+                        
+                        <div class="specific-section">
+                                <ul class="text-left">
+                                @{var N = 1;}
+                                @foreach (var item in ViewBag.UrlData)
+                                    {
+                                    <li>
+                                        <a href="@Url.Action("KnowlageCentres", "Post" ,new{UrlCentre=@item.SlugUrl})">
+                                    
+                                        &nbsp;@N. @item.MainHeading
+                                        <i class="fas fa-chevron-right"></i>
+                                    
+                                    </a>
+                                    </li>
+                                    N++;
+                                }
+                               
+                        </ul>
+                     </div>
+                    </div>
+
+                    
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    
+
+</section>
+<!-- knowledge center -->

@@ -14,6 +14,7 @@ using Newtonsoft.Json;
 using RestSharp;
 using System.Text;
 using WebApplication8.Database;
+using static Azure.Core.HttpHeader;
 
 namespace WebApplication8.Controllers
 {
@@ -27,35 +28,36 @@ namespace WebApplication8.Controllers
         }
         private readonly IWebHostEnvironment _hostingEnvironment;
         private readonly AnantyaDbContext _context;
+        private readonly IConfiguration _configuration;
 
-        public ContactUs1Controller(IWebHostEnvironment hostingEnvironment, AnantyaDbContext context)
+
+        public ContactUs1Controller(IWebHostEnvironment hostingEnvironment, AnantyaDbContext context, IConfiguration configuration)
         {
             _hostingEnvironment = hostingEnvironment;
             _context = context;
-
+            _configuration = configuration;
         }
 
-        
-
-        
-
-
         [HttpPost]
-        public async Task<string> Contact(string Name, string email, string phone, string message, string url, ContactForm contactForm)
+        public async Task<IActionResult> Contact(string Name, string email, string phone, string message, string url, ContactForm contactForm)
         {
+            var emailSettings = _configuration.GetSection("EmailSettings").Get<EmailSetting>();
+            var EmailSender = emailSettings.EmailSender;
+            var EmailReciver = emailSettings.EmailReciver;
+            var password = emailSettings.Password;
             try
             {
                 MailMessage mailMessage = new MailMessage();
                 MailMessage mailMessage1 = new MailMessage();
-                mailMessage.From = new MailAddress("mobi.seniordeveloper@gmail.com");
-                mailMessage.To.Add("262saurabhjhaa@gmail.com");
-                mailMessage1.From = new MailAddress("mobi.seniordeveloper@gmail.com");
+                mailMessage.From = new MailAddress(EmailSender);
+                mailMessage.To.Add(EmailReciver);
+                mailMessage1.From = new MailAddress(EmailSender);
                 mailMessage1.To.Add(email);
 
                 mailMessage.IsBodyHtml = true;
                 mailMessage1.IsBodyHtml = true;
-                mailMessage.Subject = "Testing";
-                mailMessage1.Subject = "Testing1";
+                mailMessage.Subject = "User Contact From Website";
+                mailMessage1.Subject = "Response From Anantya";
                 string body = @"<Html>
                                     <body>
                                         <p> Name : " + Name + "</p> <br> <br>" +
@@ -98,13 +100,11 @@ namespace WebApplication8.Controllers
                 // Set the HTML view as the email's body
                 mailMessage1.AlternateViews.Add(htmlView);
 
-                
-
-                // Smtp Client 
+               // Smtp Client 
 
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
-                NetworkCredential networkCredential = new NetworkCredential("mobi.seniordeveloper@gmail.com", "afktcwqzdwfyqjuq");
+                NetworkCredential networkCredential = new NetworkCredential(EmailSender, password);
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = networkCredential;
                 smtpClient.Port = 587;
@@ -204,7 +204,7 @@ namespace WebApplication8.Controllers
 
             SaveData(contact, null);
 
-            return "Thank You , Your mail is submitted";
+            return RedirectToAction("ContactUs", "Home"); 
         }
 
         private void SaveData(ContactForm? contact, PatnerwithUs? contact1)
@@ -228,13 +228,17 @@ namespace WebApplication8.Controllers
         [HttpPost]
         public string SignUp(string Name, string email, string phone, string country, string company)
         {
+            var emailSettings = _configuration.GetSection("EmailSettings").Get<EmailSetting>();
+            var EmailSender = emailSettings.EmailSender;
+            var EmailReciver = emailSettings.EmailReciver;
+            var password = emailSettings.Password;
             try
             {
                 MailMessage mailMessage = new MailMessage();
                 MailMessage mailMessage1 = new MailMessage();
-                mailMessage.From = new MailAddress("mobi.seniordeveloper@gmail.com");
-                mailMessage.To.Add("262saurabhjhaa@gmail.com");
-                mailMessage1.From = new MailAddress("mobi.seniordeveloper@gmail.com");
+                mailMessage.From = new MailAddress(EmailSender);
+                mailMessage.To.Add(EmailReciver);
+                mailMessage1.From = new MailAddress(EmailSender);
                 mailMessage1.To.Add(email);
 
                 mailMessage.IsBodyHtml = true;
@@ -255,7 +259,7 @@ namespace WebApplication8.Controllers
 
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
-                NetworkCredential networkCredential = new NetworkCredential("mobi.seniordeveloper@gmail.com", "afktcwqzdwfyqjuq");
+                NetworkCredential networkCredential = new NetworkCredential(EmailSender, password);
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = networkCredential;
                 smtpClient.Port = 587;
@@ -278,13 +282,17 @@ namespace WebApplication8.Controllers
         [HttpPost]
         public string LeaveReply(string Name, string email, string comment)
         {
+            var emailSettings = _configuration.GetSection("EmailSettings").Get<EmailSetting>();
+            var EmailSender = emailSettings.EmailSender;
+            var EmailReciver = emailSettings.EmailReciver;
+            var password = emailSettings.Password;
             try
             {
                 MailMessage mailMessage = new MailMessage();
                 MailMessage mailMessage1 = new MailMessage();
-                mailMessage.From = new MailAddress("mobi.seniordeveloper@gmail.com");
-                mailMessage.To.Add("262saurabhjhaa@gmail.com");
-                mailMessage1.From = new MailAddress("mobi.seniordeveloper@gmail.com");
+                mailMessage.From = new MailAddress(EmailSender);
+                mailMessage.To.Add(EmailReciver);
+                mailMessage1.From = new MailAddress(EmailSender);
                 mailMessage1.To.Add(email);
 
                 mailMessage.IsBodyHtml = true;
@@ -305,7 +313,7 @@ namespace WebApplication8.Controllers
 
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
-                NetworkCredential networkCredential = new NetworkCredential("mobi.seniordeveloper@gmail.com", "afktcwqzdwfyqjuq");
+                NetworkCredential networkCredential = new NetworkCredential(EmailSender, password);
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = networkCredential;
                 smtpClient.Port = 587;
@@ -334,26 +342,27 @@ namespace WebApplication8.Controllers
             string base64Image = Convert.ToBase64String(imageBytes);
             return string.Format("data:image/gif;base64,{0}", base64Image);
         }
-        public async Task<string> Contact1(string Name, string email, string phone, string message, string url)
-        {
-            return "hi";
-        }
+        
         [HttpPost]
         public async Task<ActionResult> PatnerContact(string Name, string email, string phone, string country, string Designation, string Company)
         {
+            var emailSettings = _configuration.GetSection("EmailSettings").Get<EmailSetting>();
+            var EmailSender = emailSettings.EmailSender;
+            var EmailReciver = emailSettings.EmailReciver;
+            var password = emailSettings.Password;
             try
             {
                 MailMessage mailMessage = new MailMessage();
                 MailMessage mailMessage1 = new MailMessage();
-                mailMessage.From = new MailAddress("mobi.seniordeveloper@gmail.com");
-                mailMessage.To.Add("262saurabhjhaa@gmail.com");
-                mailMessage1.From = new MailAddress("mobi.seniordeveloper@gmail.com");
+                mailMessage.From = new MailAddress(EmailSender);
+                mailMessage.To.Add(EmailReciver);
+                mailMessage1.From = new MailAddress(EmailSender);
                 mailMessage1.To.Add(email);
 
                 mailMessage.IsBodyHtml = true;
                 mailMessage1.IsBodyHtml = true;
-                mailMessage.Subject = "Testing";
-                mailMessage1.Subject = "Testing1";
+                mailMessage.Subject = "Contacted From Patner";
+                mailMessage1.Subject = "Response From Anantya";
                 string body = @"<Html>
                                     <body>
                                         <p> Name : " + Name + "</p> <br> <br>" +
@@ -402,7 +411,7 @@ namespace WebApplication8.Controllers
 
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
-                NetworkCredential networkCredential = new NetworkCredential("mobi.seniordeveloper@gmail.com", "afktcwqzdwfyqjuq");
+                NetworkCredential networkCredential = new NetworkCredential(EmailSender, password);
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = networkCredential;
                 smtpClient.Port = 587;
@@ -438,7 +447,7 @@ namespace WebApplication8.Controllers
                     string jsonContactData = Newtonsoft.Json.JsonConvert.SerializeObject(contactData);
 
                     // Send a POST request to create a new lead
-                    var response = await httpClient.PostAsync("LeadManagement.svc/Lead.Create", new StringContent(jsonContactData, Encoding.UTF8, "application/json"));
+                    var response = await httpClient.PostAsync("LeadManagement.svc/Lead.Update", new StringContent(jsonContactData, Encoding.UTF8, "application/json"));
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -501,7 +510,75 @@ namespace WebApplication8.Controllers
             SaveData(null, contact);
 
 
-            return RedirectToAction("Home/PatnerWithUs");
+            return RedirectToAction("PatnerWithUs", "Home");
+        }
+
+        public IActionResult SendPDf(string email, int id)
+        {
+            var emailSettings = _configuration.GetSection("EmailSettings").Get<EmailSetting>();
+            var EmailSender = emailSettings.EmailSender;
+            var EmailReciver = emailSettings.EmailReciver;
+            var password = emailSettings.Password;
+            try
+            {
+                MailMessage mailMessage = new MailMessage();           
+                mailMessage.From = new MailAddress(EmailSender);
+                mailMessage.To.Add(email);
+                mailMessage.IsBodyHtml = true;              
+                mailMessage.Subject = "Testing";
+                string body = "Thanks For Contact, Please go Through Pdf";
+                mailMessage.Body = body;
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+                NetworkCredential networkCredential = new NetworkCredential(EmailSender, password);
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = networkCredential;
+                smtpClient.Port = 587;
+                smtpClient.EnableSsl = true;
+                switch(id){
+                    case 1:
+                        // Code to execute for Option 1
+                        Attachment attachment = new Attachment("./wwwroot/usecase/Whatsapp_Marketing.pdf");
+                        mailMessage.Attachments.Add(attachment);
+                        smtpClient.Send(mailMessage);
+                        return RedirectToAction("WhatsAppMarketing", "Home"); ;
+                        break;
+                    case 2:
+                        // Code to execute for Option 2
+                        Attachment attachment1 = new Attachment("./wwwroot/usecase/Whatsapp_Commerce.pdf");
+                        mailMessage.Attachments.Add(attachment1);
+                        smtpClient.Send(mailMessage);
+                        return RedirectToAction("WhatsAppCommerce", "Home"); ;
+                        break;
+                    case 3:
+                        // Code to execute for Option 3
+                        Attachment attachment2 = new Attachment("./wwwroot/usecase/Whatsapp_Support.pdf");
+                        mailMessage.Attachments.Add(attachment2);
+                        smtpClient.Send(mailMessage);
+                        return RedirectToAction("WhatsAppSupport", "Home"); ;
+                        break;
+                    case 4:
+                        // Code to execute for Option 4
+                        Attachment attachment3 = new Attachment("./wwwroot/usecase/Whatsapp_Authentication.pdf");
+                        mailMessage.Attachments.Add(attachment3);
+                        smtpClient.Send(mailMessage);
+                        return RedirectToAction("Authentication", "Home"); ;
+                        break;
+                    default:
+                        // Code to execute if option doesn't match any case
+                        return RedirectToAction("WhatsAppMarketing", "Home"); ;
+                        break;
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return RedirectToAction("WhatsAppMarketing", "Home"); ;
+
+            }
+
+           
         }
     }
 }
