@@ -1,0 +1,243 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication8
+build_property.RootNamespace = WebApplication8
+build_property.ProjectDir = D:\Sourbh Data Backup\Downloads\WebApplication8\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Sourbh Data Backup\Downloads\WebApplication8
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/wwwroot/Templates/EmailTemplate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxUZW1wbGF0ZXNcRW1haWxUZW1wbGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Articles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXJ0aWNsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/EditBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEJsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Editblogs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdGJsb2dzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/EditKnowlage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEtub3dsYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/EditKnowlages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEtub3dsYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/EmailVarification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1haWxWYXJpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/FormData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRm9ybURhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/KnowlageCentre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS25vd2xhZ2VDZW50cmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Logout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9nb3V0MS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/PatnerwithUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGF0bmVyd2l0aFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/Tittle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGl0dGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Admin/USerInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVVNlckluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Blog/blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xibG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Blog/PostBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xQb3N0QmxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Email/Inbox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1haWxcSW5ib3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/AppMarketing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcHBNYXJrZXRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/AutomatedChatBot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRvbWF0ZWRDaGF0Qm90LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/AutoSegregation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRvU2VncmVnYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/BankingBFSI.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYW5raW5nQkZTSS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/ConversationalMarketing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb252ZXJzYXRpb25hbE1hcmtldGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/EcommerceRetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFY29tbWVyY2VSZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/EdTech.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZFRlY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/FoodBeverage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb29kQmV2ZXJhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/Healthcare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIZWFsdGhjYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/KnowledgeCenter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLbm93bGVkZ2VDZW50ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/liveagentsupport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsaXZlYWdlbnRzdXBwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/Mediaentertainment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZWRpYWVudGVydGFpbm1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/PartnerWithUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXJ0bmVyV2l0aFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/ReportsAnalytics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBvcnRzQW5hbHl0aWNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/TravelHospitality.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmF2ZWxIb3NwaXRhbGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/WhatsappAuthentication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaGF0c2FwcEF1dGhlbnRpY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/WhatsAppBroadcasting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaGF0c0FwcEJyb2FkY2FzdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/WhatsappCommerce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaGF0c2FwcENvbW1lcmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/WhatsAppMarketing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaGF0c0FwcE1hcmtldGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/WhatsappSupport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXaGF0c2FwcFN1cHBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Home/WorkWithUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXb3JrV2l0aFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Post/blogs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxibG9ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Post/KnowlageCentre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxLbm93bGFnZUNlbnRyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Post/KnowlageCentres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxLbm93bGFnZUNlbnRyZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Sourbh Data Backup/Downloads/WebApplication8/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

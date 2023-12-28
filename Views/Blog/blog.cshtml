@@ -1,11 +1,10 @@
 ﻿@model WebApplication8.Models.BlogPost;
 @{
-    if (Model.Title != null)
-    {
+    
     ViewData["Title"] = Model.Title;
     ViewData["Meta"] = Model.Meta;
     ViewData["Schema"] = Model.Schema;
-    }
+   
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 

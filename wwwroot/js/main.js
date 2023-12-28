@@ -183,7 +183,6 @@ function SendData(event) {
             var Collumn = "KnowledgeCenter"
             break;
         
-
     }
 
     $.ajax({
@@ -422,6 +421,24 @@ $(document).ready(function() {
   window.setTimeout("preloader_fade();", 500); //call fade in .5 seconds
 }
 )
+// $(document).ready(function() {
+//   !function(w,d){function e(e,n){w.ServiceBell.q=w.ServiceBell.q||[],w.ServiceBell.q.push([e,n])}if(!w.ServiceBell){var i=function(n){for(var i=arguments.length,r=new Array(i>1?i-1:0),c=1;c<i;c++)r[c-1]=arguments[c];e(n,r)};["init","identify","dial","alert","bookMeeting","hide","show","expand","collapse","connect","disconnect"].forEach((function(r){i[r]=function(){for(var i=arguments.length,r=new Array(i),c=0;c<i;c++)r[c]=arguments[c];e(n,r)}})),w.ServiceBell=i}var s=d.createElement("script");s.id="service-bell-script",s.src="https://cdn.servicebell.com/main.js",s.async=1;var r=d.getElementsByTagName("script")[0];r.parentNode.insertBefore(s,r)}(window,document);
+//   ServiceBell("init", "3077e4a699ff434b8e9457da0a4f26fe", { mode: "iframe-jit" });
+// }
+// )
+$(document).ready(function() {
+  // tawkto-script.js
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/64c0e2f1cc26a871b02b4f67/1h68nd145';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+}
+)
 
 // Add an event listener for the 'beforeunload' event, which is triggered when the user tries to leave the page (e.g., by refreshing).
 window.addEventListener('beforeunload', function () {
@@ -456,7 +473,7 @@ function CloseModal(event) {
 
 
 
-/*$(document).ready(function () {
+$(document).ready(function () {
     $('#company_slider').owlCarousel({
         loop: true,
         margin: 10,
@@ -504,6 +521,25 @@ if (FrameSlider = ! null) {
     })
 }
 
+$('#team_slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay: true,
+    smartSpeed: 1500,
+    dots: true, 
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+}) 
 
 $('#client_slider').owlCarousel({
     loop:true,
@@ -695,7 +731,7 @@ $('#screen_slider').owlCarousel({
         }
     }
 })
-*/
+
 // image accordion change
 
     $(document).ready(function () {
@@ -1391,10 +1427,7 @@ tabParentHeight();
 
 // NAVTAB2
 window.dataLayer = window.dataLayer || [];window.dataLayer.push({"platform":"gatsby"});
- (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var
-  f=d.getElementsByTagName(s)[0], j=d.createElement(s),
-  dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';
-  f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM-9RBL');
+ 
 
 
 // navtab3
@@ -1533,7 +1566,8 @@ window.addEventListener('scroll', function() {
       if (scroll > 140 && scroll < 1980) {
           document.getElementById('slices').style.position = 'fixed';
           document.getElementById('slices').style.marginTop = '-190px';
-      } else {
+      } else
+      {
           document.getElementById('slices').style.position = 'relative';
           document.getElementById('slices').style.marginTop = 'auto';
       }

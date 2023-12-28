@@ -1,4 +1,5 @@
-﻿@model IEnumerable<WebApplication8.Models.BlogPost>
+﻿@using Humanizer
+@model IEnumerable<WebApplication8.Models.BlogPost>
 @{
     ViewData["Title"] = @ViewBag.Title;
     ViewData["Meta"] = @ViewBag.Meta;
@@ -8,7 +9,7 @@
 
     var latestBlog = Model.OrderByDescending(b => b.Id).FirstOrDefault();
     var paragraphs1 = latestBlog.Content.Split(new[] { '\n', '\r', }, StringSplitOptions.RemoveEmptyEntries);
-    var firstParagraph1 = paragraphs1.FirstOrDefault();
+    var firstParagraph1 = paragraphs1.FirstOrDefault(p => p.Trim().StartsWith("<p>") && p.Trim().EndsWith("</p>"));
 }
 
 <!-- ist section -->
@@ -20,7 +21,7 @@
 
             <div class="col-xxl-6 col-xl-6 col-lg-6">
                 <div class="text-left  blog_card p-4 h-100">
-                    <img src="~/image/whatsapp-authertication.webp" class="img-fluid" style="border-radius: 17px;" alt="blog-img">
+                    <img src="@Url.Content(latestBlog.FeatureImagePath)" class="img-fluid" style="border-radius: 17px;" alt="blog-img">
                     <div class="card-body p-1">
 
                         <h5 class="pt-3">
@@ -29,7 +30,7 @@
                         <p class="text-justify">
                             @Html.Raw(@firstParagraph1)
                         </p>
-                        @Html.ActionLink("Read More >","blog","Blog",new{id= latestBlog.Id})
+                        @Html.ActionLink("Read More >", "blogs", "Post", new { SlugUrl = latestBlog.SlugUrl })
                     </div>
                 </div>
             </div>
@@ -265,13 +266,28 @@
                             </h5>
                             <p class="text-justify">
                                 @{
-                                    var paragraphs = item.Content.Split(new[] { '\n', '\r','.' }, StringSplitOptions.RemoveEmptyEntries);
-                                    var firstParagraph = paragraphs.FirstOrDefault();
-                                }
-                                @Html.Raw(@firstParagraph)
+                                    var firstParagraph22 = "";
+                                    var paragraphs = item.Content.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                                    var firstParagraph = paragraphs.FirstOrDefault(p => p.Trim().StartsWith("<p>") && p.Trim().EndsWith("</p>"));
+                                    if (firstParagraph != null)
+                                    {
+                                        if (firstParagraph.Length >= 300)
+                                        {
+                                            firstParagraph22 = firstParagraph.Substring(0,300);
 
+                                        }
+                                        else
+                                        {
+                                            firstParagraph22 = firstParagraph;
+                                        }
+
+                                    }
+                                }
+                                @Html.Raw(@firstParagraph22)
+                               
                             </p>
-                            @Html.ActionLink("Read More >","blog","Blog",new{id = item.Id})
+                            <br />
+                            @Html.ActionLink("Read More >","blogs","Post",new{SlugUrl= item.SlugUrl})
 
                         </div>
                     </div>

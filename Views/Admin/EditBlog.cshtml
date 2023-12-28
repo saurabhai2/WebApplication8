@@ -5,12 +5,9 @@
     Layout = "~/Views/Shared/_Layout2.cshtml";
 }
 
-<h1>EditBlog</h1>
+<h3 style="text-align:center;">EditBlog</h3>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<table class="table" style="background:#fff">
     <thead>
         <tr>
             <th>
@@ -29,14 +26,21 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+        @{
+            var N = 1;
+        }
+@foreach (var item in Model) {           
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Id)
+                    @N
             </td>
             <td>
                     @{
-                        var Title = item.Title.Substring(0, 50);
+                        var Title = "";
+                        if (item.Title.Length > 50)
+                        {
+                             Title = item.Title.Substring(0, 50);
+                        }
                     }
                     @Html.DisplayFor(modelItem => Title)
             </td>            
@@ -52,9 +56,10 @@
             </td>
             <td>
                     @Html.ActionLink("Edit", "Editblogs","Admin" , new {r=@ViewBag.Number, id= item.Id  }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("Delete", "Delete","Blog", new { r=@ViewBag.Number, id= item.Id  })
             </td>
         </tr>
+        N++;
 }
     </tbody>
 </table>

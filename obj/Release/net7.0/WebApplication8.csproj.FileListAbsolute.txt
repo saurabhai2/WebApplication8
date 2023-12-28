@@ -1,0 +1,803 @@
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\appsettings.Development.json
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\appsettings.json
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\WebApplication8.staticwebassets.runtime.json
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\WebApplication8.exe
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\WebApplication8.deps.json
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\WebApplication8.runtimeconfig.json
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\WebApplication8.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\WebApplication8.pdb
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Humanizer.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.Build.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.Build.Framework.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Features.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.DiaSymReader.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.NET.StringTools.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\Newtonsoft.Json.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.Common.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.Configuration.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.DependencyResolver.Core.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.Frameworks.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.LibraryModel.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.Packaging.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.ProjectModel.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.Protocol.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\NuGet.Versioning.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Composition.AttributedModel.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Composition.Convention.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Composition.Hosting.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Composition.Runtime.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Composition.TypedParts.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Drawing.Common.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Security.Permissions.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\System.Windows.Extensions.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\af\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ar\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\az\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\bg\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\bn-BD\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\da\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\el\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fa\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fi-FI\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr-BE\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\he\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\hr\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\hu\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\hy\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\id\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\is\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko-KR\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ku\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\lv\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ms-MY\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\mt\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\nb\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\nb-NO\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\nl\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ro\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\sk\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\sl\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\sr\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\sr-Latn\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\sv\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\th-TH\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\uk\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\vi\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-CN\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Humanizer.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\source\repos\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.AssemblyInfo.cs
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.RazorAssemblyInfo.cache
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.RazorAssemblyInfo.cs
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.WebApplication8.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.build.WebApplication8.props
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication8.props
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.WebApplication8.props
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\staticwebassets.pack.json
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\staticwebassets.build.json
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\staticwebassets.development.json
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\scopedcss\bundle\WebApplication8.styles.css
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.CopyComplete
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.dll
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\refint\WebApplication8.dll
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.pdb
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\WebApplication8.genruntimeconfig.cache
+C:\Users\DELL\source\repos\WebApplication8\obj\Release\net7.0\ref\WebApplication8.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\appsettings.Development.json
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\appsettings.json
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.staticwebassets.runtime.json
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.exe
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.deps.json
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.runtimeconfig.json
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.pdb
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Azure.Core.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Azure.Identity.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\EntityFramework.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Humanizer.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\MailKit.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Build.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Build.Framework.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Features.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.DiaSymReader.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Identity.Client.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.NET.StringTools.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\MimeKit.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Mono.TextTemplating.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Newtonsoft.Json.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Common.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Configuration.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.DependencyResolver.Core.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Frameworks.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.LibraryModel.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Packaging.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.ProjectModel.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Protocol.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Versioning.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\OpenPop.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\RestSharp.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\RestSharp.Serializers.NewtonsoftJson.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\Speckle.Newtonsoft.Json.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.CodeDom.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.AttributedModel.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.Convention.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.Hosting.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.Runtime.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.TypedParts.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Data.SqlClient.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Drawing.Common.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Memory.Data.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Runtime.Caching.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Security.Permissions.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\System.Windows.Extensions.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\af\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ar\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\az\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\bg\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\bn-BD\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\da\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\el\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fa\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fi-FI\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr-BE\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\he\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\hr\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\hu\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\hy\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\id\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\is\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko-KR\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ku\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\lv\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ms-MY\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\mt\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\nb\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\nb-NO\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\nl\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ro\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\sk\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\sl\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\sr\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\sr-Latn\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\sv\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\th-TH\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\uk\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\vi\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-CN\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Humanizer.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.AnantyaDbCreate.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Addtable.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.UpdateValue.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.AddContactFromTable.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.AddPatnerwithUs.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Changedatatype.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Validation.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.NameChange.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Removedb.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Addtable1.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.RemoveTable1.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Addtabless.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Dropdb1.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Addtablessss1.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.AssemblyInfoInputs.cache
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.AssemblyInfo.cs
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.RazorAssemblyInfo.cache
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.RazorAssemblyInfo.cs
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.WebApplication8.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.build.WebApplication8.props
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication8.props
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.WebApplication8.props
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets.pack.json
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets.build.json
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets.development.json
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\scopedcss\bundle\WebApplication8.styles.css
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.CopyComplete
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.dll
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\refint\WebApplication8.dll
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.pdb
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.genruntimeconfig.cache
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\ref\WebApplication8.dll
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.AddTabless3.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.RemoveTabelMeta.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.UpdatecoloumnName.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Adddtablesss.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.AddSchemaTable.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Addblogtable.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.NewcolumnBlog.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.AddtableKnowlage.resources
+C:\Users\DELL\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Updatecolumn1.resources
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\appsettings.Development.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\appsettings.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.staticwebassets.runtime.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.exe
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.deps.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.runtimeconfig.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\WebApplication8.pdb
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Azure.Core.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Azure.Identity.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\BouncyCastle.Cryptography.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\EntityFramework.SqlServer.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\EntityFramework.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Humanizer.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\MailKit.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Build.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Build.Framework.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Features.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.DiaSymReader.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Identity.Client.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.NET.StringTools.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\dotnet-aspnet-codegenerator-design.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\MimeKit.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Mono.TextTemplating.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Newtonsoft.Json.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Common.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Configuration.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.DependencyResolver.Core.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Frameworks.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.LibraryModel.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Packaging.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.ProjectModel.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Protocol.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\NuGet.Versioning.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\OpenPop.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\RestSharp.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\RestSharp.Serializers.NewtonsoftJson.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\Speckle.Newtonsoft.Json.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.CodeDom.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.AttributedModel.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.Convention.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.Hosting.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.Runtime.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Composition.TypedParts.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Data.SqlClient.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Drawing.Common.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Memory.Data.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Reflection.MetadataLoadContext.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Runtime.Caching.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Security.Permissions.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\af\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ar\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\az\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\bg\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\bn-BD\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\da\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\el\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fa\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fi-FI\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr-BE\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\he\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\hr\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\hu\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\hy\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\id\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\is\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko-KR\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ku\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\lv\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ms-MY\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\mt\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\nb\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\nb-NO\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\nl\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ro\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\sk\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\sl\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\sr\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\sr-Latn\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\sv\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\th-TH\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\uk\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\vi\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-CN\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Humanizer.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-arm64\native\sni.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x64\native\sni.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win-x86\native\sni.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.AssemblyReference.cache
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.Adddtatabase.resources
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.Migrations.RenameTable.resources
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.GenerateResource.cache
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.AssemblyInfoInputs.cache
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.AssemblyInfo.cs
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.CoreCompileInputs.cache
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.MvcApplicationPartsAssemblyInfo.cs
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.MvcApplicationPartsAssemblyInfo.cache
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.RazorAssemblyInfo.cache
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.RazorAssemblyInfo.cs
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.sourcelink.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets.build.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets.development.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.WebApplication8.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.build.WebApplication8.props
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication8.props
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.WebApplication8.props
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\staticwebassets.pack.json
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\scopedcss\bundle\WebApplication8.styles.css
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.csproj.CopyComplete
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\refint\WebApplication8.dll
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.pdb
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\WebApplication8.genruntimeconfig.cache
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Release\net7.0\ref\WebApplication8.dll

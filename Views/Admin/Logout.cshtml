@@ -63,15 +63,19 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.Index</h5>
-                    <p>@ViewBag.dataMeta.IndexMeta</p>
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.Index</h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.IndexMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
                     <input id="Check_Index" type="checkbox" onclick="checkUncheck(event)" @(
-
-                        ViewBag.Checked.IndexMeta
-                         ? "checked" : ""
+                           ViewBag.Checked != null && ViewBag.Checked.IndexMeta ? "checked" : ""                                                         
                     ) />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
@@ -126,13 +130,19 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.liveagentsupport</h5>
-                    <p>@ViewBag.dataMeta.liveagentsupportMeta</p>
+                    <p style="color:red;">https://anantya.ai/live-agent-support</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.liveagentsupport</h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.liveagentsupportMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
 
-                    <input id="Check_live" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
+                    <input id="Check_live" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -186,12 +196,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.WhatsAppBroadcasting </h5>
-                    <p>@ViewBag.dataMeta.WhatsAppBroadcastingMeta</p>
+                    <p style="color:red;">https://anantya.ai/whatsapp-broadcasting</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsAppBroadcasting </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsAppBroadcastingMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_AppBroad" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsAppBroadcastingMeta ? "checked" : "") />
+                    <input id="Check_AppBroad" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsAppBroadcastingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -245,12 +261,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.ReportsAnalytics </h5>
-                    <p>@ViewBag.dataMeta.ReportsAnalyticsMeta</p>
+                    <p style="color:red;">https://anantya.ai/reports-and-analytics</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.ReportsAnalytics </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.ReportsAnalyticsMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Report" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.ReportsAnalyticsMeta ? "checked" : "") />
+                    <input id="Check_Report" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.ReportsAnalyticsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -304,12 +326,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
+                    <p style="color:red;">https://anantya.ai/automated-chatbot</p>
+                    @if (ViewBag.data != null)
+                    {
                     <h5 style="color:blue;">@ViewBag.data.AutomatedChatBot </h5>
-                    <p>@ViewBag.dataMeta.AutomatedChatBotMeta</p>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.AutomatedChatBotMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Auto" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.AutomatedChatBotMeta ? "checked" : "") />
+                    <input id="Check_Auto" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.AutomatedChatBotMeta ? "checked" : "" ) />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -363,12 +391,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.ConversationalMarketing </h5>
+                    <p style="color:red;">https://anantya.ai/conversational-marketing</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.ConversationalMarketing </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
                     <p>@ViewBag.dataMeta.ConversationalMarketingMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Conve" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.ConversationalMarketingMeta ? "checked" : "") />
+                    <input id="Check_Conve" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.ConversationalMarketingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -422,12 +456,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.AutoSegregation </h5>
-                    <p>@ViewBag.dataMeta.AutoSegregationMeta</p>
+                    <p style="color:red;">https://anantya.ai/auto-segregation</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.AutoSegregation </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.AutoSegregationMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Segrega" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.AutoSegregationMeta ? "checked" : "") />
+                    <input id="Check_Segrega" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.AutoSegregationMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -481,12 +521,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.AppMarketing </h5>
-                    <p>@ViewBag.dataMeta.AppMarketingMeta</p>
+                    <p style="color:red;">https://anantya.ai/app-marketing</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.AppMarketing </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.AppMarketingMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Marke" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.AppMarketingMeta ? "checked" : "") />
+                    <input id="Check_Marke" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.AppMarketingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -540,12 +586,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.WhatsAppMarketing </h5>
-                    <p>@ViewBag.dataMeta.WhatsAppMarketingMeta</p>
+                    <p style="color:red;">https://anantya.ai/whatsapp-marketing</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsAppMarketing </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsAppMarketingMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_AppMark" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsAppMarketingMeta ? "checked" : "") />
+                    <input id="Check_AppMark" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsAppMarketingMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -599,12 +651,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.WhatsappCommerce </h5>
-                    <p>@ViewBag.dataMeta.WhatsappCommerceMeta</p>
+                    <p style="color:red;">https://anantya.ai/whatsapp-commerce</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsappCommerce </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsappCommerceMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Commer" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsappCommerceMeta ? "checked" : "") />
+                    <input id="Check_Commer" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsappCommerceMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -658,12 +716,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.WhatsappSupport </h5>
-                    <p>@ViewBag.dataMeta.WhatsappSupportMeta</p>
+                    <p style="color:red;">https://anantya.ai/whatsapp-support</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsappSupport </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsappSupportMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_hatsap" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsappSupportMeta ? "checked" : "") />
+                    <input id="Check_hatsap" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsappSupportMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -717,12 +781,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.WhatsappAuthentication </h5>
-                    <p>@ViewBag.dataMeta.WhatsappAuthenticationMeta</p>
+                    <p style="color:red;">https://anantya.ai/whatsapp-authentication</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsappAuthentication </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsappAuthenticationMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Authen" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WhatsappAuthenticationMeta ? "checked" : "") />
+                    <input id="Check_Authen" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsappAuthenticationMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -776,12 +846,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
+                    <p style="color:red;">https://anantya.ai/ecommerce-industry</p>
+                    @if (ViewBag.data != null)
+                    {
                     <h5 style="color:blue;">@ViewBag.data.EcommerceRetail </h5>
-                    <p>@ViewBag.dataMeta.EcommerceRetailMeta</p>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.EcommerceRetailMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Retail" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.EcommerceRetailMeta ? "checked" : "") />
+                    <input id="Check_Retail" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.EcommerceRetailMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -835,12 +911,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
+                    <p style="color:red;">https://anantya.ai/healthcare-industry</p>
+                    @if (ViewBag.data != null)
+                    {
                     <h5 style="color:blue;">@ViewBag.data.Healthcare </h5>
-                    <p>@ViewBag.dataMeta.HealthcareMeta</p>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.HealthcareMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_care" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.HealthcareMeta ? "checked" : "") />
+                    <input id="Check_care" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.HealthcareMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -894,12 +976,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
+                    <p style="color:red;">https://anantya.ai/edtech-industry</p>
+                    @if (ViewBag.data != null)
+                    {
                     <h5 style="color:blue;">@ViewBag.data.EdTech </h5>
-                    <p>@ViewBag.dataMeta.EdTechMeta</p>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.EdTechMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_EdTech" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.EdTechMeta ? "checked" : "") />
+                    <input id="Check_EdTech" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.EdTechMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -953,12 +1041,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
+                    <p style="color:red;">https://anantya.ai/banking-industry</p>
+                    @if (ViewBag.data != null)
+                    {
                     <h5 style="color:blue;">@ViewBag.data.BankingBFSI </h5>
-                    <p>@ViewBag.dataMeta.BankingBFSIMeta</p>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.BankingBFSIMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_BFSI" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.BankingBFSIMeta ? "checked" : "") />
+                    <input id="Check_BFSI" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.BankingBFSIMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1012,12 +1106,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.Mediaentertainment </h5>
-                    <p>@ViewBag.dataMeta.MediaentertainmentMeta</p>
+                    <p style="color:red;">https://anantya.ai/media-entertainment-industry</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.Mediaentertainment </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.MediaentertainmentMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Media" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.MediaentertainmentMeta ? "checked" : "") />
+                    <input id="Check_Media" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.MediaentertainmentMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1071,12 +1171,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.FoodBeverage</h5>
-                    <p>@ViewBag.dataMeta.FoodBeverageMeta</p>
+                    <p style="color:red;">https://anantya.ai/food-and-beverage-industry</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.FoodBeverage</h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.FoodBeverageMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Food" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.FoodBeverageMeta ? "checked" : "") />
+                    <input id="Check_Food" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.FoodBeverageMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1130,12 +1236,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.TravelHospitality </h5>
-                    <p>@ViewBag.dataMeta.TravelHospitalityMeta</p>
+                    <p style="color:red;">https://anantya.ai/travel-and-hospitality-industry</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.TravelHospitality </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.TravelHospitalityMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Travel" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.TravelHospitalityMeta ? "checked" : "") />
+                    <input id="Check_Travel" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.TravelHospitalityMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1189,12 +1301,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.AboutUs </h5>
-                    <p>@ViewBag.dataMeta.AboutUsMeta</p>
+                    <p style="color:red;">https://anantya.ai/about</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.AboutUs </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.AboutUsMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_AboutUs" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
+                    <input id="Check_AboutUs" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1248,12 +1366,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.WorkWithUs </h5>
-                    <p>@ViewBag.dataMeta.WorkWithUsMeta</p>
+                    <p style="color:red;">https://anantya.ai/work-with-us</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WorkWithUs </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.WorkWithUsMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_WithUs" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.WorkWithUsMeta ? "checked" : "") />
+                    <input id="Check_WithUs" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WorkWithUsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1307,12 +1431,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.PartnerWithUs </h5>
-                    <p>@ViewBag.dataMeta.PartnerWithUsMeta</p>
+                    <p style="color:red;">https://anantya.ai/partner-with-us</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.PartnerWithUs </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.PartnerWithUsMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Partner" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.PartnerWithUsMeta ? "checked" : "") />
+                    <input id="Check_Partner" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.PartnerWithUsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1366,12 +1496,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.Blog </h5>
-                    <p>@ViewBag.dataMeta.BlogMeta</p>
+                    <p style="color:red;">https://anantya.ai/blog</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.Blog </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.BlogMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Blog" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.BlogMeta ? "checked" : "") />
+                    <input id="Check_Blog" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.BlogMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1425,12 +1561,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
+                    <p style="color:red;">https://anantya.ai/contact</p>
+                    @if (ViewBag.data != null)
+                    {
                     <h5 style="color:blue;">@ViewBag.data.ContactUs </h5>
-                    <p>@ViewBag.dataMeta.ContactUsMeta</p>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.ContactUsMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Contact" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.ContactUsMeta ? "checked" : "") />
+                    <input id="Check_Contact" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.ContactUsMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>
@@ -1484,12 +1626,18 @@
             </div>
             <div class="col-sm-8">
                 <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
-                    <p style="color:red;">www.hhtpuhufehuhhh/joi/.com</p>
-                    <h5 style="color:blue;">@ViewBag.data.KnowledgeCenter </h5>
-                    <p>@ViewBag.dataMeta.KnowledgeCenterMeta</p>
+                    <p style="color:red;">https://anantya.ai/knowledge-center</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.KnowledgeCenter </h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.KnowledgeCenterMeta</p>
+                    }
                 </div>
                 <div style="margin-top:1.5vh">
-                    <input id="Check_Center" type="checkbox" onclick="checkUncheck(event)" @((bool)ViewBag.Checked.KnowledgeCenterMeta ? "checked" : "") />
+                    <input id="Check_Center" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.KnowledgeCenterMeta ? "checked" : "") />
                     <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
                 </div>
             </div>

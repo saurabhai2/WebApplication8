@@ -1,0 +1,77 @@
+﻿@model WebApplication8.Models.KnowlageCentre;
+@{
+    ViewData["Title"] = Model.Title;
+    ViewData["Meta"] = Model.Meta;
+    ViewData["Schema"] = Model.Schema;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+
+<section class="text-white"
+         style="background: linear-gradient(to left bottom, rgb(245, 193, 22), rgb(238, 86, 60));">
+    <div class="py-5 text-center">
+        <div class="row py-md-5 py-0 justify-content-center">
+            <ul class=" mx-2 p-2">
+                <!-- <li><a href="https://www.interakt.shop"><i class="fas fa-home"></i> Home</a></li> -->
+                <li class="main_link1 resource_link1">
+                    <a href="knowledge-center.html">
+                        <h1 class="font-weight-bold text-white"> Resources</h1>
+                    </a>
+                </li>
+
+                <li> &nbsp; &nbsp;/ Getting Started with Anantya.ai: Account Setup and Features Guide"</li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="container-fluid px-md-5 px-4 row  mx-auto py-5 mt-md-4">
+    <div class=" col-lg-4 col-md-4 col-sm-12 slices-aside pb-md-0 pb-4">
+        <aside id="slices" class="slices-aside sticky-box">
+            <div class="sidebar-item-category ">
+                <div class="title p-2">
+                    <h4>
+                        <strong>1.@Model.Category</strong>
+                    </h4>
+                </div>
+                <div class="sidebar-info specific-section ">
+                    <ul>
+                        @foreach (var item in ViewBag.HeadData)
+                        {
+                        <li>
+                                <a href="@Url.Action("KnowlageCentres", "Post" ,new{UrlCentre=@item.SlugUrl})">
+                                    @item.MainHeading
+                            </a>
+                        </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            
+        </aside>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12">
+
+        <h1 class="font-weight pb-2 font-weight-bold" style="font-size: 32px;">
+            <strong>
+                @Model.MainHeading <br>
+            </strong>Step-by-Step
+            Guide
+        </h1>
+
+
+        <div class="blogcontentui">
+            <div class="blogBox text-justify">
+                <section itemprop="”articleBody”" class="entry-content">
+                    @Html.Raw(Model.Content)
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

@@ -1,4 +1,7 @@
-﻿
+﻿@{
+    
+    // Use currentUrl as needed
+}
 <!DOCTYPE html>
 
 <html>
@@ -6,19 +9,18 @@
     <meta name="viewport" content="width=device-width" />
     
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/icofont.min.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
     <link href="~/css/aos.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
     <link href="~/css/responsive.css" rel="stylesheet" />
-    <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="~/image/favicon.webp" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <link rel="shortcut icon" href="~/image/favicon.webp" type="image/x-icon">
+   
    
     
     
@@ -47,10 +49,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:description"
           content="@ViewBag.Meta" />
-    <meta property="og:url" content="https://anantya.ai/" />
+    <meta property="og:url" content="@ViewBag.currentUrl"  />
     <meta property="og:site_name" content="anantya.ai" />
     <meta property="og:image" content="https://anantya.ai/image/main-page-graphics.webp" />
-    <link rel="canonical" href="https://anantya.ai/" />
+    <link rel="canonical" href="@ViewBag.currentUrl" />
     <meta name="author" content="Anantya">
 
     <script type="application/ld+json">
@@ -74,27 +76,22 @@
         </div>
         @if (@ViewBag.Index == 0)
         {
-            <div id="header-top11" class="header-top ">
+            <div id="header-top11" class="header-top d-sm-none d-md-block d-none d-lg-block">
                 <div class="headline text-center">
-                Unleash infinite possibilities with <a href="https://anantya.ai/"
-                                                       class="link-header">
-                    Anantya.ai, <span>
-                        <sup>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-whatsapp mt-2" viewBox="0 0 16 16">
-                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
-                            </svg>
-                        </sup>
+                    Connect with customers globally, online or offline, through swift and
+                    personalized bulk SMS solutions. <span>
+                        &nbsp; <a href="https://telkosh.com/" type="button" class="head_button" target="_blank">Explore Now</a>
                     </span>
-                </a> an industry-first generative AI-powered platform!
+                </div>
+                <div id="225" class="close-button" onclick="Recat()">&#10006;</div>
             </div>
-            <div id="225" class="close-button" onclick="Recat()">&#10006;</div>
-        </div> }
+        }
         <header>
 
             <div class="container px-md-0 px-2">
 
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="@Url.Action("Index","Home")">
                         <img src="~/image/logo.webp" class="img-fluid" alt="logo-image">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -192,7 +189,7 @@
                             </li>
 
                             <li class="nav-item has_dropdown">
-                                <a class="nav-link" href="#Resources">Resources</a>
+                                <a class="nav-link" href="">Resources</a>
                                 <span class="drp_btn"><i class="icofont-rounded-down"></i></span>
                                 <div class="sub_menu">
                                     <ul>
@@ -359,12 +356,12 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog  modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title title_Demo text-center ml-auto font-weight-bold" id="exampleModalLabel">
-                            Request a
-                            Demo
+                            Start Your Free trial
+
                         </h3>
 
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -374,23 +371,17 @@
                     <div class="modal-body">
                         <section class="v5-sidehugform " id="sidehugForm">
 
-                            <p class="subheading text-center">
-                                It’s <b>easier</b> and <b>faster</b> - a single platform that addresses
-                                all your
-                                conversational messaging needs.
-                            </p>
-                            <div class="wrapper img-top row">
-                                <div class="img-wrapper col-md-6 col-12 text-center my-auto d-sm-none d-md-block d-none d-lg-block">
-                                    <img src="~/image/ABCD-Shopping.webp" class="img-fluid w-50" alt="modal-image">
-                                </div>
+                            <!-- <p class="subheading text-center">Everything you need to grow your business on WhatsApp</p> -->
+                            <div class="wrapper img-top row py-4">
 
-                                <div class="form-wrapper col-md-6 col-12 px-4">
+                                <div class="form-wrapper col-md-6 col-12 my-auto px-4">
                                     <section class="styles-module_wrapper__znzC7">
-                                        <div class="styles-module_SalesforceForm__lpL7s customClass SalesforceForm" id="">
+                                        <div class="styles-module_SalesforceForm__lpL7s customClass SalesforceForm px-4" id="">
+                                            <h4 class="subheading text-center pb-3"> <b>Everything you need to grow your business  on whatsApp</b></h4>
+                                            <p class=" text-center">Get ready to see how Anantya.ai can help your business to engage your customers on WhatsApp.</p>
 
-
-                                            <div class="form-group field field-object text-left">
-                                                <form action="~/ContactUs1/SignUp" method="POST">
+                                            <div class="form-group field field-object text-left d-none">
+                                                <form action="https://formspree.io/f/mdorezev" method="POST">
 
                                                     <label class="control-label text-left" for="name">
                                                         Your Name<span class="required">*</span>
@@ -401,14 +392,18 @@
                                                     <label class="control-label text-left" for="name">
                                                         Business Email<span class="required">*</span>
                                                     </label>
-                                                    <input type="email" name="email" class="form-control" id="email" placeholder=" Enter Your business email">
+                                                    <input type="email" name="email" class="form-control" id="email"
+                                                           placeholder=" Enter Your business email">
 
                                                     <label class="control-label text-left" for="name">
                                                         Company Name<span class="required">*</span>
                                                     </label>
-                                                    <input type="text" name="company" class="form-control" id="company" placeholder="Enter your company name">
+                                                    <input type="text" name="company" class="form-control" id="company"
+                                                           placeholder="Enter your company name">
 
-                                                    <label class="control-label" for="root_00N5g00000OZ5f1">Country<span class="required">*</span></label>
+                                                    <label class="control-label" for="root_00N5g00000OZ5f1">
+                                                        Country<span class="required">*</span>
+                                                    </label>
                                                     <input type="text" id="root_00N5g00000OZ5f1" class="form-control" name="country" id="country"
                                                            placeholder="Enter your Country name">
 
@@ -425,9 +420,23 @@
                                                 </form>
 
                                             </div>
+                                            <form class="pb-4 pt-2">
+                                                <div class="user-box text-center  row px-5 my-auto ">
+                                                    <input data-id="LoginPage_TeamId" id="LoginPage_TeamId" class="form-control form-control-lg col-9 w-75"
+                                                           data-minlength="5" type="text" required="required" placeholder=" my company" onChange="validtxt()">
+                                                    <span class="col-3 ml-0  my-auto"><strong>.anantya.ai</strong></span>
+                                                    <p class="mx-auto pt-3" style="color:#ee5639;">  xyz.anantya.ai</p>
+                                                </div>
+                                                <!-- <p>Forgot Account Name?</p> -->
+                                                <a type="button" class="login_button nav-link w-25 mx-auto p-2 " href="#" title="Proceed" target="_blank"
+                                                   onclick="proceed()" style="border-width:1px;">Proceed</a>
+                                            </form>
 
                                         </div>
                                     </section>
+                                </div>
+                                <div class="img-wrapper col-md-6 col-12 text-center pr-5 my-auto d-sm-none d-md-block d-none d-lg-block">
+                                    <img src="image/freetrial-2.webp" class="img-fluid w-75" alt="modal-image">
                                 </div>
                             </div>
                         </section>
@@ -483,6 +492,131 @@
         </div>
         <!-- login popup -->
         <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title title_Demo  ml-auto font-weight-bold" id="exampleModalLabel">
+                            Interested in Working With Us?
+                        </h3>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <section class="v5-sidehugform " id="sidehugForm">
+
+
+
+                            <div class="wrapper img-top ">
+
+                                <div class="form-wrapper  col-12 pr-5">
+                                    <section class="styles-module_wrapper__znzC7">
+                                        <div class="styles-module_SalesforceForm__lpL7s customClass SalesforceForm"
+                                             id="">
+                                            <form class="rjsf" id="firstscroll_modalform_requestademo" novalidate="">
+                                                <div class="panel panel-danger errors">
+                                                    <div class="panel-heading">
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group field field-object">
+                                                    <fieldset id="root">
+                                                        <div class="form-group field field-string field-error has-error has-danger last_name">
+                                                            <label class="control-label text-left"
+                                                                   for="root_last_name">
+                                                                Your
+                                                                Name<span class="required">*</span>
+                                                            </label><input class="form-control" id="root_last_name"
+                                                                           label="Your Name" required=""
+                                                                           placeholder="Enter your name" type="text" value="">
+                                                            <div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group field field-number field-error has-error has-danger mobile">
+                                                            <label class="control-label text-left"
+                                                                   for="root_phone">
+                                                                Phone No<span class="required">*</span>
+                                                            </label><input class="form-control" id="root_phone" label="Phone No"
+                                                                           required="" placeholder="Enter your phone number"
+                                                                           type="tel" value="">
+                                                            <div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group field field-string field-error has-error has-danger email">
+                                                            <label class="control-label text-left" for="root_email">
+                                                                Email<span class="required">*</span>
+                                                            </label><input class="form-control" id="root_email"
+                                                                           label="Business Email" required=""
+                                                                           placeholder="Enter your  email" type="email" value="">
+                                                            <div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group field field-string field-error has-error has-danger country">
+                                                            <label class="control-label"
+                                                                   for="root_00N5g00000OZ5f1">
+                                                                Country<span class="required">*</span>
+                                                            </label><select id="root_00N5g00000OZ5f1" class="form-control"
+                                                                            required="">
+                                                                <option value="">Select</option>
+                                                                <option value="Afghanistan">Afghanistan</option>
+                                                                <option value="Aland Islands">Aland Islands</option>
+                                                                <option value="Albania">Albania</option>
+                                                                <option value="Algeria">Algeria</option>
+                                                                <option value="American Samoa">American Samoa</option>
+                                                            </select>
+                                                            <div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group field field-string field-error has-error has-danger country">
+                                                            <label class="control-label text-left"
+                                                                   for="root_last_name">
+                                                                Job Position:<span class="required">*</span>
+                                                            </label><input class="form-control" id="root_last_name"
+                                                                           label="Your Name" required="" placeholder="" type="text"
+                                                                           value="" required>
+                                                            <div>
+                                                                <div>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+
+
+
+
+                                                                <label class="pt-3" for="cv">Upload CV:</label>
+                                                                <input type="file" id="cv" name="cv"
+                                                                       accept=".pdf,.doc,.docx" required>
+
+
+                                                            </div>
+
+
+
+                                                            <div class="text-center">
+                                                                <button class="login_button mt-2 px-2">Submit</button>
+
+                                                            </div>
+
+
+                                                    </fieldset>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
     <script src="~/js/jquery.js"></script>
     <script src="~/js/owl.carousel.min.js"></script>
@@ -497,22 +631,10 @@
     <script type="text/javascript" src= @srcs
             integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"></script>
+    
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/64c0e2f1cc26a871b02b4f67/1h68nd145';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
+    
    
     
     <!--End of Tawk.to Script-->
