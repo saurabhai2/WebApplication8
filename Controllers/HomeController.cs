@@ -6,6 +6,7 @@ using System.Text.Json;
 using System.Threading.Tasks.Dataflow;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace WebApplication8.Controllers
 {
@@ -24,11 +25,13 @@ namespace WebApplication8.Controllers
         }
 
         [Route("/")]
-        public IActionResult Index(string Ref)
+        public IActionResult Index(string Ref, AffiliateUser affiliateUser)
         {
             if (Ref != null)
             {
-                HttpContext.Session.SetString("ref", Ref);
+                affiliateUser.User = Ref;
+                _context.AffiliateUser.Add(affiliateUser);
+                _context.SaveChanges();
             }
             var data = _context.AdminTittle.ToList();
             if (data.FirstOrDefault()?.Index != null)
@@ -57,6 +60,7 @@ namespace WebApplication8.Controllers
             return View();
 
         }
+        
 
         [Route("/live-agent-support")]
         public IActionResult liveagentsupport()
@@ -708,7 +712,7 @@ namespace WebApplication8.Controllers
         [Route("/contact")]
         public IActionResult ContactUs()
         {
-            ViewBag.Ref = HttpContext.Session.GetInt32("ref");
+           
             var data = _context.AdminTittle.ToList();
             if (data.FirstOrDefault()?.ContactUs != null)
             {
@@ -763,6 +767,47 @@ namespace WebApplication8.Controllers
 
             ViewBag.Support = _context.KnowlageCentre.Select(x => new { Category = x.Category, Heading = x.CetegoryLine }).Distinct().ToList();
             ViewBag.currentUrl = HttpContext.Request.Path;
+            return View();
+        }
+
+        [Route("/Affiliate-Program")]
+        public IActionResult AffiliateProgram()
+        {
+            /* var data = _context.AdminTittle.ToList();
+             if (data.FirstOrDefault()?.KnowledgeCenter != null)
+             {
+                 ViewBag.Title = data.FirstOrDefault()?.KnowledgeCenter;
+             }
+             var dataMeta = _context.Metatag.ToList();
+             if (dataMeta.FirstOrDefault()?.KnowledgeCenterMeta != null)
+             {
+                 ViewBag.Meta = dataMeta.FirstOrDefault()?.KnowledgeCenterMeta;
+             }
+             var dataCheck = _context.MetatagCheck.ToList();
+             if (dataMeta.FirstOrDefault()?.KnowledgeCenterMeta != null)
+             {
+                 ViewBag.Check = dataCheck.FirstOrDefault()?.KnowledgeCenterMeta;
+             }
+             var dataSchema = _context.MetatagSchema.ToList();
+             if (dataSchema.FirstOrDefault()?.KnowledgeCenterMeta != null)
+             {
+                 string? jsonString = dataSchema.FirstOrDefault()?.KnowledgeCenterMeta;
+                 ViewBag.Schema = JsonSerializer.Deserialize<dynamic>(jsonString);
+
+             }
+            
+             ViewBag.Support = _context.KnowlageCentre.Select(x => new { Category = x.Category, Heading = x.CetegoryLine }).Distinct().ToList();
+             ViewBag.currentUrl = HttpContext.Request.Path;*/
+
+
+            // Pass the value to the view
+            if (TempData["Affiliate"] != null)
+            {
+                var Ref = TempData["Affiliate"].ToString();
+                ViewBag.Affiliate = "https://anantya.ai/?Ref=" + Ref;
+                // Use the received value
+            }                                      // You can also fetch data from the database or any other source here
+
             return View();
         }
 

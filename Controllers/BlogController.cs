@@ -19,8 +19,6 @@ namespace WebApplication8.Controllers
 
         }
 
-        
-
         public async Task<IActionResult> SaveImage1Async(IFormFile file)
         {
             string filepath = "./wwwroot";

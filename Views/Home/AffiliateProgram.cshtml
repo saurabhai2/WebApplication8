@@ -1,0 +1,258 @@
+﻿@model WebApplication8.Models.Affiliate;
+@{
+    ViewData["Title"] = "AffiliateProgram";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="container py-3">
+        <div class="row py-3">
+            <div class="col-md-6 col-sm-12 my-auto">
+                <span style="letter-spacing: .2rem; padding-left: 0.5rem; color: #4a4a56!important;">
+                    AFFILIATE
+                    PROGRAM
+                </span>
+                <h2 class="Affiliate_heading pt-4">
+                    Drive Clicks, Earn Revenue: Join Our
+                    <span class="highlight   text-center py-1">
+                        Affiliate
+                    </span> Program
+                </h2>
+                <h4 class="partner_subheading">
+                    Our program is designed to reward you for promoting our products/services and
+                    driving sales through your unique referral links.
+                </h4>
+
+
+                <p>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                            <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z"
+                                  fill="currentColor"></path>
+                        </svg> &nbsp;Free membership
+                    </span>
+
+                </p>
+                <p>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                            <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z"
+                                  fill="currentColor"></path>
+                        </svg> &nbsp;Easy money withdrawal
+                    </span>
+                </p>
+                <section class="container py-4 text-center">
+                    <div class="text-black py-2 mx-md-0 mx-4 py-2 p-5" style="border-radius: 25px;
+                        border: 1px solid #ccc;background-color: #f5c11629;">
+                        <h6 class="text-center text">This is Your Referral Link:</h6>
+                        <input type="text" value="@ViewBag.Affiliate" class="form-control w-75 my-4" id="ref_link" disabled>
+
+                        <button onclick="copyTextToClipboard()" class="login_button">Copy link</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6 col-sm-12 px-5">
+                <form action="Affiliate/GenerateAffiliate" class="px-5 Affilate-form" method="POST" id="Affilate-form">
+                    <h3 class="primary_color text-center">Apply now to become <br> a Partner</h3>
+                    <label for="inputsubject"></label>
+                    <input type="text" name="Name" class="form-control" id="" placeholder="Name*" required>
+                    <label for="inputsubject"></label>
+                    <input type="email" name="email" class="form-control" id="" placeholder="Work Email id*" required>
+                    <label for="phone"></label>
+                    <input type="text" name="phone" class="form-control" id="" placeholder="Whatsapp Number*" required>
+                    <label for="inputsubject"></label>
+                    <input type="text" name="country" class="form-control" id="" placeholder="Country Name" required>
+                    <label for="inputsubject"></label>
+                    <input type="text" name="Designation*" class="form-control" id="" placeholder="Designation*" required>
+                    <label for="inputsubject"></label>
+                    <input type="text" name="company" class="form-control" id="" placeholder="Company Name*" required>
+                    <div class="mt-3 text-center">
+                        <input type="submit" class="px-5 py-2 button_partner" value="Sign Up" data-toggle="modal" data-target="#exampleModal">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container text-center py-5 px-md-0 px-4">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="" data-aos-delay="">
+            <h2>How It <span> Works</span> </h2>
+        </div>
+        <h2 class="font-weight-bold"></h2>
+        <div class="row row-cols-1 row-cols-md-5 g-4 py-md-5 py-0 ">
+            <div class="col p-0">
+                <div class=" h-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                         class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z" />
+                    </svg>
+                    <h4 class="pt-2">
+                        Get a link
+                    </h4>
+                    <p class="">Complete our easy application. Generate the link from our website only </p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center ">
+                <img src="image/arrow-right-1.svg" class="img-fluid w-75 d-sm-none d-md-block d-none d-lg-block"
+                     alt="arrow">
+            </div>
+            <div class="col  mt-md-0 mt-3 p-0">
+                <div class=" h-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                         class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
+                    </svg>
+                    <h4 class="pt-2">
+                        Promote products
+                    </h4>
+                    <p class="">Start sharing your links and promoting our products/services to your audience.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+                <img src="image/arrow-right-2.svg" class="img-fluid w-75 d-sm-none d-md-block d-none d-lg-block"
+                     alt="arrow">
+            </div>
+            <div class="col  mt-md-0 mt-3 p-0">
+                <div class=" h-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                         class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
+                    </svg>
+                    <h4 class="pt-2">
+                        Earn revenue
+                    </h4>
+                    <p class="">Earn commissions on every qualified sale made through your referral links.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container text-center py-5 px-md-0 px-4">
+        <h2 class="font-weight-bold"></h2>
+        <div class="section_title" data-aos="fade-up" data-aos-duration="" data-aos-delay="">
+
+            <h2> Who we <span> partner </span> with </h2>
+        </div>
+        <div class="row py-5">
+            <div class="col-md-6 col-sm-12 col-12">
+
+                <h2 class="font-weight-bold text-left">
+                    Some typical Affiliate partners include:
+                </h2>
+                <ul class="bullet-points mb-4 mt-4 text-justify">
+                    <li>
+
+                        <span>✔️&nbsp; </span><span>
+                            Bloggers
+                        </span>
+                    </li>
+                    <li>
+
+                        <span>✔️&nbsp; </span> <span> Influencers</span>
+                    </li>
+                    <li>
+
+                        <span>✔️&nbsp; </span> <span>
+                            Website Owners
+                        </span>
+                    </li>
+                    <li>
+
+                        <span>✔️&nbsp; </span> <span>
+                            Social Media Marketers
+
+                        </span>
+                    </li>
+                    <li>
+
+                        <span>✔️&nbsp; </span> <span>
+                            Anyone with an audience interested in our niche!
+
+                        </span>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="image/dashboard.webp" class="img-fluid" alt="dashboard">
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<svg width="1440" height="36" viewBox="0 0 1440 36" class="u-block" xmlns="http://www.w3.org/2000/svg"
+     style="width: 100%; height: auto;">
+    <rect width="100%" height="100%" fill="#fff"></rect>
+    <path d="M1440 36V8.2s-105.6-1.2-160.7-6a877 877 0 00-150.5 2.5c-42.1 3.9-140 15-223 15C754 19.6 700.3 6.8 548.8 7c-143.7 0-273.4 11.5-350 12.6-76.6 1.2-198.8 0-198.8 0V36h1440z"
+          fill="#f5c11629"></path>
+</svg>
+<section style="background-color: #f5c11629;">
+    <div class="container py-2">
+        <div class="row ">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="image/partner-with-anantya.ai.webp" class="img-fluid" alt="dashboard">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 my-auto">
+                <h4>
+                    "Partnering with Anantya.AI has been a game-changer for our revenue. Beyond that, it's been a fantastic
+                    journey
+                    discovering new marketing opportunities together and getting outstanding support. It's been a real boost
+                    for
+                    our business!"
+                </h4>
+                <h5 class="pt-4">Harpreet Sokhi</h5>
+                <strong>COO at telKosh Global Communications</strong>
+
+
+            </div>
+
+        </div>
+
+</section>
+<svg width="100%" height="36" viewBox="0 0 1440 36" class="u-block" xmlns="http://www.w3.org/2000/svg"
+     style="width: 100%;height: auto;">
+    <rect width="1440" height="100%" fill="#f5c11629">
+    </rect>
+    <path d="M1440 36V8.2s-105.6-1.2-160.7-6a877 877 0 00-150.5 2.5c-42.1 3.9-140 15-223 15C754 19.6 700.3 6.8 548.8 7c-143.7 0-273.4 11.5-350 12.6-76.6 1.2-198.8 0-198.8 0V36h1440z"
+          fill="white"></path>
+</svg>
+  </div>
+<!-- Affiliate Program Today -->
+<section class="container py-5">
+    <div class="text-black py-2 mx-md-0 mx-4 py-2 p-4" style="border-radius: 25px;
+    border: 1px solid #ccc;background-color: #f5c11629; border-radius: 15px;">
+        <div class="row my-auto py-md-4 py-2 px-md-0 px-0 mx-md-5 mx-0">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-capitalize  my-auto text-center">
+                <h2 class="font-weight-bold">Join Our <span class="highlight"> Affiliate</span> Program Today </h2>
+                <a type="button" class="button_partner  text-capitalize my-3" href="#Affilate-form">Let's team up</a>
+
+                <p>
+                    <span class="u-inline-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                            <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z"
+                                  fill="currentColor"></path>
+                        </svg> &nbsp;Free membership
+                    </span>
+                    <span class="pl-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                            <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z"
+                                  fill="currentColor"></path>
+                        </svg> &nbsp;Easy money withdrawal
+                    </span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Affiliate Program Today -->
+<!-- REFFERAL LINK -->
+
+<!-- REFFERAL LINK -->
+

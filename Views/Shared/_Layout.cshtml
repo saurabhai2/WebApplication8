@@ -106,13 +106,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <!-- secondery menu start -->
-                            <!-- <li class="nav-item has_dropdown">
-                              <a class="nav-link" href="index.html">Home</a>
-
-                            </li> -->
-                            <!-- secondery menu end -->
-
+                           
                             <li class="nav-item has_dropdown">
                                 <a class="nav-link" href="">Platform</a>
                                 <span class="drp_btn"><i class="icofont-rounded-down"></i></span>
@@ -126,8 +120,6 @@
                                             <li>@Html.ActionLink("Automated ChatBot","AutomatedChatBot","Home",new{})</li>
                                             <li>@Html.ActionLink("Conversational Marketing","ConversationalMarketing","Home",new{})</li>
                                             <li>@Html.ActionLink("Auto-Segregation","AutoSegregation","Home",new{})</li>
-
-
                                         </ul>
                                     </div>
                                     <div class="col-md-6 col-sm-12 p-0">
@@ -182,7 +174,7 @@
                                     <ul>
                                         <li>@Html.ActionLink("About Us","AboutUs","Home",new{})</li>
                                         <li>@Html.ActionLink("Work With Us","WorkWithUs","Home",new{})</li>
-                                        <li>@Html.ActionLink("Partner With Us","PartnerWithUs","Home",new{})</li>
+                                        
                                         <!-- <li><a href="testimonial.html">Testimonial</a></li> -->
                                     </ul>
                                 </div>
@@ -201,14 +193,14 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li class="nav-item mr-md-5  pr-md-5 mr-0 pr-0">
+                                 @Html.ActionLink("Partner", "PartnerWithUs", "Home", new { })
+                            </li>
                             <li class="nav-item mx-md-3 mx-0">
 
 
                                 <a class="login_button nav-link" data-toggle="modal" title="login" target="_blank"
                                    style="border-width:1px;" data-target="#exampleModalLong">Login</a>
-
-
-
                             </li>
                             <!-- <li class="nav-item ml-2">
                               <a class="signup_button  nav-link" href="#login" title="Get In Touch" style="border-width:1px;">Signup</a>

@@ -39,7 +39,11 @@
                         var Title = "";
                         if (item.Title.Length > 50)
                         {
-                             Title = item.Title.Substring(0, 50);
+                            Title = item.Title.Substring(0, 50);
+                        }
+                        else
+                        {
+                            Title = item.Title;
                         }
                     }
                     @Html.DisplayFor(modelItem => Title)

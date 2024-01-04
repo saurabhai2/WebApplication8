@@ -817,6 +817,14 @@
       "PackagePath": "staticwebassets\\image\\ai.png"
     },
     {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\arrow-right-1.svg",
+      "PackagePath": "staticwebassets\\image\\arrow-right-1.svg"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\arrow-right-2.svg",
+      "PackagePath": "staticwebassets\\image\\arrow-right-2.svg"
+    },
+    {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\arrow.png",
       "PackagePath": "staticwebassets\\image\\arrow.png"
     },
@@ -949,6 +957,10 @@
       "PackagePath": "staticwebassets\\image\\dashboard.webp"
     },
     {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\draw-arrow6.avif",
+      "PackagePath": "staticwebassets\\image\\draw-arrow6.avif"
+    },
+    {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\e-commerce.webp",
       "PackagePath": "staticwebassets\\image\\e-commerce.webp"
     },
@@ -1019,6 +1031,10 @@
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\gitex-2.jpeg",
       "PackagePath": "staticwebassets\\image\\gitex-2.jpeg"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\gitexblog (1).jpeg",
+      "PackagePath": "staticwebassets\\image\\gitexblog (1).jpeg"
     },
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\gitexblog.jpeg",
@@ -1095,6 +1111,10 @@
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\label-report.webp",
       "PackagePath": "staticwebassets\\image\\label-report.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\let’s-grow-together-home.webp",
+      "PackagePath": "staticwebassets\\image\\let’s-grow-together-home.webp"
     },
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\linkdin.png",
@@ -1199,6 +1219,10 @@
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\panel.png",
       "PackagePath": "staticwebassets\\image\\panel.png"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\partner-with-anantya.ai.webp",
+      "PackagePath": "staticwebassets\\image\\partner-with-anantya.ai.webp"
     },
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\pick-up-chat.webp",
@@ -1319,6 +1343,46 @@
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\udyan.webp",
       "PackagePath": "staticwebassets\\image\\udyan.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\aL-madina.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\aL-madina.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\al-insan.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\al-insan.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\amokil.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\amokil.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\foxme.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\foxme.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\ivy-SMS.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\ivy-SMS.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\kin-marche.jpg",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\kin-marche.jpg"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\micris.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\micris.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\north-star.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\north-star.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\staywell-.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\staywell-.webp"
+    },
+    {
+      "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\updated-logo\\tijwaal.webp",
+      "PackagePath": "staticwebassets\\image\\updated-logo\\tijwaal.webp"
     },
     {
       "Id": "D:\\Sourbh Data Backup\\Downloads\\WebApplication8\\wwwroot\\image\\validate-and-review-contacts.webp",

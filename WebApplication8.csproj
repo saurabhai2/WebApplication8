@@ -341,8 +341,4 @@
     <None Include="wwwroot\js\owl.carousel.min.js" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\Templates\" />
-  </ItemGroup>
-
 </Project>

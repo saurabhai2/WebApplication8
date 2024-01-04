@@ -1,4 +1,4 @@
-﻿@model WebApplication8.Models.AdminTittle
+﻿@model IEnumerable<WebApplication8.Models.Affiliate>
 
 @{
     ViewData["Title"] = "Affiliate Market";
@@ -6,4 +6,66 @@
     ViewData["heading"] = "Affiliate Market";
    
 }
+
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:10vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
+    <a>@Html.ActionLink("White Label", "PatnerwithUs", "Admin", new { r = @ViewBag.Number })</a>
+</p>
+
+<p style="border:1px solid green ; border-radius:2px 2px 2px 2px;width:10vw;padding:0.5vw;background:#fff;text-align:center;display:inline-block">
+    <a>@Html.ActionLink("Solution", "PatnerwithUs", "Admin", new { r = @ViewBag.Number })</a>
+</p>
+
+<table class="table" style="background:#fff">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Affiliates)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var N = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @N
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.phone)
+                </td>
+                <td>
+                    https://anantya.ai/?Ref=@Html.DisplayFor(modelItem => item.Affiliates)
+                </td>
+
+
+            </tr>
+            N++;
+        }
+    </tbody>
+</table>
+
 

@@ -1,6 +1,36 @@
 // Open Sub Menu
 
+function copyTextToClipboard()
+{
+    var Value = document.getElementById("ref_link").value;
+    
 
+    // Set the textarea value to the input value
+    navigator.clipboard.writeText(Value);
+
+}
+
+function submitForm()
+{
+    // Get the form data
+    var formData = new FormData(document.getElementById("Affilate-form"));
+
+    // Perform a POST request using Fetch API or XMLHttpRequest
+    fetch('Affiliate/GenerateAffiliate', {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.text())
+        .then(data => {
+            // Open a pop-up window displaying the received value
+            var popup = window.open('', '_blank', 'width=300,height=200');
+            popup.document.write('<html><head><title>Popup</title></head><body>');
+            popup.document.write('<p>Received value: ' + data + '</p>'); // Display received value
+            popup.document.write('</body></html>');
+        });
+
+    return false; // Prevent the default form submission
+}
 function SendData(event) {
 
     var currentTargetId = event.currentTarget.id

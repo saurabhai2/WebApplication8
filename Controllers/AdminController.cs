@@ -95,21 +95,17 @@ namespace WebApplication8.Controllers
 
         public IActionResult Tittle(int r)
         {
-
             var number = HttpContext.Session.GetInt32("Token");
             ViewBag.Number = @number;
             if (r == @number)
             {
-                var data = _context.AdminTittle.FirstOrDefault(item => item.Id == 1);
-
-
-                return View(data);
+                List<Affiliate> Affiliate = _context.Affiliate.ToList();
+                return View(Affiliate);
             }
             else
             {
                 return RedirectToAction("Admin");
             }
-
         }
 
         public IActionResult Inbox(int r)
@@ -164,7 +160,6 @@ namespace WebApplication8.Controllers
 
         public IActionResult Logout(int r) 
         {
-
             var number = HttpContext.Session.GetInt32("Token");
             ViewBag.Number = @number;
             if (r == @number)
@@ -188,9 +183,8 @@ namespace WebApplication8.Controllers
 
             var number = HttpContext.Session.GetInt32("Token");
             ViewBag.Number = @number;
-            if (r == @number)
+            if(r == @number)
             {
-               
                 return View();
             }
             else
@@ -217,7 +211,6 @@ namespace WebApplication8.Controllers
 
         public IActionResult EditKnowlage(int r)
         {
-
             var number = HttpContext.Session.GetInt32("Token");
             ViewBag.Number = @number;
             if (r == @number)
@@ -231,7 +224,7 @@ namespace WebApplication8.Controllers
             }
         }
 
-        public IActionResult Editblogs(int r , int Id)
+        public IActionResult Editblogs(int r,int Id)
         {
 
             var number = HttpContext.Session.GetInt32("Token");
@@ -264,16 +257,14 @@ namespace WebApplication8.Controllers
         }
 
         public IActionResult Logout1(int r)
-        {            
-                return RedirectToAction("Admin");
-            
+        {
+            return RedirectToAction("Admin");
+
         }
 
-        public IActionResult EmailVarification() 
+        public IActionResult EmailVarification()
         {
             return View();
         }
-
-        
-    } 
+    }
 }

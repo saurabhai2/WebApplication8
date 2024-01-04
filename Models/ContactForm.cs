@@ -13,7 +13,7 @@ namespace WebApplication8.Models
 
         public string url { get; set; }
 
-        public string RefNumber { get; set; }
+       
 
     }
 

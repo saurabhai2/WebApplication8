@@ -372,7 +372,7 @@ namespace WebApplication8.Controllers
                                         "<p> Message :" + country + "</p> <br> <br>" +
                                         "<p> Company:" + Company + "</p> <br> <br> <p> Designation:" + Designation + "</p> <br> <br> </body></html>";
                 mailMessage.Body = body;
-                string htmlBody = System.IO.File.ReadAllText(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "./wwwroot/Templates/EmailTemplate.cshtml"));
+                string htmlBody = System.IO.File.ReadAllText(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "Views", "EmailTem", "EmailTemplate.cshtml"));
 
                 // Create LinkedResource for each image and set their Content-IDs
                 var logoImage = new LinkedResource(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "./wwwroot/image/logo.png"));
@@ -422,6 +422,12 @@ namespace WebApplication8.Controllers
 
                 using (var httpClient = new HttpClient())
                 {
+                 /*   var request = new HttpRequestMessage(HttpMethod.Post, "https://api-in21.leadsquared.com/v2/LeadManagement.svc/Lead.Create?accessKey=u$rce7dad9984ce11949354bb263d4b2ccf&secretKey=b91df9ce97dfe611b5448d0efcf74586439bedf5");
+                    var content = new StringContent("[\r\n \r\n {\r\n\"Attribute\": \"FirstName\",\r\n \"Value\": \"John\"\r\n},\r\n{\r\n \"Attribute\": \"LastName\",\r\n        \"Value\": \"Smith\"\r\n    }\r\n\r\n    ]", null, "application/json");
+                    request.Content = content;
+                    var response = await httpClient.SendAsync(request);
+                    response.EnsureSuccessStatusCode();
+                    Console.WriteLine(await response.Content.ReadAsStringAsync());*/
                     httpClient.BaseAddress = new Uri("https://api.leadsquared.com/v2/");
                     httpClient.DefaultRequestHeaders.Accept.Clear();
                     httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
@@ -440,10 +446,10 @@ namespace WebApplication8.Controllers
 
                       };*/
                     // Create a JSON string from your contact form data
-                    string jsonContactData = Newtonsoft.Json.JsonConvert.SerializeObject(contactData);
-
+                   string jsonContactData = Newtonsoft.Json.JsonConvert.SerializeObject(contactData);
+                    var content = new StringContent("[\r\n \r\n {\r\n\"Attribute\": \"FirstName\",\r\n \"Value\": \"John\"\r\n},\r\n{\r\n \"Attribute\": \"LastName\",\r\n\"Value\": \"Smith\"\r\n},\r\n{\r\n \"Attribute\": \"EmailAddress\",\r\n\"Value\": \"262Saurabhjhaa@gmail.com\"\r\n}\r\n\r\n]", null, "application/json");
                     // Send a POST request to create a new lead
-                    var response = await httpClient.PostAsync("LeadManagement.svc/Lead.Create", new StringContent(jsonContactData, Encoding.UTF8, "application/json"));
+                    var response = await httpClient.PostAsync("LeadManagement.svc/Lead.Create", content);
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -562,10 +568,8 @@ namespace WebApplication8.Controllers
                         break;
                     default:
                         // Code to execute if option doesn't match any case
-                        return RedirectToAction("WhatsAppMarketing", "Home"); ;
+                        return RedirectToAction("WhatsAppMarketing", "Home"); 
                         break;
-
-
                 }
             }
             catch (Exception ex)
@@ -575,5 +579,37 @@ namespace WebApplication8.Controllers
 
             }
         }
+        public IActionResult Partermail(string email)
+        {
+            var emailSettings = _configuration.GetSection("EmailSettings").Get<EmailSetting>();
+            var EmailSender = emailSettings.EmailSender;
+            var EmailReciver = emailSettings.EmailReciver;
+            var password = emailSettings.Password;
+            try
+            {
+                MailMessage mailMessage = new MailMessage();
+                mailMessage.From = new MailAddress(EmailSender);
+                mailMessage.To.Add(EmailReciver);
+                mailMessage.IsBodyHtml = true;
+                mailMessage.Subject = "Partner's mail";
+                string body = "Partner's mail :" + email;
+                mailMessage.Body = body;
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+                NetworkCredential networkCredential = new NetworkCredential(EmailSender, password);
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = networkCredential;
+                smtpClient.Port = 587;
+                smtpClient.EnableSsl = true;
+                smtpClient.Send(mailMessage);
+                return RedirectToAction("PartnerWithUs", "Home"); ;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return RedirectToAction("PartnerWithUs", "Home"); ;
+
+            }
+        }
+
     }
 }

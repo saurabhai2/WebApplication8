@@ -847,3 +847,7 @@ D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8
 D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8.Migrations.RenameTable.resources
 D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8.Migrations.Addtables.resources
 D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8.Migrations.AddtableeREf.resources
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8.Migrations.Affiliate.resources
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8.Migrations.AddtableAffiliate.resources
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8.Migrations.AddUSerAffiliate.resources
+D:\Sourbh Data Backup\Downloads\WebApplication8\obj\Debug\net7.0\WebApplication8.Migrations.RemoveTable1.resources
