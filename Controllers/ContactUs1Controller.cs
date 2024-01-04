@@ -14,14 +14,12 @@ using Newtonsoft.Json;
 using RestSharp;
 using System.Text;
 using WebApplication8.Database;
-using static Azure.Core.HttpHeader;
-using System.Security.Cryptography;
 
 namespace WebApplication8.Controllers
 {
     public class ContactUs1Controller : Controller
     {
-        
+
 
         public IActionResult Index()
         {
@@ -40,7 +38,7 @@ namespace WebApplication8.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Contact(string Name, string email, string phone, string message, string url, string RefNumber, ContactForm contactForm)
+        public async Task<IActionResult> Contact(string Name, string email, string phone, string message, string url, ContactForm contactForm)
         {
             var emailSettings = _configuration.GetSection("EmailSettings").Get<EmailSetting>();
             var EmailSender = emailSettings.EmailSender;
@@ -67,11 +65,11 @@ namespace WebApplication8.Controllers
                                         "<p> Message :" + message + "</p> <br> <br>" +
                                         "<p> url:" + url + "</p> <br> <br> </body></html>";
                 mailMessage.Body = body;
-                string htmlBody = System.IO.File.ReadAllText(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "Views","EmailTem","EmailTemplate.cshtml"));
+                string htmlBody = System.IO.File.ReadAllText(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "Views", "EmailTem", "EmailTemplate.cshtml"));
                 mailMessage1.Body = htmlBody;
-               // Create LinkedResource for each image and set their Content-IDs
-               //var logoImage = new LinkedResource(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "./wwwroot/image/logo.png"));
-               //logoImage.ContentId = "logoImage";
+                // Create LinkedResource for each image and set their Content-IDs
+                //var logoImage = new LinkedResource(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "./wwwroot/image/logo.png"));
+                //logoImage.ContentId = "logoImage";
                 /*  var anotherImage = new LinkedResource(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "./wwwroot/image/panel.png"));
                   anotherImage.ContentId = "panelImage";
                   var aiImage = new LinkedResource(System.IO.Path.Combine(_hostingEnvironment.ContentRootPath, "./wwwroot/image/ai.png"));
@@ -101,9 +99,11 @@ namespace WebApplication8.Controllers
                   // Set the HTML view as the email's body
                   mailMessage1.AlternateViews.Add(htmlView);*/
 
+
+
                 // Smtp Client 
 
-               SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
                 NetworkCredential networkCredential = new NetworkCredential(EmailSender, password);
                 smtpClient.UseDefaultCredentials = false;
@@ -120,7 +120,7 @@ namespace WebApplication8.Controllers
                     httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
                     // Replace with your LeadSquared API access token and API secret key
-                    
+
                     httpClient.DefaultRequestHeaders.Add("accessKey", "u$rce7dad9984ce11949354bb263d4b2ccf");
                     httpClient.DefaultRequestHeaders.Add("secretKey", "b91df9ce97dfe611b5448d0efcf74586439bedf5");
 
@@ -154,7 +154,7 @@ namespace WebApplication8.Controllers
                     }
                 }
 
-                
+
 
                 //   var client = new RestClient("https://api.leadsquared.com/v2/LeadManagement.svc/Lead.Create");
                 //  RestRequest request = new RestRequest(Method.Post);
@@ -194,18 +194,18 @@ namespace WebApplication8.Controllers
 
             var contact = new ContactForm
             {
-                
+
                 Name = Name,
                 Email = email,
                 Phone = phone,
                 Message = message,
                 url = url,
-                RefNumber = RefNumber,
+
             };
 
             SaveData(contact, null);
 
-            return RedirectToAction("ContactUs", "Home"); 
+            return RedirectToAction("ContactUs", "Home");
         }
 
         private void SaveData(ContactForm? contact, PatnerwithUs? contact1)
@@ -273,7 +273,7 @@ namespace WebApplication8.Controllers
                 Console.WriteLine(ex.Message);
             }
 
-            
+
 
 
             return "Thank You , Your mail is submitted";
@@ -321,7 +321,7 @@ namespace WebApplication8.Controllers
                 smtpClient.EnableSsl = true;
                 smtpClient.Send(mailMessage);
                 smtpClient.Send(mailMessage1);
-               
+
             }
             catch (Exception ex)
             {
@@ -343,7 +343,7 @@ namespace WebApplication8.Controllers
             string base64Image = Convert.ToBase64String(imageBytes);
             return string.Format("data:image/gif;base64,{0}", base64Image);
         }
-        
+
         [HttpPost]
         public async Task<ActionResult> PatnerContact(string Name, string email, string phone, string country, string Designation, string Company)
         {
@@ -431,19 +431,19 @@ namespace WebApplication8.Controllers
                     httpClient.DefaultRequestHeaders.Add("secretKey", "b91df9ce97dfe611b5448d0efcf74586439bedf5");
 
                     string contactData = "[{'Attribute':'FirstName','Value':'Saurabh'},{'Attribute':'EmailAddress','Value':'262Saurabhjhaa@gmail.com'},{'Attribute':'Phone','Value':'9221345631'}]";
-                  /*  {
+                    /*  {
 
-                        FirstName = Name,
-                        EmailAddress = email,
-                        Phone = phone,
-                        Company = Company,
+                          FirstName = Name,
+                          EmailAddress = email,
+                          Phone = phone,
+                          Company = Company,
 
-                    };*/
+                      };*/
                     // Create a JSON string from your contact form data
                     string jsonContactData = Newtonsoft.Json.JsonConvert.SerializeObject(contactData);
 
                     // Send a POST request to create a new lead
-                    var response = await httpClient.PostAsync("LeadManagement.svc/Capture", new StringContent(contactData, Encoding.UTF8, "application/json"));
+                    var response = await httpClient.PostAsync("LeadManagement.svc/Lead.Create", new StringContent(jsonContactData, Encoding.UTF8, "application/json"));
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -517,10 +517,10 @@ namespace WebApplication8.Controllers
             var password = emailSettings.Password;
             try
             {
-                MailMessage mailMessage = new MailMessage();           
+                MailMessage mailMessage = new MailMessage();
                 mailMessage.From = new MailAddress(EmailSender);
                 mailMessage.To.Add(email);
-                mailMessage.IsBodyHtml = true;              
+                mailMessage.IsBodyHtml = true;
                 mailMessage.Subject = "Testing";
                 string body = "Thanks For Contact, Please go Through Pdf";
                 mailMessage.Body = body;
@@ -530,7 +530,8 @@ namespace WebApplication8.Controllers
                 smtpClient.Credentials = networkCredential;
                 smtpClient.Port = 587;
                 smtpClient.EnableSsl = true;
-                switch(id){
+                switch (id)
+                {
                     case 1:
                         // Code to execute for Option 1
                         Attachment attachment = new Attachment("./wwwroot/usecase/Whatsapp_Marketing.pdf");
@@ -573,8 +574,6 @@ namespace WebApplication8.Controllers
                 return RedirectToAction("WhatsAppMarketing", "Home"); ;
 
             }
-
-           
         }
     }
 }

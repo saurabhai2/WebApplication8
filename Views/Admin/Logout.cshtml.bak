@@ -1,0 +1,1687 @@
+﻿@model WebApplication8.Models.Metatag;
+@{
+    ViewData["Title"] = "MetaTags";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewData["heading"] = "MetaTags";
+}
+<div>
+    <h5 style="display:inline">Category : </h5>
+    <select name="Pages" id="Pages" onchange="DropDownShowHide(event)" style="margin-left:1vw" class="select">
+        <option value="Homepages">Home pages</option>
+        <option value="Platform">Platform</option>
+        <option value="Solution">Solution</option>
+        <option value="Company">Company</option>
+        <option value="Resource">Resource</option>
+    </select>
+    <select name="PlatformPages" id="PlatformPages" style="display:none" onchange="DropDownShowHide(event)" class="select">
+        <option value="livepages">live agent support</option>
+        <option value="WhatsApp">WhatsApp Broadcasting</option>
+        <option value="ReportsAnalytics">Reports Analytics</option>
+        <option value="AutomatedChatBot">Automated ChatBot</option>
+        <option value="ConversationalMarketing">Conversational Marketing</option>
+        <option value="AutoSegregation">Auto-Segregation</option>
+        <option value="AppMarketing">App Marketing</option>
+    </select>
+    <select name="Pages" id="SolutionPages" style="display:none" onchange="DropDownShowHide(event)" class="select">
+        <option value="Byusecase">By use case</option>
+        <option value="ByIndustry">By Industry</option>
+    </select>
+    <select name="Pages" id="SolutioncasePages" style="display:none" onchange="DropDownShowHide(event)" class="select">
+        <option value="WhatsAppMarketing">WhatsApp Marketing</option>
+        <option value="WhatsappCommerce">Whatsapp Commerce</option>
+        <option value="WhatsappSupport">Whatsapp Support</option>
+        <option value="WhatsappAuthentication">Whatsapp Authentication</option>
+    </select>
+    <select name="Pages" id="SolutionindustryPages" style="display:none" onchange="DropDownShowHide(event)" class="select">
+        <option value="EcommerceRetail">Ecommerce Retail</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="EdTech">EdTech</option>
+        <option value="BankingBFSI">BankingBFSI</option>
+        <option value="Mediaentertainment">Media entertainment</option>
+        <option value="FoodBeverage">Food Beverage</option>
+        <option value="TravelHospitality">Travel Hospitality</option>
+    </select>
+    <select name="Pages" id="CompanyPages" style="display:none" onchange="DropDownShowHide(event)" class="select">
+        <option value="AboutUs">About Us</option>
+        <option value="WorkWithUs">Work With Us</option>
+        <option value="PartnerWithUs">Partner With Us</option>
+    </select>
+    <select name="Pages" id="ResourcePages" style="display:none" onchange="DropDownShowHide(event)" class="select"   >
+        <option value="Blog">Blog</option>
+        <option value="ContactUs">Contact Us</option>
+        <option value="KnowledgeCenter">Knowledge Center</option>
+    </select>
+</div>
+<hr>
+<div>
+    <div id="HomePage">
+        <h5 sTyle="display:block" class="Metaheading">Home Page</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>                
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.Index</h5>
+                    }
+                    @if (ViewBag.dataMeta != null)
+                    {
+                        <p>@ViewBag.dataMeta.IndexMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Index" type="checkbox" onclick="checkUncheck(event)" @(
+                           ViewBag.Checked != null && ViewBag.Checked.IndexMeta ? "checked" : ""                                                         
+                    ) />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr /> 
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Index_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Index" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Index" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Index_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Index" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Index" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Index_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Index" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Index" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="liveagentPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">live agent support</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.liveagentsupport</h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.liveagentsupportMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+
+                    <input id="Check_live" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="live_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_live" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_live" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_live_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_live" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_live" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_live_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_live" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_live" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="BroadcastingPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">WhatsApp Broadcasting</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsAppBroadcasting </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsAppBroadcastingMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_AppBroad" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsAppBroadcastingMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="AppBroad_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_AppBroad" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_AppBroad" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_AppBroad_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_AppBroad" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_AppBroad" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_AppBroad_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_AppBroad" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_AppBroad" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="AnalyticsPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Report Analytics</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.ReportsAnalytics </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.ReportsAnalyticsMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Report" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.ReportsAnalyticsMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Report_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Report" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Report" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Report_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Report" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Report" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Report_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Report" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Report" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="AutomatedPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Automated ChatBot</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                    <h5 style="color:blue;">@ViewBag.data.AutomatedChatBot </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.AutomatedChatBotMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Auto" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.AutomatedChatBotMeta ? "checked" : "" ) />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Auto_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Auto" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Auto" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Auto_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Auto" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Auto" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Auto_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Auto" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Auto" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="ConversationalPages" style="display:none">
+    <h5 sTyle="display:block" class="Metaheading">Conversational Marketing</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.ConversationalMarketing </h5>
+                    }
+                    @if(ViewBag.data != null)
+                    {
+                    <p>@ViewBag.dataMeta.ConversationalMarketingMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Conve" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.ConversationalMarketingMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Conve_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Conve" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Conve" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Conve_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Conve" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Conve" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Conve_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Conve" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Conve" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="SegregationPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Auto Segregation</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.AutoSegregation </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.AutoSegregationMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Segrega" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.AutoSegregationMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Segrega_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Segrega" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Segrega" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Segrega_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Segrega" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Segrega" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Segrega_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Segrega" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Segrega" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="MarketingPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">App Marketing</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.AppMarketing </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.AppMarketingMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Marke" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.AppMarketingMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Marke_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Marke" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Marke" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Marke_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Marke" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Marke" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Marke_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Marke" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Marke" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="WhatsAppPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">WhatsApp Marketing</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsAppMarketing </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsAppMarketingMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_AppMark" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsAppMarketingMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="AppMark_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_AppMark" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_AppMark" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_AppMark_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_AppMark" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_AppMark" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_AppMark_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_AppMark" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_AppMark" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="CommercePages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Whatsapp Commerce</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsappCommerce </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsappCommerceMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Commer" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsappCommerceMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Commer_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Commer" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Commer" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Commer_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Commer" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Commer" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Commer_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Commer" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Commer" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="SupportPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Whatsapp Support</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsappSupport </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsappSupportMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_hatsap" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsappSupportMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="hatsap_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_hatsap" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_hatsap" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_hatsap_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_hatsap" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_hatsap" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_hatsap_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_hatsap" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_hatsap" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="AuthenticationPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Whatsapp Authentication</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WhatsappAuthentication </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.WhatsappAuthenticationMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Authen" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WhatsappAuthenticationMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Authen_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Authen" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Authen" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Authen_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Authen" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Authen" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Authen_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Authen" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Authen" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="EcommercePages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Ecommerce Retail</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                    <h5 style="color:blue;">@ViewBag.data.EcommerceRetail </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.EcommerceRetailMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Retail" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.EcommerceRetailMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Retail_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Retail" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Retail" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Retail_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Retail" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Retail" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Retail_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Retail" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Retail" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="HealthcarePages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Healthcare</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                    <h5 style="color:blue;">@ViewBag.data.Healthcare </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.HealthcareMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_care" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.HealthcareMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="care_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_care" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_care" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_care_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_care" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_care" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_care_text" name="Description"></textarea>
+            </div>
+        </div>
+            <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_care" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_care" onclick="DeleteData(event)">Delete</button>
+            </div>
+        </div>
+    <div id="EdTechPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">EdTech</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                    <h5 style="color:blue;">@ViewBag.data.EdTech </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.EdTechMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_EdTech" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.EdTechMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="EdTech_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_EdTech" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_EdTech" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_EdTech_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_EdTech" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_EdTech" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_EdTech_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_EdTech" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_EdTech" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="BankingBFSIPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">BankingBFSI</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                    <h5 style="color:blue;">@ViewBag.data.BankingBFSI </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.BankingBFSIMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_BFSI" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.BankingBFSIMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="BFSI_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_BFSI" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_BFSI" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_BFSI_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_BFSI" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_BFSI" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_BFSI_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_BFSI" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_BFSI" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="MediaPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Media entertainment</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.Mediaentertainment </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.MediaentertainmentMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Media" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.MediaentertainmentMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Media_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Media" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Media" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Media_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Media" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Media" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Media_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Media" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Media" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="FoodPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Food Beverage</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/food-and-beverage-industry</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.FoodBeverage</h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.FoodBeverageMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Food" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.FoodBeverageMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Food_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Food" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Food" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Food_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Food" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Food" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Food_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Food" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Food" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="TravelPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Travel Hospitality</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/travel-and-hospitality-industry</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.TravelHospitality </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.TravelHospitalityMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Travel" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.TravelHospitalityMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Travel_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Travel" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Travel" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Travel_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Travel" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Travel" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Travel_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Travel" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Travel" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="AboutPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">About Us</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/about</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.AboutUs </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.AboutUsMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_AboutUs" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.liveagentsupportMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="AboutUs_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_AboutUs" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_AboutUs" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_AboutUs_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_AboutUs" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_AboutUs" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_AboutUs_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_AboutUs" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_AboutUs" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="WorkPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Work With Us</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/work-with-us</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.WorkWithUs </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.WorkWithUsMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_WithUs" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.WorkWithUsMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="WithUs_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_WithUs" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_WithUs" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_WithUs_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_WithUs" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_WithUs" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_WithUs_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_WithUs" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_WithUs" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="PartnerPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Partner With Us</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/partner-with-us</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.PartnerWithUs </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.PartnerWithUsMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Partner" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.PartnerWithUsMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Partner_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Partner" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Partner" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Partner_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Partner" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Partner" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Partner_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Partner" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Partner" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="BlogPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Blog</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/blog</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.Blog </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.BlogMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Blog" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.BlogMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Blog_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Blog" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Blog" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Blog_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Blog" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Blog" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Blog_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Blog" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Blog" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="ContactPages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Contact Us</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/contact</p>
+                    @if (ViewBag.data != null)
+                    {
+                    <h5 style="color:blue;">@ViewBag.data.ContactUs </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.ContactUsMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Contact" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.ContactUsMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Contact_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Contact" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Contact" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Contact_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Contact" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Contact" onclick="DeleteData(event)">Delete</button>
+        </div>
+    <hr>
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Contact_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Contact" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Contact" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+    <div id="KnowledgePages" style="display:none">
+        <h5 sTyle="display:block" class="Metaheading">Knowledge Center</h5>
+        <hr />
+        <div class="row">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Snippet Preview</h6>
+            </div>
+            <div class="col-sm-8">
+                <div style="width:50vw;height:25vh; border:1px solid red; background:#fff; padding:1vw">
+                    <p style="color:red;">https://anantya.ai/knowledge-center</p>
+                    @if (ViewBag.data != null)
+                    {
+                        <h5 style="color:blue;">@ViewBag.data.KnowledgeCenter </h5>
+                    }
+                    @if (ViewBag.data != null)
+                    {
+                        <p>@ViewBag.dataMeta.KnowledgeCenterMeta</p>
+                    }
+                </div>
+                <div style="margin-top:1.5vh">
+                    <input id="Check_Center" type="checkbox" onclick="checkUncheck(event)" @(ViewBag.Checked != null && ViewBag.Checked.KnowledgeCenterMeta ? "checked" : "") />
+                    <h6 style="display:inline;font-weight:400">no Follow , no Index</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Title</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Center_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Tittle_Center" onclick="SendData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Tittle_Center" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Description</h6>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="Meta_Center_input" style="width:50vw" />
+            </div>
+        </div>
+        <div class="buttondiv">
+            <button value="Save" class="btn button" id="Meta_Center" onclick="SendMetaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Meta_Center" onclick="DeleteData(event)">Delete</button>
+        </div>
+        <hr />
+        <div class="row" style="height:7vh; margin-top:6vh">
+            <div class="col-sm-3">
+                <h6 style="font-weight:400">Category Schema</h6>
+            </div>
+            <div class="col-sm-8">
+                <textarea style="width:50vw;height:20vh" id="Schema_Center_text" name="Description"></textarea>
+            </div>
+        </div>
+        <div style="margin-top:15vh" class="buttondiv">
+            <button value="Save" class="btn button" id="Schema_Center" onclick="SendSchemaData(event)">Save</button>
+            <button value="Delete" class="btn button" id="Schema_Center" onclick="DeleteData(event)">Delete</button>
+        </div>
+    </div>
+</div>
+
+
